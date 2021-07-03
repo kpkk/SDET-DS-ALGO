@@ -14,6 +14,12 @@ public class ReverseAnInteger {
     did i understand the problem- yes
     test data, 123, -456, 1, 120000,
 
+     Did i understand the problem? yes
+    what is the input? integer
+    what should be the expected output? integer
+    test data set
+    +ve, -ve and edge
+
     Pseudo code:-
     1. assign the input number to a temp variable, to check for the negative value
     2. If the number is less than 0 then multiply by -1

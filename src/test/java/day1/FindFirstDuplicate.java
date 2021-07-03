@@ -8,6 +8,12 @@ public class FindFirstDuplicate {
 
     /*
 
+    Did i understand the problem? yes
+    what is the input? integer array
+    what should be the expected output? int number
+    test data set
+    +ve, -ve and edge
+
     int=[1,2,3,4,4,5,6,6]
      */
 

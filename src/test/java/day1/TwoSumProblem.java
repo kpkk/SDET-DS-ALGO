@@ -8,6 +8,13 @@ public class TwoSumProblem {
 
     /*
 
+
+ Did i understand the problem? yes
+    what is the input? integer array,  target
+    what should be the expected output? integer array
+    test data set
+    +ve, -ve and edge
+
     int [] ={1, 4, 2, 8, 2, 6}
     int k=10
      */
