@@ -15,10 +15,21 @@ public class ReverseAnInteger {
     test data, 123, -456, 1, 120000,
 
      Did i understand the problem? yes
-    what is the input? integer
-    what should be the expected output? integer
-    test data set
+    2. what is the input? integer (which includes +ve, -ve)
+    3. what should be the expected output? reversed integer
+    4. Do i have any constraints - No constraints
+    5. do i've all the information to solve the problem - convert into string and reverse it from end, recursion technique
+    4. test data set
     +ve, -ve and edge
+
+
+
+
+
+
+
+
+
 
     Pseudo code:-
     1. assign the input number to a temp variable, to check for the negative value
