@@ -13,7 +13,6 @@ public class TwoSumProblem {
     int [] ={1, 4, 2, 8, 2, 6}
     int k=10
 
-
  Did i understand the problem? yes
           - If no ask to provide examples
           - if yes, proceed with the next steps
