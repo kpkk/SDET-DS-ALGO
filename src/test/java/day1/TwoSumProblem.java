@@ -8,15 +8,25 @@ public class TwoSumProblem {
 
     /*
 
+    Two sum problem
+    eg:
+    int [] ={1, 4, 2, 8, 2, 6}
+    int k=10
+
 
  Did i understand the problem? yes
-    what is the input? integer array,  target
-    what should be the expected output? integer array
+          - If no ask to provide examples
+          - if yes, proceed with the next steps
+    1. what is the input? integer array,  target
+    2. what should be the expected output? integer array
+    3. Do i have any constraints - No constraints
+    4. How big is your test data?
+    5. test data set
+    +ve, -ve and edge
+    6. do i've all the information to solve the problem - convert into string and reverse it from end, recursion technique
     test data set
     +ve, -ve and edge
 
-    int [] ={1, 4, 2, 8, 2, 6}
-    int k=10
      */
 
 
@@ -64,18 +74,6 @@ public class TwoSumProblem {
     }
 
     public int[] twoSum(int [] nums, int k){
-        StringBuffer sb=new StringBuffer();
-        sb.length();
-        sb.capacity();
-        sb.trimToSize();
-
-        StringBuilder sc=new StringBuilder();
-        sc.length();
-        sc.capacity();
-        sc.trimToSize();
-
-
-
         Arrays.sort(nums);
         int left=0, right=nums.length-1;
         while (left<right){

@@ -15,19 +15,15 @@ public class ReverseAnInteger {
     test data, 123, -456, 1, 120000,
 
      Did i understand the problem? yes
+          - If no ask to provide examples
+          - if yes, proceed with the next steps
     2. what is the input? integer (which includes +ve, -ve)
     3. what should be the expected output? reversed integer
     4. Do i have any constraints - No constraints
-    5. do i've all the information to solve the problem - convert into string and reverse it from end, recursion technique
-    4. test data set
+    4. How big is your test data?
+    5. test data set
     +ve, -ve and edge
-
-
-
-
-
-
-
+    6. do i've all the information to solve the problem - convert into string and reverse it from end, recursion technique
 
 
 

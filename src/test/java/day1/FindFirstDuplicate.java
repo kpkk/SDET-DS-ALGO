@@ -13,16 +13,19 @@ public class FindFirstDuplicate {
 
     /*
 find first duplicate in integer array
+eg:-  int=[1,2,3,4,4,5,6,6]
 
    Did i understand the problem?
+       - If no ask to provide examples
+       - if yes, proceed with the next steps
     1. what is the input? integer array
     2. what should be the expected output? integer
     3. Do i have any constraints - solve by bruteforce- no constraints for now
-
-    4. do i've all the information to solve the problem
+    4. How big is your test data?
     5. test data set
     +ve, -ve and edge
-    int=[1,2,3,4,4,5,6,6]
+    6. do i've all the information to solve the problem
+
      */
 
     //+ve
@@ -53,15 +56,22 @@ find first duplicate in integer array
     @Test
     public void test3(){
         int[] nums={-1,8,1,-1,1,1,2,7,4,5,6};
-     //   int duplicate = findDuplicate(nums);
-     //   System.out.println(duplicate);
+        int duplicate = findDuplicate(nums);
+        System.out.println(duplicate);
         int approach = approach(nums);
         System.out.println(approach);
     }
 
+    /*
+    1. declare an arraylist
+    2. iterate the outer loop starting from 0th index
+    3. iterate inner loop starting at a position after i
+    4. compare if the numbers are same
+    5. If same then add the index to the list
+    6. sort the list then get the first element to ensure its the first encountered duplicate
+     */
     public int approach(int[] nums){
         ArrayList<Integer> al=new ArrayList();
-        int count=0;
         for (int i=0;i<nums.length;i++){
             for (int j=i+1;j<nums.length;j++){
                 if (nums[i]==nums[j])
@@ -69,16 +79,25 @@ find first duplicate in integer array
             }
         }
         Collections.sort(al);
+        System.out.println(al);
         if (al.isEmpty()){
             isDuplicateExist=false;
             System.out.println("no duplicates");
             return 0;
         }
 
-
        return nums[al.get(0)];
     }
 
+
+    /*
+    Pseduo code:-
+
+    1. initialize the hashset
+    2. iterate the array from left to right
+    3. Add each character to the set and check if it results in false
+    4. if at all the add method returns false, that's the duplicate hence return the integer
+     */
 
     public int findDuplicate(int[] nums){
         HashSet<Integer> set=new HashSet<>();
