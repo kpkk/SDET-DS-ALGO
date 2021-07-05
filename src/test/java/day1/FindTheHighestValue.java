@@ -76,10 +76,11 @@ Simple technique brute force
         int []nums={11,8,2,11,7,8};
         Assert.assertEquals(findHighestNumber(nums),11);
     }
-
     private int findHighestNumber(int[] nums) {
         if (nums.length==0)
             throw new RuntimeException("empty array given , no max element");
+        if (nums.length==1)
+            return nums[0];
         int max=Integer.MIN_VALUE;
         for (int i=0;i<nums.length;i++){
             max=Math.max(nums[i],max);

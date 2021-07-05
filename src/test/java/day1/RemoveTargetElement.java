@@ -120,6 +120,13 @@ public class RemoveTargetElement {
 
         Assert.assertArrayEquals(removetarget(input, target), new int[]{2, 3, 4, 6});
     }
+    @Test
+    public void test6() {
+        int[] input = {5,5,5};
+        int target = 5;
+
+        Assert.assertArrayEquals(removetarget(input, target), new int[]{2, 3, 4, 6});
+    }
 
 
     // Time complexity- O[N]
@@ -134,6 +141,7 @@ public class RemoveTargetElement {
 
             }
         }
+        System.out.println(Arrays.toString(nums));
         return Arrays.copyOfRange(nums, 0,index); //O[N]
 
     }
