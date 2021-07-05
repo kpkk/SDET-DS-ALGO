@@ -1,0 +1,31 @@
+Day 2 HW:
+
+-----------------
+1.Understand String Builder reverse method internally and O notations(Swap) - reviewed with team
+2.Learn Eclipse debug video / Short cuts as a team - just had a walk through
+3.Why generics are not supported to primitive data type - done
+4.Try to do 1 pass for remove a value in integer array - done
+5.Find peak element is an element that is strictly heater than its neighbour - done
+
+problems:-
+-----------------
+1) Given an integer x, return true if x is palindrome integer.
+
+2) Given an array nums of size n, return the majority element. ou may assume that the majority element always exists in the array.The majority element is the element that appears more than ⌊n / 2⌋ times.
+
+3) Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+ 
+Example 1:
+Input: nums1 = [1,2,2,1], nums2 = [2,2]
+Output: [2]
+
+4) Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+Input: nums = [3,0,1]
+Output: 2
+
+5) Given an array of integers arr, write a function that returns true if and only if the number of occurrences of each value in the array is unique.
+ 
+Example 1:
+Input: arr = [1,2,2,1,1,3]
+Output: true
