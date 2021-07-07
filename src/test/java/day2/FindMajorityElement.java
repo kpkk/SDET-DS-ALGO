@@ -74,10 +74,13 @@ Simple technique brute force
 
     /*
     Pseudo code:-
-    1. Initialize the hashmap and add all the array elements (key) and occurrences (values) into map
-    2. then get the values of it
-    3. If the occurrence of a specific key is more than n/2 return true, else false
+    1. Initialize the hashmap and add all the array elements (key) and occurrences (values)
+    2. iterate the entry set and get the value of each key
+    3. If the value  of a specific key is more than n/2 return true, else false
      */
+
+    // Time complexity- O(n)
+    //space complexity- O(n)
     public Integer findMajorityEle(int[] nums) {
         if (nums.length==0) throw new RuntimeException("empty array");
         HashMap<Integer, Integer> map = new HashMap<>();

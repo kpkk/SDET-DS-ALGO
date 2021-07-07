@@ -1,9 +1,12 @@
 package day2;
 
+import org.junit.Test;
+
 class Address{
     String city;
     String street;
 }
+
 public class pojo {
 
     int id;

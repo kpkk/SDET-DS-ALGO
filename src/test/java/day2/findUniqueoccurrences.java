@@ -18,13 +18,13 @@ Output: true
 
 Problem solving template
 
-1. Did I understand the problem? yes or no
+1. Did I understand the problem? yes
 
         If no ask the person to provide with more details with examples
         If yes go to the next step
 
-        What is the input(s)?
-        What is the expected output?
+        What is the input(s)? Integer array
+        What is the expected output? boolean
         Do I’ve constraints to solve the problem?
         Do Ive all the information to go to the next steps
         How big is your test data set will be?
@@ -57,21 +57,33 @@ Simple technique brute force
     @Test
     public void test1(){
         int[] nums={1,2,2,3,3,3};
-        boolean result= true;
+
        Assert.assertTrue( checkUniqueOccurrence(nums));
     }
     @Test
     public void test2(){
         int[] nums={1,2,2,3,3,3,4,1};
-        boolean result= false;
+
         Assert.assertFalse(checkUniqueOccurrence(nums));
     }
     @Test
     public void test3(){
         int[] nums={2,2,2,2};
-        boolean result= false;
+
         Assert.assertTrue(checkUniqueOccurrence(nums));
     }
+
+    /*
+
+    Pseudo code:-
+    1. Initialize the hashmap and put the characters and their occurrences
+    2. if map size if true then return true
+    3. load all the values into hashset such that duplicates would get removed
+    4. then compare if the map size and set size are same, if yes return true else false
+     */
+
+    //Time Complexity- O(n)
+    //Space Complexity- O(n)
     public boolean checkUniqueOccurrence(int[] nums){
         HashMap<Integer,Integer>map=new HashMap<>();
         for (int i=0;i<nums.length;i++){

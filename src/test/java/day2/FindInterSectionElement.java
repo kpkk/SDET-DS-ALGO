@@ -16,13 +16,13 @@ Output: [2]
 
 Problem solving template
 
-1. Did I understand the problem? yes or no
+1. Did I understand the problem? yes
 
         If no ask the person to provide with more details with examples
         If yes go to the next step
 
         What is the input(s)? - two input arrays
-        What is the expected output? - integer array
+        What is the expected output? - integer array without duplicates
         Do I’ve constraints to solve the problem?
         Do Ive all the information to go to the next steps
         How big is your test data set will be?
@@ -67,6 +67,15 @@ Simple technique brute force
         Assert.assertEquals(output,new Integer[]{2,3,4});
     }
 
+    /*
+
+    Pseudo code:-
+    1. Initialize a hashset to hold the intersection elements
+    2. iterate the two arrays using two for loops
+    3. if the number at a specified index is equal in both the arrays add to the set
+    4. Convert the set into an integer array and return the same
+
+     */
     @Test
     public void test3() {
         int[] nums1 = {1, 2, 2, 1};
@@ -75,12 +84,15 @@ Simple technique brute force
         Assert.assertEquals(output,new Integer[]{});
     }
 
+    // Time complexity- O(n^2)
+    // Space complexity- O(n)
         private Integer[] findInterSection (int[] nums1, int[] nums2){
             HashSet<Integer>set=new HashSet<>();
         for (int i=0;i<nums1.length;i++){
             for (int j=0;j<nums2.length;j++){
                 if (nums1[i]==nums2[j]){
                     set.add(nums2[j]);
+                    break;
                 }
             }
         }

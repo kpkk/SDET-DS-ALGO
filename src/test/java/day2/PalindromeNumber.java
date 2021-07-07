@@ -16,7 +16,7 @@ public class PalindromeNumber {
 
         What is the input(s)? -->integer
         What is the expected output? --->boolean
-        Do I’ve constraints to solve the problem? -->
+        Do I’ve constraints to solve the problem? --> use swaping
         Do Ive all the information to go to the next steps
         How big is your test data set will be?
 
@@ -49,7 +49,7 @@ Simple technique brute force
         int n = 121;
         Assert.assertTrue(palinDromeUsingMod(n));
         //  Assert.assertTrue(checkPalindrome(n));
-        Assert.assertTrue(checkPalindromusingUsingString(n));
+      //  Assert.assertTrue(checkPalindromusingUsingString(n));
 
     }
 
@@ -66,8 +66,8 @@ Simple technique brute force
     public void test3() {
         int n = 00100;
         //  Assert.assertTrue(checkPalindrome(n));
-       // Assert.assertTrue(palinDromeUsingMod(n));
-        Assert.assertTrue(checkPalindromusingUsingString(n));
+        Assert.assertTrue(palinDromeUsingMod(n));
+      //  Assert.assertTrue(checkPalindromusingUsingString(n));
     }
 
     //010
@@ -77,7 +77,7 @@ Simple technique brute force
         int n = -1765;
         // Assert.assertFalse(checkPalindrome(n));
         Assert.assertFalse(palinDromeUsingMod(n));
-        Assert.assertFalse(checkPalindromusingUsingString(n));
+     //   Assert.assertFalse(checkPalindromusingUsingString(n));
     }
 
     @Test
@@ -85,7 +85,7 @@ Simple technique brute force
         int n = 997799;
         // Assert.assertTrue(checkPalindrome(n));
         Assert.assertTrue(palinDromeUsingMod(n));
-        Assert.assertTrue(checkPalindromusingUsingString(n));
+     //   Assert.assertTrue(checkPalindromusingUsingString(n));
     }
 
     @Test
@@ -93,22 +93,19 @@ Simple technique brute force
         int n = 4;
         // Assert.assertTrue(checkPalindrome(n));
         Assert.assertTrue(palinDromeUsingMod(n));
-        Assert.assertTrue(checkPalindromusingUsingString(n));
+       // Assert.assertTrue(checkPalindromusingUsingString(n));
     }
 
 
     /*
 
     Pseudo code:-
-    1. Create a temp variable then store the value of n
-    2. If the value of the integer is single digit, the return true
-    3. Then create an additional int variable to hold the reverse the number
-    4. iterate the loop as long as the number >0
-    5. Then get the last digit using mod operator
-    6. Then multiply the rev with 10 and add last digit
-    7. then divide the n to reduce its value
-    8. after the loop is done, check if the temp and rev values are same, if yes return true
-    9. if not return false
+    1. Create a temp variables then store the value of n for final comparision
+    2. Initialize another variable called rev=0, to hold the reversed digit
+    3. If the value of the integer is single digit, the return true
+    4. If the value is less than 0 return false
+    5. Then while n>0 get the last digit, using mod and multiply with the value which is initialized with zero
+    6. compare the value of temp and rev, if they are equal return true else false
      */
 
 
@@ -139,18 +136,18 @@ Simple technique brute force
     //Space complexity- O(1)
     public boolean palinDromeUsingMod(int n) {
         if (n < 0) return false;
-        if (n >= 0 && n < 10) return true;
+        if (n >= 0 && n < 10) return true; //1221
         int div = 1;
         // get the value of the number in terms of places
-        while (n / div >= 10) {
-            div *= 10;
+        while (n / div >= 10) { //121/100==1
+            div *= 10; //10*10-100
         }
-        while (n > 0) {
-            int left = n / div;
-            int right = n % 10;
+        while (n > 0) { //2
+            int left = n / div;  //121/100->1
+            int right = n % 10; //12%10-->1  2%10
             if (left != right) return false;
-            n = (n % div) / 10;
-            div = div / 100;
+            n = (n % div) / 10; // 121%100-->21/10-->2
+            div = div / 100; //1
         }
         return true;
     }

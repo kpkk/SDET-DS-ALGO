@@ -74,6 +74,12 @@ Simple technique brute force
         int k = 2;
         Assert.assertEquals(findMissing(nums), k);
     }
+    @Test // throw an exception
+    public void test78() {
+        int[] nums = {20,22,24};
+        int k = 21;
+        Assert.assertEquals(bruteForce(nums), k);
+    }
 
 
     /*
@@ -84,6 +90,9 @@ Simple technique brute force
     3. Then compare the arrays then return the first missing value
 
      */
+
+    // Time complexity - O(n)
+    //Space complexity - O(1)
     private int findMissing(int[] nums) {
         if (nums.length == 0)
             throw new RuntimeException("empty array found");
@@ -93,7 +102,7 @@ Simple technique brute force
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 
     @Test
@@ -144,8 +153,8 @@ Simple technique brute force
         Assert.assertEquals(bruteForce(nums), k);
     }
 
-    //Time complexity- 0[N]
-    //space
+    //Time complexity- O(n)
+    //space complexity - O(1)
     private int bruteForce(int[] nums) {
         int length = nums.length; //0[1]
         // condition to check for empty array
@@ -173,10 +182,10 @@ Simple technique brute force
             throw new RuntimeException("invalid input array");
         if (missingEle > min && missingEle <max)
             return missingEle;
-       /* if (expectedSum - actualSum == 0 && min == 0)
+        if (expectedSum - actualSum == 0 && min == 0)
             return 0;
         if (expectedSum - actualSum == 0 && min != 0)
-            throw new RuntimeException("invalid input");*/
+            return 0; //run in debug mode
 
         return 0;
     }

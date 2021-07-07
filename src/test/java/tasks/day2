@@ -32,7 +32,7 @@ problems:-
 -----------------
 1) Given an integer x, return true if x is palindrome integer.
 
-2) Given an array nums of size n, return the majority element. ou may assume that the majority element always exists in the array.The majority element is the element that appears more than ⌊n / 2⌋ times.
+2) Given an array nums of size n, return the majority element. you may assume that the majority element always exists in the array.The majority element is the element that appears more than ⌊n / 2⌋ times.
 
 3) Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
  
