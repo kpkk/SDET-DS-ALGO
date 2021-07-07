@@ -1,0 +1,21 @@
+Assignment for Day 1
+-------------------------
+1. why any programming language design starts with implementing interfaces and annotations then abstract class
+
+
+Interface:-
+
+1. Interface is a template which provides the total abstraction and loosely coupling
+2. Interfaces defines the capability, class that implements the interface must implement all of its methods unless its an abstract class
+3. Every method/ variable that we define in interface is public static final default
+4. Since java doesn’t  support multiple inheritance, it supports through the interfaces
+5. Since java 8 we can implement default methods in interface so that the implemented classes are unaffected
+6. We can also add static methods in the interface and these can be called without having to create an object, with interface name  we can call
+
+Interface programming is used to implement modular programming at component level in OOP language
+Interface based programming language provides advantages over the packages even if the component contains only one package
+
+In interface based programming defines the application as collection based , the communication between the component (API) happens through interfaces this enhances the modularity and availability
+
+
+

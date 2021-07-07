@@ -1,5 +1,6 @@
 package day2;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -56,13 +57,22 @@ Simple technique brute force
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {2, 2};
         Integer[] output = findInterSection(nums1, nums2);
+        Assert.assertEquals(output,new Integer[]{2});
+    }
+    @Test
+    public void test2() {
+        int[] nums1 = {1, 2, 2, 1,3,4,3};
+        int[] nums2 = {2, 2,3,6,4};
+        Integer[] output = findInterSection(nums1, nums2);
+        Assert.assertEquals(output,new Integer[]{2,3,4});
     }
 
     @Test
-    public void test2() {
+    public void test3() {
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {3, 4, 5, 6};
         Integer[] output = findInterSection(nums1, nums2);
+        Assert.assertEquals(output,new Integer[]{});
     }
 
         private Integer[] findInterSection (int[] nums1, int[] nums2){

@@ -3,7 +3,28 @@ Day 2 HW:
 -----------------
 1.Understand String Builder reverse method internally and O notations(Swap) - reviewed with team
 2.Learn Eclipse debug video / Short cuts as a team - just had a walk through
+
+---------------------------
 3.Why generics are not supported to primitive data type - done
+
+ava is statically types here,  type of the value is known at compile time
+
+It eliminates the casts and stronger checks at compile time
+
+Using generics we can make our classes or interfaces a generic one that means it can support multiple types
+
+Java generics are built using Type-erasure concept meaning that symbol would get replaced by the actual type we send
+
+Primitives or not of reference types , so generics only support class objects
+
+Wrapper classes provide a way to implement these with the help of auto-boxing and unboxing techniques
+
+
+* Java primitive types are not reference types (e.g. an int is not an Object)
+* Java does generics using type-erasure of reference types (e.g. a List<?> is really a List<Object> at run-time
+
+-------------------------------
+
 4.Try to do 1 pass for remove a value in integer array - done
 5.Find peak element is an element that is strictly heater than its neighbour - done
 
