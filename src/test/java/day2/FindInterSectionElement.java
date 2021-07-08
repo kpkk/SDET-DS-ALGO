@@ -3,6 +3,7 @@ package day2;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class FindInterSectionElement {
@@ -56,15 +57,22 @@ Simple technique brute force
     public void test1() {
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {2, 2};
-        Integer[] output = findInterSection(nums1, nums2);
-        Assert.assertEquals(output,new Integer[]{2});
+        int i = Integer.numberOfLeadingZeros(0000111);
+        Integer[] integers = intersectionArr(nums1, nums2);
+        System.out.println(Arrays.toString(integers));
+        System.out.println(i);
+        //  Integer[] output = findInterSection(nums1, nums2);
+        //  Assert.assertEquals(output,new Integer[]{2});
     }
+
     @Test
     public void test2() {
-        int[] nums1 = {1, 2, 2, 1,3,4,3};
-        int[] nums2 = {2, 2,3,6,4};
+        int[] nums1 = {1, 2, 2, 1, 3, 4, 3};
+        int[] nums2 = {2, 2, 3, 6, 4};
         Integer[] output = findInterSection(nums1, nums2);
-        Assert.assertEquals(output,new Integer[]{2,3,4});
+        Assert.assertEquals(output, new Integer[]{2, 3, 4});
+        Integer[] integers = intersectionArr(nums1, nums2);
+        System.out.println(Arrays.toString(integers));
     }
 
     /*
@@ -81,24 +89,58 @@ Simple technique brute force
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {3, 4, 5, 6};
         Integer[] output = findInterSection(nums1, nums2);
-        Assert.assertEquals(output,new Integer[]{});
+        Assert.assertEquals(output, new Integer[]{});
+    }
+
+    @Test
+    public void test4() {
+        int[] nums1 = {14, 8, 3};
+        int[] nums2 = {8, 14, 8, 12, 6};
+        Integer[] output = findInterSection(nums1, nums2);
+        Assert.assertEquals(output, new Integer[]{8, 14});
     }
 
     // Time complexity- O(n^2)
     // Space complexity- O(n)
-        private Integer[] findInterSection (int[] nums1, int[] nums2){
-            HashSet<Integer>set=new HashSet<>();
-        for (int i=0;i<nums1.length;i++){
-            for (int j=0;j<nums2.length;j++){
-                if (nums1[i]==nums2[j]){
+    private Integer[] findInterSection(int[] nums1, int[] nums2) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < nums1.length; i++) {
+            for (int j = 0; j < nums2.length; j++) {
+                if (nums1[i] == nums2[j]) {
                     set.add(nums2[j]);
                     break;
                 }
             }
         }
-            System.out.println(set);
-        Integer[] arr=new Integer[set.size()];
+        System.out.println(set);
+        Integer[] arr = new Integer[set.size()];
+        return set.toArray(arr);
+    }
+
+    private Integer[] intersectionArr(int[] nums1, int[] nums2) {
+
+        HashSet<Integer> set = new HashSet<>();
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int p1 = 0, p2 = 0;
+        while (p1 < nums1.length && p2 < nums2.length) {
+            if (nums1[p1] == nums2[p2]) {
+                set.add(nums1[p1]);
+                p1++;
+                p2++;
+            } else if (nums1[p1] < nums2[p2]) {
+                p1++;
+            }
+                else{
+                    p2++;
+                }
+            }
+        System.out.println(set);
+        Integer [] arr=new Integer[set.size()];
         return set.toArray(arr);
         }
 
-}
+
+    }
+
+

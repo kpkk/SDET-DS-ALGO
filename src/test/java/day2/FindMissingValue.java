@@ -58,6 +58,7 @@ Simple technique brute force
         int[] nums = {3, 0, 1};
         int k = 2;
         Assert.assertEquals(findMissing(nums), k);
+        Assert.assertEquals(bruteForce2(nums), k);
     }
 
 
@@ -65,7 +66,8 @@ Simple technique brute force
     public void test2() {
         int[] nums = {1, 0, 2, 3, 4};
         int k = 5;
-        Assert.assertEquals(findMissing(nums), k);
+     //   Assert.assertEquals(findMissing(nums), k);
+        Assert.assertEquals(bruteForce2(nums), 0);
     }
 
     @Test // throw an exception
@@ -73,12 +75,14 @@ Simple technique brute force
         int[] nums = {};
         int k = 2;
         Assert.assertEquals(findMissing(nums), k);
+        Assert.assertEquals(bruteForce2(nums), 0);
     }
     @Test // throw an exception
     public void test78() {
         int[] nums = {20,22,24};
         int k = 21;
         Assert.assertEquals(bruteForce(nums), k);
+        Assert.assertEquals(bruteForce2(nums), k);
     }
 
 
@@ -103,6 +107,33 @@ Simple technique brute force
             }
         }
         return -1;
+    }
+
+       /*
+
+    Pseudo code:-
+    1. sort the given array
+    2. Then iterate the given array using two pointers forward direction
+    3. if number doesn't present then return the element
+     */
+
+    // Time Complexity- O(n^2)
+    //space complexity- O(1)
+    public int bruteForce2(int[] nums){
+
+        if (nums.length<=1)
+            throw new RuntimeException("empty array");
+        Arrays.sort(nums);
+        for (int i=0;i<nums.length;i++){
+            for (int j=i+1;j<nums.length;j++){
+                if(nums[j]-nums[i]>1)
+                    return nums[j]-1;
+                else
+                    break;
+
+            }
+        }
+        return 0;
     }
 
     @Test

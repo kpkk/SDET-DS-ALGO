@@ -3,10 +3,8 @@ package day2;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class FindMajorityElement {
 
@@ -22,7 +20,7 @@ public class FindMajorityElement {
 
         What is the input(s)? --> Integer array of size n
         What is the expected output?  --> integer
-        Do I’ve constraints to solve the problem?  -->
+        Do I’ve constraints to solve the problem?  --> single pass
         Do Ive all the information to go to the next steps
         How big is your test data set will be?
 
@@ -54,22 +52,42 @@ Simple technique brute force
     @Test
     public void test1() {
         int[] nums = {1, 2, 2, 2};
-        Integer n=2;
-        Assert.assertEquals(findMajorityEle(nums),n);
+        Integer n = 2;
+      //  Assert.assertEquals(findMajorityEle(nums), n);
+      //  Assert.assertEquals(findMajorityEleSinglePass(nums), 2);
+       // Assert.assertEquals(bruteForce(nums), 2);
+        Assert.assertEquals(majorityEleusingMidValue(nums), 2);
+
     }
 
     @Test
     public void test2() {
         int[] nums = {1, 2, 3, 4, 4, 4, 4, 4};
-        Integer n=4;
-        Assert.assertEquals(findMajorityEle(nums),n);
+        Integer n = 4;
+        //Assert.assertEquals(findMajorityEle(nums), n);
+      //  Assert.assertEquals(findMajorityEleSinglePass(nums), 4);
+      //  Assert.assertEquals(bruteForce(nums), 4);
+        Assert.assertEquals(majorityEleusingMidValue(nums), 4);
     }
 
     @Test
     public void test3() {
+        int[] nums = {1,1, 4, 4};
+        Integer n = 4;
+     //   Assert.assertEquals(findMajorityEle(nums), n);
+      //  Assert.assertEquals(findMajorityEleSinglePass(nums), 4);
+       // Assert.assertEquals(bruteForce(nums), 4);
+        Assert.assertEquals(majorityEleusingMidValue(nums), 4);
+    }
+
+    @Test
+    public void test4() {
         int[] nums = {};
-        Integer n=2;
-        Assert.assertEquals(findMajorityEle(nums),n);
+        Integer n = 2;
+       // Assert.assertEquals(findMajorityEle(nums), n);
+       // Assert.assertEquals(findMajorityEleSinglePass(nums), 0);
+       // Assert.assertEquals(bruteForce(nums), 2);
+        Assert.assertEquals(majorityEleusingMidValue(nums), 2);
     }
 
     /*
@@ -82,19 +100,71 @@ Simple technique brute force
     // Time complexity- O(n)
     //space complexity- O(n)
     public Integer findMajorityEle(int[] nums) {
-        if (nums.length==0) throw new RuntimeException("empty array");
+        if (nums.length == 0) throw new RuntimeException("empty array");
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-                map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
         }
         Set<Map.Entry<Integer, Integer>> entries = map.entrySet();
         for (Map.Entry entry : entries) {
             Integer value = (Integer) entry.getValue();
-            if (value >nums.length >>1) {
+            if (value > nums.length >> 1) {
                 return (Integer) entry.getKey();
             }
         }
 
         return 0;
+    }
+
+    // Time complexity- O(n)
+    //Space Complexity- O(n)
+    private int findMajorityEleSinglePass(int[] nums) {
+        if (nums.length == 0) throw new RuntimeException("empty array given");
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+            if (map.get(nums[i]) > (nums.length) / 2) {
+                return nums[i];
+            }
+        }
+        return 0;
+    }
+
+
+    private int bruteForce(int[] nums) {
+        int max = 0, count = 0, majorityele = 0;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                if (nums[i] == nums[j]) {
+                    count++;
+                }
+            }
+            if (max < count) {
+                max = count;
+                majorityele = nums[i];
+            }
+        }
+        if (max > (nums.length) / 2) {
+            return majorityele;
+        }
+        return 0;
+    }
+
+    //{1,2,2,2} --> 2, >n/2
+    //{1,2,2}-->3
+    // time complexity- O(n)
+    // space complexity - O(1)
+    private int majorityEleusingMidValue(int nums[]){
+        Arrays.sort(nums);
+        int mid=nums.length/2;
+        if (nums.length %2 ==1){
+            return nums[mid];
+        }
+        else {
+            if(nums[mid]==nums[mid-1])
+                return nums[mid];
+
+        }
+        throw new RuntimeException("invalid input");
     }
 }

@@ -66,12 +66,12 @@ public class FindMissingValue {
     /*
 
     Pseudo code:-
-    1. Add the n elements into a list
-    2. Then iterate the given array
+    1. sort the given array
+    2. Then iterate the given array using two pointers forward direction
     3. if number doesn't present then return the element
      */
 
-    // Time Complexity- O(n2)
+    // Time Complexity- O(n^2)
     //space complexity- O(1)
     public int bruteForce(int[] nums){
 
