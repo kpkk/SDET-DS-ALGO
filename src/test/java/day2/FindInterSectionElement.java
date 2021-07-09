@@ -128,7 +128,7 @@ Simple technique brute force
                 set.add(nums1[p1]);
                 p1++;
                 p2++;
-            } else if (nums1[p1] < nums2[p2]) {
+            } else if(nums1[p1] < nums2[p2]) {
                 p1++;
             }
                 else{

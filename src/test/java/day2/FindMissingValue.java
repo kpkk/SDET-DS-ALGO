@@ -124,14 +124,8 @@ Simple technique brute force
         if (nums.length<=1)
             throw new RuntimeException("empty array");
         Arrays.sort(nums);
-        for (int i=0;i<nums.length;i++){
-            for (int j=i+1;j<nums.length;j++){
-                if(nums[j]-nums[i]>1)
-                    return nums[j]-1;
-                else
-                    break;
-
-            }
+        for (int i=1;i<nums.length;i++){
+            if(nums[i]-nums[i-1]!=1) return nums[i]-1;
         }
         return 0;
     }
@@ -220,4 +214,8 @@ Simple technique brute force
 
         return 0;
     }
+    1+2+3=6
+    1+3=4
+    6-2
+
 }

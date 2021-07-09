@@ -1,0 +1,115 @@
+package day3;
+
+import org.junit.Test;
+
+public class FindCountOfSmallerNumbers {
+
+    /*
+
+    Example 1:
+
+Input: nums = [8,1,2,2,3] 1,2,2,3,8-->   8-1, 1-1, 2-2, 3-1
+Output: [4,0,1,1,3]
+Explanation:
+For nums[0]=8 there exist four smaller numbers than it (1, 2, 2 and 3).
+For nums[1]=1 does not exist any smaller number than it.
+For nums[2]=2 there exist one smaller number than it (1).
+For nums[3]=2 there exist one smaller number than it (1).
+For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
+Example 2:
+
+Input: nums = [6,5,4,8]
+Output: [2,1,0,3]
+Example 3:
+
+Input: nums = [7,7,7,7]
+Output: [0,0,0,0]
+
+
+Constraints:
+
+2 <= nums.length <= 500
+0 <= nums[i] <= 100
+
+1. Did I understand the problem? -->yes
+  Q. Do we need to return the array in sorted order or the way it is given in problem?
+
+        If no ask the person to provide with more details with examples
+        If yes go to the next step
+
+        What is the input(s)?  --> integer array
+        What is the expected output? integer array
+        Do I’ve constraints to solve the problem?  [array length >2, <500 , elements in an array >0<100], solve in O(n)
+        Do Ive all the information to go to the next steps
+        How big is your test data set will be?
+
+2. Test data set
+        Minimum  3 data set including positive, negative and edge
+        Validate with the interviewer if the data set is fine by his/ her assumptions
+
+3. Do I know to solve it?
+        Yes- great is there an alternate ?
+        No - can I break the problem into sub problems?
+
+4. Ask for hint (if you don’t know how to solve this
+5.  Do I know alternate solutions as well
+        Yes- what are those?
+        No- that is still fine, proceed to solve by what you know
+
+Simple technique brute force
+
+6. If you know the alternate solution find out the O-notations (performance)
+7. Then, explain either both are the best (depends on the time)
+        Approach 1:- start with the worst-> improve (optimize) ->  End up with the best
+        Approach 2: Write down the options and benefits and code the best
+8. Start always with the Pseudo code
+9. Test against different test data
+10. If it fails then debug to solve it
+
+     */
+
+    @Test
+    public void test1(){
+        int [] nums={8,1,2,2,3};
+        int[] output={4,0,1,1,3};
+    }
+
+    /*
+    1->1
+    2->2
+    3->1 [1,2,1,1]
+    8->1
+
+    1. sort the array O(n log n) + O(n)
+    2. find the occurrences of each ele using hashmap
+    3. get the value set into an array , and start from reverse direction
+     */
+
+    @Test
+    public void test2(){
+        int [] nums={1,1,1,1,1};
+        int[] output={0,0,0,0,0};
+    }
+    @Test
+    public void test3(){
+        int [] nums={-1,0, 1, -2, 2};
+        int[] output={1,2,3,0,4};
+    }
+
+    /*
+    Pseudo code:-
+
+    1. sort the input array
+    2. iterate the array from start from 1 st position, not 0th
+    3. initialize an output array to hold the smaller elements
+    4. check nums[i-1]< nums[i] if yes add index to the output array
+    5. if nums[i-1]== nums[i] then add the element of output array which is at previous index
+    6. return the array
+     */
+
+    public int[] findSmallerElements(int[] nums){
+        if (nums.length<2 || nums.length>500) throw new RuntimeException()
+    }
+
+
+}
