@@ -1,0 +1,56 @@
+HashMap:
+
+1. The underlying data structure for  hash map is an associated array
+
+2. Map is a two dimensional collection object and an interface which stores the data in key value pair, map  is collection which stores heterogeneous objects
+
+3. Key in Map can’t be duplicate, but values can be duplicate when we try to insert an existing key, map will override the existing key with recent entry
+
+4. Null value is allowed as key but only once
+
+5. The implemented classes for Map interface are Hashmap, TreeMap, weakHashMap, IdentityHashMap
+
+
+6. Hashmap implements map, serialisable and clonable  interfaces and extends abstractMap works on hashing algorithm which was considered to be the fastest
+
+
+
+7. When we create an object of hash map it create with a default  size of 16, with a load factor of .75% i.e when 75 % of the Map is occupied it will grow automatically.
+
+8. Hash map will have array of nodes where each node be indexed based on size, And each node will be internally having the linked list implementation
+
+PUT method
+
+When ever we call PUT method of map, to insert a key value, it calculates the hash code and then it performs bit wise & operation with the size(n-1) [Index = hashcode(Key) & (n-1)  ] to calculate the index. Then stores the value at that index
+
+Hash collision: -
+
+when two more keys determined to be residing at same index, then collision occurs the new object will be linked to the existing object, each element will have the four details( key, value, hash, node connector)
+
+When ever there is a change of size in map, all the elements would  be re-arranged
+
+Time complexity:-
+
+The best case for put method would be - O(1)
+
+
+
+Get Method:-
+
+Get method basically calculates the hashcode of the key then calculate the index, then checks for the equality of hash codes, if at all it is equal then it checks for the equality of the key (object) then return the corresponding value of it .
+
+Time complexity:-
+
+The best case for get method would be - O(1)
+The worst case would be -O(n)
+
+
+
+
+Hashing:-
+ Hashing is nothing but an integer representation of an object , it is calculated mathematically, it helps for faster searches and indexing. Hash code won’t change when we calculate for the same object repeatedly
+
+Hashcode method is implemented in Object class
+
+Equals - equals method present in Object class, which checks for the equality of the two objects, when we are overriding the equals method we must also implement the hashcode method
+

@@ -59,6 +59,8 @@ Simple technique brute force
         int k = 2;
         Assert.assertEquals(findMissing(nums), k);
         Assert.assertEquals(bruteForce2(nums), k);
+        Assert.assertEquals(findMissingusingSum(nums), k);
+
     }
 
 
@@ -67,7 +69,8 @@ Simple technique brute force
         int[] nums = {1, 0, 2, 3, 4};
         int k = 5;
      //   Assert.assertEquals(findMissing(nums), k);
-        Assert.assertEquals(bruteForce2(nums), 0);
+        Assert.assertEquals(bruteForce2(nums), k);
+        Assert.assertEquals(findMissingusingSum(nums), 0);
     }
 
     @Test // throw an exception
@@ -79,10 +82,11 @@ Simple technique brute force
     }
     @Test // throw an exception
     public void test78() {
-        int[] nums = {20,22,24};
+        int[] nums = {20,23,22,24};
         int k = 21;
-        Assert.assertEquals(bruteForce(nums), k);
-        Assert.assertEquals(bruteForce2(nums), k);
+       // Assert.assertEquals(bruteForce(nums), k);
+      // Assert.assertEquals(bruteForce2(nums), k);
+        Assert.assertEquals(findMissingusingSum(nums), k);
     }
 
 
@@ -95,7 +99,7 @@ Simple technique brute force
 
      */
 
-    // Time complexity - O(n)
+    // Time complexity - O(n log n)
     //Space complexity - O(1)
     private int findMissing(int[] nums) {
         if (nums.length == 0)
@@ -117,7 +121,7 @@ Simple technique brute force
     3. if number doesn't present then return the element
      */
 
-    // Time Complexity- O(n^2)
+    // Time Complexity- O(n logn)
     //space complexity- O(1)
     public int bruteForce2(int[] nums){
 
@@ -214,8 +218,31 @@ Simple technique brute force
 
         return 0;
     }
-    1+2+3=6
-    1+3=4
-    6-2
+
+    /*
+
+    Pseduo code:-
+    1. iterate the array and find the min and max
+    2. also calculate the sum of all the values present in an array
+    3. then in another loop starting from min to max and count the sum
+    4. return the difference
+     */
+
+    private int findMissingusingSum(int [] nums){
+        if (nums.length==0) throw new RuntimeException(" empty array");
+        int min=Integer.MAX_VALUE;
+        int max=0, arrSum=0, expSum=0;
+        for (int i=0;i<nums.length;i++){
+            min=Math.min(nums[i],min);
+            max= Math.max(max,nums[i]);
+            arrSum+=nums[i];
+        }
+
+        for (int j=min;j<=max;j++){
+            expSum+=j;
+        }
+        return expSum-arrSum;
+    }
+
 
 }

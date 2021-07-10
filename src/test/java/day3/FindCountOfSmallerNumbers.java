@@ -1,6 +1,10 @@
 package day3;
 
+import org.junit.Assert;
 import org.junit.Test;
+
+import javax.swing.plaf.IconUIResource;
+import java.util.*;
 
 public class FindCountOfSmallerNumbers {
 
@@ -68,11 +72,7 @@ Simple technique brute force
 
      */
 
-    @Test
-    public void test1(){
-        int [] nums={8,1,2,2,3};
-        int[] output={4,0,1,1,3};
-    }
+
 
     /*
     1->1
@@ -86,14 +86,26 @@ Simple technique brute force
      */
 
     @Test
+    public void test1(){
+        int [] nums={8,1,2,2,3};
+        int[] output={4,0,1,1,3};
+      //  Assert.assertTrue(Arrays.equals(bruteForce(nums),output));
+        Assert.assertTrue(Arrays.equals(findSmallerEleusingMap(nums),output));
+
+
+
+    }
+    @Test
     public void test2(){
         int [] nums={1,1,1,1,1};
         int[] output={0,0,0,0,0};
+        Assert.assertTrue(Arrays.equals(bruteForce(nums),output));
     }
     @Test
     public void test3(){
         int [] nums={-1,0, 1, -2, 2};
         int[] output={1,2,3,0,4};
+        Assert.assertTrue(Arrays.equals(bruteForce(nums),output));
     }
 
     /*
@@ -107,8 +119,46 @@ Simple technique brute force
     6. return the array
      */
 
-    public int[] findSmallerElements(int[] nums){
-        if (nums.length<2 || nums.length>500) throw new RuntimeException()
+    // Time Complexity- O(n^2)
+    //Space complexity - O(n)
+
+    public int[] bruteForce(int[] nums){
+        int [] arr=new int[nums.length];
+        int index=0;
+        if (nums.length<2 || nums.length>500) throw new RuntimeException("invalid input");
+        for (int i=0;i<nums.length;i++){
+            int count=0;
+            for (int j=0;j<nums.length;j++){
+                if (nums[i]>nums[j] && i!=j) count++;
+            }
+            arr[index++]=count;
+        }
+        return arr;
+    }
+
+    public int[] findSmallerEleusingMap(int[]nums){
+        HashMap<Integer,Integer> map=new HashMap<>();
+        Integer [] arr=new Integer[nums.length];
+        int []eleCount=new int[nums.length];
+        for (int i=0;i<nums.length;i++){
+            map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+        }
+        map.values().toArray(arr);
+
+        int count=0, index=0;
+        for (int i=arr.length-1;i>0;i--){
+            if(arr[i]==1) {
+                count+= arr[i-1];
+                eleCount[index++]=count;
+            }
+            else {
+                while (arr[i]>=1){
+                    count++;
+                }
+                eleCount[index++]=count;
+            }
+        }
+       return eleCount;
     }
 
 

@@ -7,7 +7,7 @@ Day 2 HW:
 ---------------------------
 3.Why generics are not supported to primitive data type - done
 
-ava is statically types here,  type of the value is known at compile time
+java is statically types here,  type of the value is known at compile time
 
 It eliminates the casts and stronger checks at compile time
 
