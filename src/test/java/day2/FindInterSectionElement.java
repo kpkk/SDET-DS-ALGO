@@ -57,10 +57,9 @@ Simple technique brute force
     public void test1() {
         int[] nums1 = {1, 2, 2, 1};
         int[] nums2 = {2, 2};
-        int i = Integer.numberOfLeadingZeros(0000111);
         Integer[] integers = intersectionArr(nums1, nums2);
+        Assert.assertEquals(integers,new Integer[]{2});
         System.out.println(Arrays.toString(integers));
-        System.out.println(i);
         //  Integer[] output = findInterSection(nums1, nums2);
         //  Assert.assertEquals(output,new Integer[]{2});
     }
@@ -69,10 +68,22 @@ Simple technique brute force
     public void test2() {
         int[] nums1 = {1, 2, 2, 1, 3, 4, 3};
         int[] nums2 = {2, 2, 3, 6, 4};
-        Integer[] output = findInterSection(nums1, nums2);
-        Assert.assertEquals(output, new Integer[]{2, 3, 4});
+      //  Integer[] output = findInterSection(nums1, nums2);
+      //  Assert.assertEquals(output, new Integer[]{2, 3, 4});
         Integer[] integers = intersectionArr(nums1, nums2);
+        Assert.assertEquals(integers,new Integer[]{2,3,4});
         System.out.println(Arrays.toString(integers));
+    }
+
+    @Test
+    public void test5() {
+        int[] nums1 = {};
+        int[] nums2 = {};
+        Integer[] integers = intersectionArr(nums1, nums2);
+        Assert.assertEquals(integers,new Integer[]{});
+        System.out.println(Arrays.toString(integers));
+        //  Integer[] output = findInterSection(nums1, nums2);
+        //  Assert.assertEquals(output,new Integer[]{2});
     }
 
     /*
@@ -118,7 +129,23 @@ Simple technique brute force
         return set.toArray(arr);
     }
 
+
+    /*
+    Solution:
+    1. Sort the given two arrays
+    2. Initialize a hashset to store the common elements
+    3. Initialize two pointers to traverse in both the arrays (equi-directional)
+    4. if (nums1[p1]==nums2[p2]) then add the nums[p1] to set
+          if (nums1[p1]<nums2[p2]) increment p1
+          if (nums1[p1]>nums2[p2]) increment p2
+    5. Convert the set into an integer array then return
+
+     */
+
+    //Time complexity- O(n)
+    //space complexity- O(n)
     private Integer[] intersectionArr(int[] nums1, int[] nums2) {
+        if (nums1.length==0 && nums2.length==0) return new Integer[]{};
 
         HashSet<Integer> set = new HashSet<>();
         Arrays.sort(nums1);
@@ -126,9 +153,10 @@ Simple technique brute force
         int p1 = 0, p2 = 0;
         while (p1 < nums1.length && p2 < nums2.length) {
             if (nums1[p1] == nums2[p2]) {
-                set.add(nums1[p1]);
+               set.add(nums1[p1]);
                 p1++;
                 p2++;
+
             } else if(nums1[p1] < nums2[p2]) {
                 p1++;
             }
@@ -136,9 +164,9 @@ Simple technique brute force
                     p2++;
                 }
             }
-        System.out.println(set);
         Integer [] arr=new Integer[set.size()];
         return set.toArray(arr);
+
         }
 
 

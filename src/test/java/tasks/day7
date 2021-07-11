@@ -1,0 +1,121 @@
+1) Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+
+Example 1:
+Input: nums = [2,2,1]  1 2 2
+Output: 1
+
+Example 2:
+Input: nums = [4,1,2,1,2]  1 1  2 4 4
+Output: 4
+
+invalid - no priority
+{2,2,2,2}
+{1,2,3,3,4,4}
+{}
+
+constraint:-
+constant space- O(1)
+Time complexity- O(n)
+
+bruteforce:-
+O(n2)-- using two for loops
+
+optimized:-
+
+solutions 1
+1. sort the array
+2. initialize two pointers p1, p2 (p2<input.length-1)in equi directional
+3. compare p1 and p2, if equal increment as p1=p2+1, p2=p1+1
+4. else return p1
+
+solutions 2
+1. sort the array
+2. iterate the array using pointer p1 from 0 to n
+3. compare values of p1==p1+1, if equals increment p1 by 2
+4. else return p1
+
+1 2 2
+
+
+
+------------------
+Write an algorithm to determine if a number n is happy. A happy number is a number defined by the following process:
+
+Starting with any positive integer, replace the number by the sum of the squares of its digits.
+Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+Those numbers for which this process ends in 1 are happy.
+Return true if n is a happy number, and false if not.
+
+Example 1:
+
+Input: n = 19 1+81-->82
+Output: true
+Explanation:
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
+
+Example 2:
+Input: n = 2
+Output: false'
+
+19 1+81-->82
+
+11--> 1  +1
+2- 4
+4-16
+16-37
+37- 9+49
+58- 25+64
+89- 64+81
+145- 1+16+25
+42- 16+4
+20- 4+0
+4-
+
+Time complexity - O(n*m)
+space complexity- O(n)
+solution 1
+1. initialize an int variable sumOfsquares
+2.for each digit in the inputNumber (using modulo)
+    a.Compute the square (using ^) and add it to the sumOfsquares
+3. If sumOfsquares is 1
+    a.return true
+4. Repeat 2,3 till adding sumOfsquares to set is true (using do-while)
+5. return false
+
+
+9490
+int div=1;
+n/div>10
+div*10;
+1000
+
+
+-------------------------
+
+
+Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+
+We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+
+You must solve this problem without using the library's sort function.
+
+
+Example 1:
+
+Input: nums = [2,0,2,1,1,0]   chars[white]<=2 && chars[blue]<=2
+Output: [0,0,1,1,2,2]
+
+Example 2:
+
+Input: nums = [2,0,1]
+Output: [0,1,2]
+
+Example 3:
+
+Input: nums = [0]
+Output: [0]

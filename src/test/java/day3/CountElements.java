@@ -72,8 +72,8 @@ Simple technique brute force
     public void test1() {
         int[] arr = {1, 2, 3};
         int output = 2;
-        Assert.assertEquals(countElements(arr),output);
-     //   Assert.assertEquals(countEleBruteForce(arr),output);
+        Assert.assertEquals(countElements(arr), output);
+        //   Assert.assertEquals(countEleBruteForce(arr),output);
 
     }
 
@@ -81,61 +81,43 @@ Simple technique brute force
     public void test2() {
         int[] arr = {1, 1, 3, 3, 5, 5, 7, 7};
         int output = 0;
-        Assert.assertEquals(countElements(arr),output);
-      //  Assert.assertEquals(countEleBruteForce(arr),output);
+        Assert.assertEquals(countElements(arr), output);
+        // Assert.assertEquals(countEleBruteForce(arr),output);
     }
+
     @Test
     public void test3() {
-        int[] arr = { 1,3,2,3,5,0}; //0,1,2,3,4,5
+        int[] arr = {1, 3, 2, 3, 5, 0}; //0,1,2,3,4,5
         int output = 3;
-        Assert.assertEquals(countElements(arr),output);
-      //  Assert.assertEquals(countEleBruteForce(arr),output);
+        Assert.assertEquals(countElements(arr), output);
+        // Assert.assertEquals(countEleBruteForce(arr),output);
     }
+
     @Test
     public void test4() {
-        int[] arr = { 1,1,2,2};
+        int[] arr = {1, 1, 2, 2};
         int output = 2;
-        Assert.assertEquals(countElements(arr),output);
-        //Assert.assertEquals(countEleBruteForce(arr),output);
+        Assert.assertEquals(countElements(arr), output);
+        // Assert.assertEquals(countEleBruteForce(arr),output);
     }
+
     @Test
     public void test5() {
-        int[] arr = { 1,1,2};
+        int[] arr = {1, 1, 2};
         int output = 2;
-        Assert.assertEquals(countElements(arr),output);
-        Assert.assertEquals(countEleBruteForce(arr),output);
-    }
-    @Test
-    public void test6() {
-        int[] arr = { 1,3,2,3,5,0,4}; //0,1,2,3,4,5
-        int output = 5;
-        Assert.assertEquals(countElements(arr),output);
+        Assert.assertEquals(countElements(arr), output);
         //  Assert.assertEquals(countEleBruteForce(arr),output);
     }
 
-    /*
-
-    Pseudo code:-
-    1. sort the array
-    1. iterate the loop from the start to the end
-    2. iterate another inner loop from one position after for comparision
-    3. if(nums[j]-nums[i]==1) then increment the count
-    4. return the count
-
-     */
-
-    public int countEleBruteForce(int[] nums){
-        Arrays.sort(nums);
-        int count=0;
-        for (int i=0;i<nums.length;i++){
-            for (int j=i+1;j<nums.length;j++){
-                if (nums[j]-nums[i]==1) count++;
-            }
-        }
-        return count;
+    @Test
+    public void test6() {
+        int[] arr = {1, 3, 2, 3, 5, 0, 4}; //0,1,2,3,4,5
+        int output = 6;
+        Assert.assertEquals(countElements(arr), output);
+        //  Assert.assertEquals(countEleBruteForce(arr),output);
     }
-    /*
 
+   /*
     Pseudo code:-
     1. push all the array elements into a list
     2. then iterate the loop from start to the end
@@ -151,13 +133,33 @@ Simple technique brute force
         for (int i = 0; i < nums.length; i++) {
             list.add(nums[i]);
         }
-       /* for (int eachInt: list){
-            if (eachInt)
-        }*/
-        Arrays.sort(nums);
         for (int i = 0; i < nums.length; i++) {
-        //  if(i>0 && nums[i]==nums[i-1])continue;
+            //  if(i>0 && nums[i]==nums[i-1])continue;
             if (list.contains(nums[i] + 1)) count++;
+        }
+        return count;
+    }
+
+     /*
+
+    Pseudo code:-
+    1. sort the array
+    1. iterate the loop from the start to the end
+    2. iterate another inner loop from one position after for comparision
+    3. if(nums[j]-nums[i]==1) then increment the count
+    4. return the count
+
+     */
+
+    //Time complexity - O(n logn)+ O(n^2)--> O(n^2)
+    //Space complexity - O(1)
+    public int countEleBruteForce(int[] nums) {
+        Arrays.sort(nums);
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[j] - nums[i] == 1) count++;
+            }
         }
         return count;
     }
