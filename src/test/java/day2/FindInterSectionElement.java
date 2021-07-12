@@ -3,6 +3,7 @@ package day2;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -169,6 +170,36 @@ Simple technique brute force
 
         }
 
+
+        @Test
+        public void test(){
+        int[] nums1={4,9,5};
+        int[] nums2={9,4,9,8,4};
+            int[] intersect = intersect(nums1, nums2);
+            System.out.println(Arrays.toString(intersect));
+        }
+
+    public int[] intersect(int[] nums1, int[] nums2) {
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int p1=0, p2=0, index=0;
+        if(nums1.length==0 && nums2.length==0) return new int[]{-1,-1};
+        if(nums1.length==0 || nums2.length==0) return new int[]{-1,-1};
+
+        int minLength= nums1.length<nums2.length?nums1.length:nums2.length;
+        int [] intersectionArray=new int[minLength];
+        while(p1<nums1.length && p2<nums2.length){
+            if(nums1[p1]<nums2[p2]) p1++;
+            else if(nums1[p1]>nums2[p2]) p2++;
+            else if(nums1[p1]==nums2[p2]){
+                intersectionArray[index++]=nums1[p1];
+                p1++;
+                p2++;
+            }
+        }
+        return Arrays.copyOfRange(intersectionArray,0,index);
+
+    }
 
     }
 

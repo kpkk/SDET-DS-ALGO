@@ -1,14 +1,21 @@
-Problem solving template
+package day3;
 
-1. Did I understand the problem? yes or no
+import org.junit.Test;
+
+public class PushZeroesToRight {
+
+    /*
+
+    Given an integer array push all the zeroes to the end
+1. Did I understand the problem? yes
 
         If no ask the person to provide with more details with examples
         If yes go to the next step
 
-        What is the input(s)?
-        What is the expected output?
-        Do I’ve constraints to solve the problem?
-        Do Ive all the information to go to the next steps
+        What is the input(s)? --> integer array
+        What is the expected output?--> integer array
+        Do I’ve constraints to solve the problem?--> solve using two pointer
+        Do Ive all the information to go to the next steps -->yes
         How big is your test data set will be?
 
 2. Test data set
@@ -16,7 +23,7 @@ Problem solving template
         Validate with the interviewer if the data set is fine by his/ her assumptions
 
 3. Do I know to solve it?
-        Yes- great is there an alternate ?
+        Yes- great is there an alternate ? brute force and two pointer
         No - can I break the problem into sub problems?
 
 4. Ask for hint (if you don’t know how to solve this
@@ -30,8 +37,31 @@ Simple technique brute force
 7. Then, explain either both are the best (depends on the time)
         Approach 1:- start with the worst-> improve (optimize) ->  End up with the best
         Approach 2: Write down the options and benefits and code the best
-8. Start always with the Pseudo code (explain the pseudo code to the interviewer with some test data)
-    -write the code
+8. Start always with the Pseudo code
 9. Test against different test data
 10. If it fails then debug to solve it
-11. Optimize the code and remove unnecessary code
+     */
+
+    @Test
+    public void test(){
+        int [] nums={1,0,2,0,3,0,4,5};
+        int[] output={1,2,3,4,5,0,0,0};
+    }
+    @Test
+    public void test2(){
+        int [] nums={0,0,0,0};
+        int[] output={0,0,0,0};
+    }
+    @Test
+    public void test3(){
+        int [] nums={1,5,34,7,3};
+        int[] output={1,5,34,7,3};
+    }
+
+    /*
+
+    Solution:
+    1. Initialize an array of same length as that of input
+    2.
+     */
+}

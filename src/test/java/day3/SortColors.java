@@ -117,4 +117,18 @@ Simple technique brute force
 
         return outputArray;
     }
+
+    /*
+
+    if input length is < 2 return input
+	 * Create 3 ptr , low, mid as 0 and high as length -1
+	 * Iterate the input till mid < high
+	 * 		a ) if current element 0, swap low element and mid, increment low and mid
+	 *      b ) if current element 1, increment mid
+	 *      c ) if current element 2, swap mid and high, decrement high
+	 * return the inpu
+
+•You should have only 3 Pointers [ Low, Mid, High]
+•You need traverse the array from left to right and STOP when your mid crosses High
+     */
 }
