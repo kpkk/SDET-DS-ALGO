@@ -17,7 +17,7 @@ You must solve this problem without using the library's sort function.
 
 Example 1:
 
-Input: nums = [2,0,2,1,1,0]   chars[white]<=2 && chars[blue]<=2
+Input: nums = [2,0,2,1,1,0]
 Output: [0,0,1,1,2,2]
 
 Example 2:
@@ -70,6 +70,7 @@ Simple technique brute force
         int[] nums = {2, 0, 2, 1, 1, 0};
         int[] output = {0, 0, 1, 1, 2, 2};
         Assert.assertTrue(Arrays.equals(sortColors(nums),output));
+        Assert.assertTrue(Arrays.equals(sortColorsUsingThreePointer(nums),output));
     }
 
     @Test
@@ -77,6 +78,7 @@ Simple technique brute force
         int[] nums = {2, 0, 1};
         int[] output = {0, 1, 2};
         Assert.assertTrue(Arrays.equals(sortColors(nums),output));
+        Assert.assertTrue(Arrays.equals(sortColorsUsingThreePointer(nums),output));
     }
 
     @Test
@@ -84,6 +86,7 @@ Simple technique brute force
         int[] nums = {0};
         int[] output = {0};
         Assert.assertTrue(Arrays.equals(sortColors(nums),output));
+        Assert.assertTrue(Arrays.equals(sortColorsUsingThreePointer(nums),output));
     }
 
     /*
@@ -115,20 +118,48 @@ Simple technique brute force
                 blueCount--;
             }
 
+
         return outputArray;
     }
 
     /*
-
+     2, 0, 2, 1, 1, 0
+     0, 0, 2, 1, 1, 2
+     0, 0, 2, 1, 1, 2
+     0, 0, 1, 1, 2, 2
     if input length is < 2 return input
 	 * Create 3 ptr , low, mid as 0 and high as length -1
 	 * Iterate the input till mid < high
 	 * 		a ) if current element 0, swap low element and mid, increment low and mid
 	 *      b ) if current element 1, increment mid
 	 *      c ) if current element 2, swap mid and high, decrement high
-	 * return the inpu
+	 * return the input
 
 •You should have only 3 Pointers [ Low, Mid, High]
 •You need traverse the array from left to right and STOP when your mid crosses High
      */
+
+    private int[] sortColorsUsingThreePointer(int[] nums){
+        if (nums.length<2) return nums;
+        int low=0, mid=0, high=nums.length-1, temp=0;
+        while (mid<=high){
+            if (nums[mid]==0){
+                 temp=nums[low];
+                nums[low++]=nums[mid];
+                nums[mid++]=temp;
+            }
+            else if(nums[mid]==1){
+                mid++;
+            }else{
+                temp= nums[high];
+                nums[high]=nums[mid];
+                nums[mid]=temp;
+                high--;
+            }
+
+        }
+        System.out.println(Arrays.toString(nums));
+        return nums;
+
+    }
 }

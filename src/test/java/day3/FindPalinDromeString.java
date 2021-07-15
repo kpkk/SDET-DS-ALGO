@@ -63,10 +63,10 @@ Simple technique brute force
 
     @Test
     public void test1() {
-        String s = "A man, a plan, a canal: Panama";
+        String s = "A man,.nama";
         boolean result = true;
-          Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
-       // Assert.assertEquals(palindromeStringusingBruteForce(s), result);
+        Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
+        // Assert.assertEquals(palindromeStringusingBruteForce(s), result);
 
     }
 
@@ -75,7 +75,7 @@ Simple technique brute force
         String s = "race a car";
         boolean result = false;
 
-          Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
+        Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
         //Assert.assertEquals(palindromeStringusingBruteForce(s), result);
     }
 
@@ -84,8 +84,8 @@ Simple technique brute force
         String s = "Malayalam";
         boolean result = true;
 
-         Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
-      //  Assert.assertEquals(palindromeStringusingBruteForce(s), result);
+        Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
+        //  Assert.assertEquals(palindromeStringusingBruteForce(s), result);
     }
 
     @Test
@@ -93,8 +93,8 @@ Simple technique brute force
         String s = "%$#&*(";
         boolean result = false;
 
-          Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
-      //  Assert.assertEquals(palindromeStringusingBruteForce(s), result);
+        Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
+        //  Assert.assertEquals(palindromeStringusingBruteForce(s), result);
     }
 
     @Test
@@ -102,13 +102,15 @@ Simple technique brute force
         String s = "a";
         boolean result = true;
 
-          Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
-       // Assert.assertEquals(palindromeStringusingBruteForce(s), result);
+        Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
+        // Assert.assertEquals(palindromeStringusingBruteForce(s), result);
     }
+
     @Test
     public void testcase6() {
-        String s = " ";
-        boolean result = false;
+        String s = "!#aa!";
+        boolean result = true;
+        // !#aa!
 
         Assert.assertEquals(checkpalinDromeusingTwoPointer(s), result);
         // Assert.assertEquals(palindromeStringusingBruteForce(s), result);
@@ -152,27 +154,30 @@ Simple technique brute force
     // Time complexity- O(n/2)
     // space complexity- O(n) // holding char array
 
+    //A man,.nama
     public boolean checkpalinDromeusingTwoPointer(String str) {
 
+        boolean isNoAlphabetsPresent = false;
         if (str.trim().length() == 0) throw new RuntimeException("empty string");
         if (str.length() == 1 && Character.isLetterOrDigit(str.charAt(0))) return true;
         int left = 0, right = str.length() - 1;
-        while (left <right) {
-            if (!Character.isLetterOrDigit(str.charAt(left))){
+        while (left < right) {
+            if (!Character.isLetterOrDigit(str.charAt(left))) {
                 left++;
-            }
-            if (!Character.isLetterOrDigit(str.charAt(right))) {
+            } else if (!Character.isLetterOrDigit(str.charAt(right))) {
                 right--;
             }
-            if (Character.isLetterOrDigit(str.charAt(left)) && Character.isLetterOrDigit(str.charAt(right))) {
-                if(Character.toLowerCase(str.charAt(left)) != Character.toLowerCase(str.charAt(right))){
-                    return false;
-                }else{
-                    left++;
-                    right--;
-                }
-            }
+            // if (Character.isLetterOrDigit(str.charAt(left)) && Character.isLetterOrDigit(str.charAt(right))) {
+            //   if(Character.toLowerCase(str.charAt(left)) != Character.toLowerCase(str.charAt(right))){
+            else if (Character.toLowerCase(str.charAt(left)) == Character.toLowerCase(str.charAt(right))) {
+                isNoAlphabetsPresent = true;
+                left++;
+                right--;
+            } else return false;
+
+
         }
+        if (!isNoAlphabetsPresent) return false;
         return true;
 
     }

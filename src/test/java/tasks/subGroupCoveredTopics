@@ -1,0 +1,26 @@
+SDET covered topics
+
+Week1
+
+1. Template(10 Steps) to solve the problem
+2. 	String Internals
+3. 	String Buffer/Builder and reverse method in it
+4. 	Why generics allow only wrapper classes
+5. 	Why Any programming starts with interface
+6. 	Wrapper classes and its methods
+7. 	Math min and max functions
+8. 	Bitwise Operators
+9. 	HashMap Internals
+10. Boyer Moore Technique
+
+
+Covered in sub group
+
+
+Week 2
+
+1.
+2. Two pointer
+3. Sliding window
+4. Three pointer (Dutch national flag)
+5. Problems
