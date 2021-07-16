@@ -86,8 +86,8 @@ Simple technique brute force
 
     @Test
     public void test3() {
-        int[] calaroies = {6, 5, 0, 0};
-        int output = 0, k = 2, lower = 1, upper = 5;
+        int[] calaroies = {6, 5, 5, -5};  // 6+5, 5+0, 0+0
+        int output = 1, k = 2, lower = 1, upper = 5;
         Assert.assertEquals(calculateCaloriesConsumtption(calaroies, lower, upper, k), output);
     }
 
@@ -104,7 +104,7 @@ Simple technique brute force
     2. Traverse through the array until the k elements and calculate sum, compare with lower and upper values
         - if its less than lower then output-=1
         - If its greater than upper then output+=1
-    3. Traverse through the array from 1 index and add the subsequent elements of k window size
+    3. Traverse through the array from k index and add the subsequent elements of k window size
     4. compare the sum value with lower and upper values
         - if its less than lower then output-=1
         - If its greater than upper then output+=1
@@ -113,18 +113,15 @@ Simple technique brute force
      */
 
     private int calculateCaloriesConsumtption(int[] calaroies, int lower, int upper, int k) {
-
+//6500
         int sum = 0, total = 0;
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < k; i++)
             sum += calaroies[i];
-        }
         if (sum < lower) total--;
         else if (sum > upper) total++;
         if(calaroies.length==k) return total;
-        for (int i = k; i < calaroies.length-k+1; i++) {
+        for (int i = k; i <calaroies.length; i++) {    //6 5 0 0    +5+0
             sum += calaroies[i] - calaroies[i - k];
-         //  else sum += calaroies[i] - calaroies[i - k];
-
             if (sum < lower) total--;
             else if (sum > upper) total++;
             else continue;
