@@ -76,8 +76,8 @@ Simple technique brute force
     }
     @Test
     public void test3(){
-        String s="abc";
-        boolean result=false;
+        String s="abcakcba";
+        boolean result=true;
         Assert.assertFalse(isPalindrome(s));
     }
     @Test

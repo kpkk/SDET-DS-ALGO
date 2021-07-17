@@ -120,8 +120,8 @@ Simple technique brute force
         if (sum < lower) total--;
         else if (sum > upper) total++;
         if(calaroies.length==k) return total;
-        for (int i = k; i <calaroies.length; i++) {    //6 5 0 0    +5+0
-            sum += calaroies[i] - calaroies[i - k];
+        for (int i = 1; i <calaroies.length-k+1; i++) {    //6 5 0 0    +5+0
+            sum += calaroies[i+k-1] - calaroies[i - 1];
             if (sum < lower) total--;
             else if (sum > upper) total++;
             else continue;
