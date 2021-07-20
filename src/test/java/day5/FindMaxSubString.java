@@ -29,25 +29,25 @@ public class FindMaxSubString {
     public void test1(){
         String s="eceba";
         int k=2;
-        Assert.assertEquals(findSubStringusingAscii(s,k),3);
+        Assert.assertEquals(findSubString(s,k),3);
     }
     @Test
     public void test2(){
         String s="aabab";
         int k=2;
-        Assert.assertEquals(findSubStringusingAscii(s,k),5);
+        Assert.assertEquals(findSubString(s,k),5);
     }
     @Test //-ve
     public void test3(){
         String s="eceba";
         int k=6;
-        Assert.assertEquals(findSubStringusingAscii(s,k),5);
+        Assert.assertEquals(findSubString(s,k),5);
     }
     @Test //edge - must have been clarified before
     public void test4(){
         String s="ceEba";
         int k=3;
-        Assert.assertEquals(findSubStringusingAscii(s,k),3);
+        Assert.assertEquals(findSubString(s,k),3);
     }
 
 
@@ -58,12 +58,12 @@ public class FindMaxSubString {
         if(s.trim().length()==0) return 0;
         if(s.trim().length()<k) return s.length();
         int left=0, right=0, max=1;
-        HashMap<Integer, Integer>map=new HashMap<>();
+        HashMap<Character, Integer>map=new HashMap<>();
         while (right< s.length()){
-            map.put((int)s.charAt(right),right++);
+            map.put(s.charAt(right),right++);
             if(map.size()>k){
                 Integer minIndex = Collections.min(map.values());
-                map.remove((int)s.charAt(minIndex));
+                map.remove(s.charAt(minIndex));
                 left=minIndex+1;
             }
            max= Math.max(max,right-left);
@@ -91,11 +91,10 @@ public class FindMaxSubString {
                ascii[s.charAt(right)]++;
                uniqueCount++;
            }
-           else {
-               ascii[s.charAt(right)]++;
-           }
+           else ascii[s.charAt(right)]++;
+
            if(uniqueCount>k){
-               while (--ascii[s.charAt(left++)]>0); //a-0 e-1 b-1  k--
+               while (--ascii[s.charAt(left++)]>0);
                uniqueCount--;
            }
           max= Math.max(max,right-left+1);

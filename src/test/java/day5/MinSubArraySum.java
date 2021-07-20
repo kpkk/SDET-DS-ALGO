@@ -29,21 +29,21 @@ Output: 0
     public void test1() {
         int[] nums = {2, 3, 1, 2, 4, 3};
         int target = 7;
-        Assert.assertEquals(findSubArrayLength(nums, target), 2);
+        Assert.assertEquals(minSubArrayLengthBruteForce(nums, target), 2);
     }
 
     @Test
     public void test2() {
         int[] nums = {1, 4, 4};
         int target = 1;
-        Assert.assertEquals(findSubArrayLength(nums, target), 1);
+        Assert.assertEquals(minSubArrayLengthBruteForce(nums, target), 1);
     }
 
     @Test
     public void test3() {
         int[] nums = {1, 1, 1, 1, 1, 1, 1, 1};
         int target = 11;
-        Assert.assertEquals(findSubArrayLength(nums, target), 0);
+        Assert.assertEquals(minSubArrayLengthBruteForce(nums, target), 0);
     }
 
     /*
@@ -78,6 +78,35 @@ Output: 0
         }
         if (!isTargetEverMet) return 0;
         return min;
+    }
+
+    /*
+    Solution:-
+    1. If the length of the array is zero return 0
+    2. If the length of the array is one and the element is greater than 7 return 1
+    3. Initialize variables min=Integer.MAX, sum=0
+    4. traverse through the array from start index until the end
+    5. traverse the array(inner loop) starting from i and sum the elements
+    6. if the sum is greater than or target then find the min value  between mon and j-i+1
+    7. return min
+
+
+     */
+
+    private int minSubArrayLengthBruteForce(int[] nums, int target) {
+        if(nums.length==0) return 0;
+        if(nums.length==1 && nums[0]>=7) return 1;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            int sum=0;
+            for (int j = i; j < nums.length; j++) {
+                sum += nums[j];
+                if (sum >= target) {
+                    min = Math.min(min, j - i + 1);
+                }
+            }
+        }
+        return (min!=Integer.MAX_VALUE)?min:0;
     }
 
 }
