@@ -77,7 +77,7 @@ public class RemoveTargetElement {
     // Iterate the input array
     // If current element in the array not matches the target
     //  Ad
-    // from Kishore to everyone in this breakout session:    12:32  PM
+    //
     // PSeudocode
     // Create a array list
     // Iterate the input array
@@ -130,8 +130,8 @@ public class RemoveTargetElement {
     }
 
 
-    // Time complexity- O[N]
-    //space complexity- O[N]
+    // Time complexity- O(n)
+    //space complexity- O(n)
     public int[] removetarget(int[] nums, int target) {
         int index = 0; //o[1]
         for (int i = 0; i < nums.length; i++) {

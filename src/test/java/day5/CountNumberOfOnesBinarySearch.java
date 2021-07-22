@@ -14,22 +14,25 @@ public class CountNumberOfOnesBinarySearch {
     @Test
     public void test1() {
         int[] nums = {0, 0, 0, 1, 1, 1, 1};
-        int count = 4;
         Assert.assertEquals(countNumberOnesUsingBinarySearch(nums), 4);
     }
+
 
     @Test
     public void test2() {
         int[] nums = {1, 1, 1, 1, 1, 1, 1};
-        int count = 7;
         Assert.assertEquals(countNumberOnesUsingBinarySearch(nums), 7);
     }
 
     @Test
     public void test3() {
         int[] nums = {0, 0, 0, 0, 0};
-        int count = 7;
         Assert.assertEquals(countNumberOnesUsingBinarySearch(nums), -1);
+    }
+    @Test
+    public void test4() {
+        int[] nums = {0, 0, 0, 1};
+        Assert.assertEquals(countNumberOnesUsingBinarySearch(nums), 1);
     }
 
     /*

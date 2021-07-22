@@ -56,7 +56,7 @@ Simple technique brute force
       //  Assert.assertEquals(findMajorityEle(nums), n);
       //  Assert.assertEquals(findMajorityEleSinglePass(nums), 2);
        // Assert.assertEquals(bruteForce(nums), 2);
-        Assert.assertEquals(majorityEleusingMidValue(nums), 2);
+        Assert.assertEquals(majorityElementBoyreMooreVoting(nums), 2);
 
     }
 
@@ -67,7 +67,7 @@ Simple technique brute force
         //Assert.assertEquals(findMajorityEle(nums), n);
       //  Assert.assertEquals(findMajorityEleSinglePass(nums), 4);
       //  Assert.assertEquals(bruteForce(nums), 4);
-        Assert.assertEquals(majorityEleusingMidValue(nums), 4);
+        Assert.assertEquals(majorityElementBoyreMooreVoting(nums), 4);
     }
 
     @Test
@@ -77,7 +77,7 @@ Simple technique brute force
      //   Assert.assertEquals(findMajorityEle(nums), n);
       //  Assert.assertEquals(findMajorityEleSinglePass(nums), 4);
        // Assert.assertEquals(bruteForce(nums), 4);
-        Assert.assertEquals(majorityEleusingMidValue(nums), 4);
+        Assert.assertEquals(majorityElementBoyreMooreVoting(nums), 4);
     }
 
     @Test
@@ -105,6 +105,7 @@ Simple technique brute force
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
         }
+        Integer max = Collections.max(map.values());
         Set<Map.Entry<Integer, Integer>> entries = map.entrySet();
         for (Map.Entry entry : entries) {
             Integer value = (Integer) entry.getValue();
@@ -166,5 +167,15 @@ Simple technique brute force
 
         }
         throw new RuntimeException("invalid input");
+    }
+
+    private int majorityElementBoyreMooreVoting(int[] nums){
+        int currentNumber=nums[0], counter=1;
+        for (int i=1;i<nums.length;i++){
+            if (counter==0) currentNumber=nums[i];
+            if(nums[i]==currentNumber) counter++;
+            else counter--;
+        }
+        return currentNumber;
     }
 }

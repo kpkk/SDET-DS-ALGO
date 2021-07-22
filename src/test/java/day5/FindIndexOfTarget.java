@@ -45,9 +45,9 @@ Output: [-1,-1]
     }
     @Test
     public void test4() {
-        int[] nums = {5, 7, 7, 8, 8, 8,8, 10};
+        int[] nums = {5, 7, 7, 8, 8,8,8, 10};
         int k = 8;
-        Assert.assertTrue(Arrays.equals(findIndexUsingBinarySearch(nums, k), new int[]{3, 5}));
+        Assert.assertTrue(Arrays.equals(findIndexUsingBinarySearch(nums, k), new int[]{3, 6}));
     }
 
     /*
@@ -76,14 +76,19 @@ Output: [-1,-1]
             mid = (low + high) / 2;
             if (nums[mid] == k) {
                 isMidMatched = true;
-                if (nums[mid - 1] == k) {
+                if(nums[mid-1]==k && nums[mid+1]==k && startIndex!=0){
+                    low=mid+1;
+                }
+               else if (nums[mid - 1] == k) {
                     endIndex = Math.max(mid,endIndex);
                     high = mid - 1;
-                } else if (nums[mid + 1] == k) {
+                }
+                else if (nums[mid + 1] == k) {
                     startIndex = Math.min(mid,startIndex);
                     low = mid + 1;
                 }
-            } else if (mid < k) low = mid + 1;
+
+            } else if (nums[mid] < k) low = mid + 1;
             else high = mid - 1;
 
         }

@@ -1,0 +1,13 @@
+HW- July 21
+
+1.Write a program to return the shortest substring having all the unique characters of the string
+Input: "abbcafcb" Output: "bcaf"
+2.array of nums, contains equal no of positve and negative, rearrange in an order +ve and then -ve in alternate positions.
+	Constraint: cannot use extra space
+	eg : int[] input = {12, -90, -100, 15, 98, 99, -56, -2};
+			   expected output {12, -90, 15, -100, 98,-56,99,-2}
+
+CW 1 : Given an integer array and target value find the closest product of distinct two numbers that matches the target
+2.Given a string print the characters and their count as a string str="abcdee" output - "a1b1c1d1e2"
+
+
