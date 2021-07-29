@@ -3,6 +3,7 @@ package day5;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class FindLastMatchingAnagram {
@@ -19,7 +20,7 @@ public class FindLastMatchingAnagram {
     public void test1(){
         String input="abcdeghcbahjcab";
         String anagram="abc";
-        Assert.assertEquals(findLastAnagram(input,anagram),"cab");
+        Assert.assertEquals(findLastSubStringAscii(input,anagram),"cba");
     }
     @Test
     public void test2(){
@@ -62,6 +63,7 @@ public class FindLastMatchingAnagram {
      */
     private String findLastAnagram(String input, String anagram) {
         int startIndex=0,endIndex=0;
+        String outputString="";
         if(input.length()==0) return "";
         if(input.length()==anagram.length() && input.equals(anagram)) return input;
         HashMap<Character,Integer>anagramMap=new HashMap<>();
@@ -70,30 +72,50 @@ public class FindLastMatchingAnagram {
         for (int i=0;i<anagram.length();i++){
             anagramMap.put(anagram.charAt(i), anagramMap.getOrDefault(anagram.charAt(i),0)+1);
             inputStringmap.put(input.charAt(i), inputStringmap.getOrDefault(input.charAt(i),0)+1);
-           /* if(anagramMap.equals(inputStringmap)){
-                startIndex=0;
-                endIndex=i;
-            }*/
-
         }
         for (int i=1;i<input.length()-anagram.length();i++){
-            inputStringmap.put(input.charAt(i),inputStringmap.getOrDefault(input.charAt(i),0)+1);
-            if(inputStringmap.size()==anagram.length()){
-                while(inputStringmap.equals(anagramMap)){
-                    startIndex=Math.max(startIndex,i);
-                    endIndex=Math.max(endIndex,i+anagram.length()-1);
-                    String s=input.substring(startIndex,endIndex);
-
-                    if(inputStringmap.get(input.charAt(i))>1)
-                        inputStringmap.put(input.charAt(i),inputStringmap.getOrDefault(input.charAt(i),0)-1);
-                    else
-                        inputStringmap.remove(input.charAt(i));
+            inputStringmap.put(input.charAt(i+anagram.length()-1),inputStringmap.getOrDefault(input.charAt(i+anagram.length()-1),0)+1);
+            if(inputStringmap.size()>=anagram.length()){
+                if(inputStringmap.equals(anagramMap)) {
+                    startIndex = Math.max(startIndex, i - 1);
+                    endIndex = Math.max(endIndex, i + anagram.length() - 1);
+                    outputString = input.substring(startIndex, endIndex);
                 }
+                    if(inputStringmap.get(input.charAt(i-1))>1)
+                        inputStringmap.put(input.charAt(i-1),inputStringmap.getOrDefault(input.charAt(i-1),0)-1);
+                    else
+                        inputStringmap.remove(input.charAt(i-1));
+
             }
+
         }
 
-        return input.substring(startIndex,endIndex+1);
+        return outputString;
 
+    }
+
+    private String findLastSubStringAscii(String str, String anagram){
+        int[] inputAscii=new int[128];
+        int[] anagramAscii=new int[128];
+        String outputString="";
+
+        for (int i=0;i<anagram.length();i++){
+            anagramAscii[anagram.charAt(i)]++;
+          //  inputAscii[str.charAt(i)]++;
+        }
+      //  if(Arrays.equals(anagramAscii,inputAscii)) outputString=str.substring(0,anagram.length());
+       int left=0, right=0;
+       while (right<str.length()){
+           inputAscii[str.charAt(right++)]++;
+           if(right-left==anagram.length()){
+               if(Arrays.equals(anagramAscii,inputAscii)) outputString=str.substring(left,right+1);
+               inputAscii[str.charAt(left++)]--;
+           }
+
+
+        }
+
+       return outputString;
     }
 
 }

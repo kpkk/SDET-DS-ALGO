@@ -114,7 +114,7 @@ Solution:-
         int start = 0, end = 1, substringLength = 1, subStringStart = 0, subStringEnd = 0;
         char firstChar = ' ';
 
-        if (s.length() == 2) {
+        if (s.length() == 2) { //  Aa aA
             if (s.charAt(start) == s.charAt(end) || s.toLowerCase().charAt(start) == s.charAt(end) || s.charAt(start) == s.toLowerCase().charAt(end))
                 return s;
         }

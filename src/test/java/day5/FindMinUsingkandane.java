@@ -38,7 +38,7 @@ public class FindMinUsingkandane {
         int result= -17;
         Assert.assertEquals(findMinusingKandane(nums),result);
     }
-
+// window sum should be compared with current index and maxsum and window sum should be compared again
     private int findMinusingKandane(int[] nums) {
         if(nums.length==0)
             throw new RuntimeException("Empty array");
@@ -59,7 +59,7 @@ public class FindMinUsingkandane {
      -> if it breaks --> high-->mid-1--> 1+49/2-->25-->
                 --> if it doesn't break at 25-->low=mid+1-->  (26+50)/-->38--> 39+50-->89/2-->44-->45+50/2--> 47--> 48+50-->49
      --> if it doesn't break--> low=mid+1;  (51+100)/2  -->75--> 76+100/2->88--> 189/2-> 94--> 195/2-->97-->198/2-->99--> 100+100/2---100
-     --> if it brea
+     --> if it break
 
 
 

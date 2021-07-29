@@ -3,6 +3,7 @@ package practise;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrayInterSection {
@@ -53,6 +54,7 @@ Output: [2]
         int p1=0,p2=0;
         int index=0;
         while (p1<nums1.length &&p2< nums2.length){
+            ArrayList list=new ArrayList(12);
             if(nums1[p1]==nums2[p2]){
                 nums[index++]=nums1[p1];
                 p1++;

@@ -169,13 +169,23 @@ Simple technique brute force
         throw new RuntimeException("invalid input");
     }
 
-    private int majorityElementBoyreMooreVoting(int[] nums){
-        int currentNumber=nums[0], counter=1;
+    /*
+    Approach: Boure moore voting algorithm
+    - Initialize variables majorityEle and counter=0
+    - Assign the first element in the array to majorityEle
+    - traverse through the array from the index 1
+    - check if the current index number is equal to majorityEle
+        - if yes increase the counter
+        - else decrease the counter
+     - check if the counter is zero change the majorityEle as that particular index ele
+     */
+    private int majorityElementBoyreMooreVoting(int[] nums) {
+        int majorityEle=nums[0],counter=1;
         for (int i=1;i<nums.length;i++){
-            if (counter==0) currentNumber=nums[i];
-            if(nums[i]==currentNumber) counter++;
+            if (counter==0) majorityEle=nums[i];
+            if(nums[i]==majorityEle)counter++;
             else counter--;
-        }
-        return currentNumber;
+
+        }return majorityEle;
     }
 }

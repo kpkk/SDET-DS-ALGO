@@ -84,7 +84,7 @@ Simple technique brute force
         - If the difference of nums[mid] and (mid)-1 is less than k
             - low=mid+1
          - else high=mid-1
-     - retun high+k+1
+     - return high+k+1
      */
 
     private int findMissingNumberusingBinarySearch(int[] nums, int k) {

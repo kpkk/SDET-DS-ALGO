@@ -13,8 +13,8 @@ public class CountNumberOfOnesBinarySearch {
 
     @Test
     public void test1() {
-        int[] nums = {0, 0, 0, 1, 1, 1, 1};
-        Assert.assertEquals(countNumberOnesUsingBinarySearch(nums), 4);
+        int[] nums = {0, 0, 0, 1, 1, 1,1};
+        Assert.assertEquals(countNumberOnesUsingBinarySearch(nums), 3);
     }
 
 

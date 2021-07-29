@@ -3,6 +3,7 @@ package day1;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class TwoSumProblem {
 
@@ -34,7 +35,7 @@ public class TwoSumProblem {
     public void test(){
         int [] nums={1,4,2,8,2,6};
         int k=10;
-        int[] ints = returnIndex(nums, k);
+        int[] ints = twoSumMap(nums, k);
         System.out.println(Arrays.toString(ints));
     }
     //-ve
@@ -43,7 +44,7 @@ public class TwoSumProblem {
         int [] nums={1,4,2,8,2,6};
         int k=110;
         int g=110;
-        int[] ints = returnIndex(nums, k);
+        int[] ints = twoSumMap(nums, k);
         System.out.println(Arrays.toString(ints));
 
     }
@@ -51,8 +52,8 @@ public class TwoSumProblem {
     @Test
     public void test2(){
         int [] nums={1,4,2,8,2,6};
-        int k=10;
-        int[] ints = twoSum(nums, k);
+        int k=8;
+        int[] ints = twoSumMap(nums, k);
         System.out.println(Arrays.toString(ints));
     }
 
@@ -82,6 +83,19 @@ public class TwoSumProblem {
                 right--;
             else
                 left++;
+        }
+        return new int[]{-1,-1};
+    }
+
+    private int[] twoSumMap(int[] nums, int target){
+        HashMap<Integer,Integer>map=new HashMap<>();
+        for (int i=0;i<nums.length;i++){
+            int diff=target-nums[i];
+            if(map.containsKey(diff)){
+                return new int[]{map.get(diff),i};
+            }else{
+                map.put(nums[i],i);
+            }
         }
         return new int[]{-1,-1};
     }

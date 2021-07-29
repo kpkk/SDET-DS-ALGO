@@ -3,6 +3,8 @@ package day3;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.HashMap;
+
 public class FindAtMostK {
     /*
 
@@ -49,12 +51,12 @@ Simple technique brute force
 11. Optimize the code and remove unnecessary code
      */
 
-    @Test
+    @Test  //1-1  2-1  3-1
     public void test1() {
         int[] nums = {1, 2, 3, 1};
         int k = 3;
         boolean result = true;
-        Assert.assertEquals(result, isDistanceAtmostK(nums, k));
+        Assert.assertEquals(result, isDistanceAtmostKOptimized(nums, k));
 
     }
 
@@ -63,7 +65,7 @@ Simple technique brute force
         int[] nums = {1, 0, 1, 1};
         int k = 1;
         boolean result = true;
-        Assert.assertEquals(result, isDistanceAtmostK(nums, k));
+        Assert.assertEquals(result, isDistanceAtmostKOptimized(nums, k));
 
     }
 
@@ -72,7 +74,7 @@ Simple technique brute force
         int[] nums = {1, 2, 3, 1, 2, 3};
         int k = 2;
         boolean result = false;
-        Assert.assertEquals(result, isDistanceAtmostK(nums, k));
+        Assert.assertEquals(result, isDistanceAtmostKOptimized(nums, k));
 
     }
 
@@ -81,7 +83,7 @@ Simple technique brute force
         int[] nums = {7, 8, 13, 6, 7, 14, 3};
         int k = 4;
         boolean result = true;
-        Assert.assertEquals(result, isDistanceAtmostK(nums, k));
+        Assert.assertEquals(result, isDistanceAtmostKOptimized(nums, k));
 
     }
     /*
@@ -109,8 +111,13 @@ Simple technique brute force
     }
 
     private boolean isDistanceAtmostKOptimized(int[] nums, int k) {
-
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i]) &&  i - map.get(nums[i])<=k) {
+                    return true;
+            }
+            map.put(nums[i], i);
+        }
         return false;
     }
-
 }

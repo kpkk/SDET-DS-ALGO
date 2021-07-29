@@ -3,6 +3,12 @@ package day5;
 import org.junit.Assert;
 import org.junit.Test;
 
+import javax.jnlp.IntegrationService;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 public class FindPeakElement {
 
     /*
@@ -56,6 +62,8 @@ nums[i] != nums[i + 1] for all valid i.
 
     private int findPeakElement(int[] nums){
         int low=0, high=nums.length-1;
+        HashMap<String, Integer> map=new HashMap<>();
+        Set<Map.Entry<String, Integer>> entries = map.entrySet();
         while (low<high){
             int mid=(low+high)/2;
             if(nums[mid]>nums[mid+1]) high=mid;

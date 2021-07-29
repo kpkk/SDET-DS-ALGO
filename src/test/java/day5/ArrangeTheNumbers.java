@@ -28,7 +28,7 @@ public class ArrangeTheNumbers {
             }
         }
         int index=0;
-        while ( index<j && index<nums.length&&nums[index]<0){
+        while (index<j && index<nums.length&&nums[index]<0){
 
             temp=nums[index];
             nums[index]=nums[j];

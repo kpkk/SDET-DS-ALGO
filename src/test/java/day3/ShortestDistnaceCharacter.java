@@ -159,7 +159,7 @@ It is guaranteed that c occurs at least once in s.
     public void test4() {
         String s = "loveleetcode";
         char c = 'e';
-        Assert.assertTrue(Arrays.equals(closestCharusingtwoPassApproach(s, c), new int[]{3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0}));
+        Assert.assertTrue(Arrays.equals(closetCharUsingTwoPointer(s, c), new int[]{3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0}));
 
     }
     @Test
@@ -216,6 +216,8 @@ It is guaranteed that c occurs at least once in s.
         return answer;
         }
 
+
+        //solved by srinivas
         private int[] closestCharusingtwoPassApproach(String s, char c){
 
         int prevCount=s.length();

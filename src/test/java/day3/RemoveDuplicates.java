@@ -26,7 +26,7 @@ Explanation: Your function should return length = 7, with the first seven elemen
     public void test1(){
         int[] nums={1,1,1,2,2,3}; //1,2 dup=3; left
         int result=5;
-        Assert.assertTrue(removeDuplicates(nums)==5);
+        Assert.assertTrue(removeDups(nums)==5);
     }
     @Test
     public void test2(){
@@ -64,6 +64,17 @@ Explanation: Your function should return length = 7, with the first seven elemen
             right++;left++;
         }
         return index;
+    }
+
+    private int removeDups(int[] nums){
+        int j=0;
+        for (int i=0;i<nums.length;i++){
+            if(nums[i]!=nums[j]){
+                j++;
+                nums[j]=nums[i];
+            }
+        }
+        return j;
     }
 
 }

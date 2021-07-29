@@ -1,0 +1,9 @@
+Find out how many missing brackets to make a valid parentheses !!
+Input can have only open and closing brackets ( )
+String st = “((((” -> 4 brackets
+String st = “(()))” -> 1 bracket
+
+
+
+given an integer array which is not -sorted, need to find max distance between any 2 values
+
