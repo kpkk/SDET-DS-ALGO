@@ -38,7 +38,7 @@ public class ReverseAnInteger {
 
     @Test
     public void test(){
-        int num=123;
+        int num=1534236469;
         int i = reverseNumber(num);
         System.out.println(i);
         int i1 = approach2(num);

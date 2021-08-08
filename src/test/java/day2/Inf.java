@@ -7,7 +7,7 @@ public interface Inf {
       int b=10;
        void show();
 
-       default void demo(){
+       public default void demo(){
            System.out.println("can be implemented");
        }
        static void staticmethod(){

@@ -87,16 +87,32 @@ Output: 1
         return sum;
     }
 
-    public int maxSumAfterPartitioning(int[] A, int K) {
-        int N = A.length, dp[] = new int[N + 1];
-        for (int i = 1; i <= N; ++i) {
-            int curMax = 0, best = 0;
-            for (int k = 1; k <= K && i - k >= 0; ++k) {
-                curMax = Math.max(curMax, A[i - k]);
-                best = Math.max(best, dp[i - k] + curMax * k);
+    /*
+    Approach:- dynamic programming
+
+    Solution:-
+    - Initialize a temporary array of size one extra space than the input
+    - Traverse the array from index=1 until the end
+    - Initialize two variables currMax=0, finalMax=0
+    - traverse through the array until the window size k (inner loop)
+    - calculate the current max between currmax and value of the index i-k
+    - calculate the final max between finalMax and temp[i-k]+crrentmax*k
+    - return the last element of the temp array
+
+
+     */
+
+    public int maxSumAfterPartitioning(int[] nums, int K) {
+        int[] temp=new int[(nums.length)+1];
+        for (int i=1;i<=nums.length;i++){
+            int currentMax=0,finalMax=0;
+            for (int j=1;j<=K && i-j>=0;j++){
+                currentMax=Math.max(currentMax,nums[i-j]);
+                finalMax=Math.max(finalMax,temp[i-j]+currentMax*j);
             }
-            dp[i] = best;
+            temp[i]=finalMax;
+
         }
-        return dp[N];
+       return temp[temp.length-1];
     }
 }
