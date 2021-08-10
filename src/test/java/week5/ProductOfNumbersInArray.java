@@ -4,7 +4,7 @@ import com.sun.tools.hat.internal.parser.HprofReader;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class ProductOfNumbersInArray {
     /*
@@ -27,7 +27,7 @@ Questions:-
     public void test() {
         int[] nums = {3, 4, 5, 6};
         int[] output = {120, 90, 72, 60};
-        Assert.assertArrayEquals(productExceptSelf(nums), output);
+        Assert.assertArrayEquals(prefixAndSuffix(nums), output);
     }
 
     private int[] findProductBruteForce(int[] nums) {

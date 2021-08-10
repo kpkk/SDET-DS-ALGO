@@ -36,21 +36,27 @@ public class DecodeStringUsingRecursion {
         String output="aaabcbcbcabcbcbc";
         Assert.assertEquals(decodeString(str),output);
     }
+    @Test
+    public void test3(){
+        String str="12[a][b]";
+        String output="aaaaaaaaaaaab";
+        Assert.assertEquals(decodeString(str),output);
+    }
 
     public String decodeString(String input) {
         if(!input.contains("]")) return input;
-        String output ="";// digit ="";
+        String output ="", digit ="";
         int number= 0, count=1;
         int firstClosingIndex =input.indexOf(']');
         int lastOpenIndex =input.substring(0, firstClosingIndex).lastIndexOf('[');
         String substring = input.substring(lastOpenIndex+1,firstClosingIndex);
         while(lastOpenIndex-count>=0 && Character.isDigit(input.charAt(lastOpenIndex-count))) {
             number = Character.isDigit(input.charAt(lastOpenIndex-count)) ? Character.getNumericValue(input.charAt(lastOpenIndex-1)):1;
-          //  digit= input.substring(lastOpenIndex-count,lastOpenIndex);
+            digit= input.substring(lastOpenIndex-count,lastOpenIndex);
             count++;
         }
-      //  number=Integer.parseInt(digit);
-      //  lastOpenIndex=lastOpenIndex-count+2;
+        number=Integer.parseInt(digit);
+        lastOpenIndex=lastOpenIndex-count+2;
 
         while(number>0){
             output+=substring;
