@@ -20,3 +20,8 @@
 ##### 2. Approach to solve the problem
 ##### 3. O-notations for each problem (both time and space)
 ##### 4. A few famous Algorithms
+
+
+##[Recursion](https://github.com/kpkk/SDET-DS-ALGO/tree/master/src/test/java/recursion)
+
+#####[CountNoOfOnesInADigit](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountNoOfOnesInADigit.java)
