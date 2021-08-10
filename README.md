@@ -22,10 +22,11 @@
 ##### 4. A few famous Algorithms
 
 
-###Recursion
-[CountNoOfOnesInADigit](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountNoOfOnesInADigit.java)
-[CountOccurrencesOfSubStringInS](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountOccurrencesOfSubStringInS.java)
-[DecodeString](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/DecodeString.java)
-[FactorialOfGivenNumber](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/FactorialOfGivenNumber.java)
-[ReverseAStringusingRecursion](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/ReverseAStringusingRecursion.java)
-[SumOfNaturalNumbers](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/SumOfNaturalNumbers.java)
+### Recursion
+
+1. [CountNoOfOnesInADigit](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountNoOfOnesInADigit.java)
+2. [CountOccurrencesOfSubStringInS](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountOccurrencesOfSubStringInS.java)
+3. [DecodeString](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/DecodeString.java)
+4. [FactorialOfGivenNumber](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/FactorialOfGivenNumber.java)
+5. [ReverseAStringusingRecursion](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/ReverseAStringusingRecursion.java)
+6. [SumOfNaturalNumbers](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/SumOfNaturalNumbers.java)
