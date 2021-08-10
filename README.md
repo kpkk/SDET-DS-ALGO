@@ -22,6 +22,10 @@
 ##### 4. A few famous Algorithms
 
 
-[Recursion](https://github.com/kpkk/SDET-DS-ALGO/tree/master/src/test/java/recursion)
-
+###Recursion
 [CountNoOfOnesInADigit](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountNoOfOnesInADigit.java)
+[CountOccurrencesOfSubStringInS](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountOccurrencesOfSubStringInS.java)
+[DecodeString](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/DecodeString.java)
+[FactorialOfGivenNumber](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/FactorialOfGivenNumber.java)
+[ReverseAStringusingRecursion](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/ReverseAStringusingRecursion.java)
+[SumOfNaturalNumbers](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/SumOfNaturalNumbers.java)
