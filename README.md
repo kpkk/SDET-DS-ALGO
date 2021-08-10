@@ -22,6 +22,6 @@
 ##### 4. A few famous Algorithms
 
 
-##[Recursion](https://github.com/kpkk/SDET-DS-ALGO/tree/master/src/test/java/recursion)
+[Recursion](https://github.com/kpkk/SDET-DS-ALGO/tree/master/src/test/java/recursion)
 
-#####[CountNoOfOnesInADigit](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountNoOfOnesInADigit.java)
+[CountNoOfOnesInADigit](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountNoOfOnesInADigit.java)
