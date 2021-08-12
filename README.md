@@ -30,3 +30,5 @@
 4. [FactorialOfGivenNumber](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/FactorialOfGivenNumber.java)
 5. [ReverseAStringusingRecursion](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/ReverseAStringusingRecursion.java)
 6. [SumOfNaturalNumbers](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/SumOfNaturalNumbers.java)
+7. [ReverseLinkedListElements](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/ReverseLinkedListElements.java)
+8. [RemoveEleFromLinkedList](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/RemoveEleFromLinkedList.java)
