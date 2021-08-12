@@ -1,16 +1,13 @@
-package week4;
+package stack;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Stack;
 
 public class SimplifyPath {
 
     /*
-
     Given a string path, which is an absolute path (starting with a slash '/') to a file or directory in a Unix-style file system,
     convert it to the simplified canonical path.
 In a Unix-style file system, a period '.' refers to the current directory, a double period '..'
@@ -28,59 +25,51 @@ Example 1:
 Input: path = "/home/"  / h o m e /
 Output: "/home"
 Explanation: Note that there is no trailing slash after the last directory
-
      */
-
-
-    /*
-    Solution:-
-    -  Initialize a stack and an arrayList
-    -  Convert the string into a String array (split)
-    -  Start pushing each character into stack until the end
-            - if the character is . or empty ignore
-            - if the character .. pop it
-    - Convert the stack into a stringBuilder
-
-
-        sb.insert(0,stack.pop());
-            sb.insert(0,"/");
-     */
+    //   /etc/../bin//home/./  --> /etc/bin/home
 
     @Test
     public void test1(){
-        String str="/home//foo";
-        Assert.assertEquals(simplifypath(str),"/home/foo");
+        String s="/home/";
+        Assert.assertEquals(simplifyPath(s),"/home");
     }
     @Test
     public void test2(){
-        String str="/../";
-        Assert.assertEquals(simplifypath(str),"/");
-    }
-    @Test
-    public void test3(){
-        String str="/root//../users/.//desktop";
-        Assert.assertEquals(simplifypath(str),"/users/desktop");
+        String s="/etc/../bin//home/./";
+        Assert.assertEquals(simplifyPath(s),"/bin/home");
     }
 
-    private String simplifypath(String str) {
-        Stack<String>stack=new Stack<>();
-        String[] split = str.split("/");
-        for (String s:split){
-            if(s.isEmpty() || s.equals(".")) continue;
-            else if(s.equals("..")){
-                if(!stack.isEmpty())
-                stack.pop();
-            }
-            else
-                stack.push(s);
+    /*
+    Approach: using stack
+    Solution:-
+    - Initialize a stack of character type
+    - Split the string using the delimiter /
+    - traverse the array from start till the end
+    - if the String at the current index is either empty or . , just continue
+    - if the string at the current index is .. then pop the string
+    - else push into the stack
+    - while the stack is not empty
+        - insert into the stringbuffer at 0 index
+        - insert a / at 0 index
+
+     */
+    private String simplifyPath(String s) {
+       Stack<String> stack=new Stack<>();
+        String[] split = s.split("/");
+        for (String str:split){
+            if(str.isEmpty() || str.equals(".")) continue;
+            else if(str.equals("..")) {
+                if(!stack.isEmpty()){
+                    stack.pop();
+                }
+            }else stack.push(str);
         }
         StringBuffer sb=new StringBuffer();
         while (!stack.isEmpty()){
             sb.insert(0,stack.pop());
             sb.insert(0,"/");
-
-           // sb.append("/").append(stack.pop());
         }
-       return sb.toString();
+        return sb.toString();
     }
+
 }

@@ -17,19 +17,19 @@ String st = “(()))” -> 1 bracket
     @Test
     public void test1() {
         String s = "((((";
-        Assert.assertEquals(findBracketCount(s), 4);
+        Assert.assertEquals(bracketCount(s), 4);
     }
 
     @Test
     public void test2() {
         String s = "()()";
-        Assert.assertEquals(findBracketCount(s), 0);
+        Assert.assertEquals(bracketCount(s), 0);
     }
 
     @Test
     public void test3() {
         String s = ")))";
-        Assert.assertEquals(findBracketCount(s), 3);
+        Assert.assertEquals(bracketCount(s), 3);
     }
 
     /*
@@ -49,9 +49,14 @@ String st = “(()))” -> 1 bracket
 
      */
 
+    //Time complexity - O(n)
+    //space complexity - O(n)
     private int findBracketCount(String s) {
         HashMap<Character, Character> map = new HashMap<>();
-        map.put(')', '(');
+        map.put(')','(');
+        map.put(']','[');
+        map.put('}','{');
+        map.put('>','<');
         Stack<Character> stack = new Stack<>();
         char[] chars = s.toCharArray();
         for (char ch : chars) {
@@ -65,5 +70,24 @@ String st = “(()))” -> 1 bracket
 
         }
         return stack.size();
+    }
+
+    /*
+    Linear approach
+    - Initialize two variables called open=0, close=0
+    - Iterate the character array from start index until end
+    - If the character at a specified index is any of the opening bracket, then increment the open count
+    - Else increment the close
+    - return the absolute of open and close
+     */
+    private int bracketCount(String s){
+        int open=0, close=0;
+        char[] chars = s.toCharArray();
+        for (int i=0;i<chars.length;i++){
+            if(chars[i]=='(') open++;
+            else close++;
+        }
+        return Math.abs(open-close);
+
     }
 }
