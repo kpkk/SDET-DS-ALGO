@@ -22,6 +22,15 @@
 ##### 4. A few famous Algorithms
 
 
+### Stack
+
+1. [CountMissedBrackets](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/stack/CountMissedBrackets.java)
+2. [DecodeAstring](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/stack/DecodeAstring.java)
+3. [MeasureIncrementInDailyTemperatures](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/stack/MeasureIncrementInDailyTemperatures.java)
+4. [SimplifyPath](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/stack/SimplifyPath.java)
+5. [ValidateBrackets](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/stack/ValidateBrackets.java)
+
+
 ### Recursion
 
 1. [CountNoOfOnesInADigit](https://github.com/kpkk/SDET-DS-ALGO/blob/master/src/test/java/recursion/CountNoOfOnesInADigit.java)
