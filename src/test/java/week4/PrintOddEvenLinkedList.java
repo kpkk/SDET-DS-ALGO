@@ -68,14 +68,14 @@ public class PrintOddEvenLinkedList {
 
     @Test
     public void test(){
-        Node head = addNode(3);
+        Node head = addNode(1);
         head.next=addNode(4);
         head.next.next=addNode(3);
         head.next.next.next=addNode(6);
         head.next.next.next.next=addNode(5);
-     //   Node node = printOddEvenList(head);
-        Node condense = condense(head);
-        printAllNode(condense);
+        Node node = printOddEvenList(head);
+     //   Node condense = condense(head);
+        printAllNode(node);
 
     }
 }
