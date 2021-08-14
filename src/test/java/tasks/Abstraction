@@ -1,0 +1,23 @@
+Abstraction:
+hiding the implementation from the consumer and offering only the functionality
+Abstraction can be achieved through
+- interface (A template, which helps enforcing design rules, also until java 1.7 only supports abstract methods)
+
+- abstract class (its a class, which can have a partial implementation of implemented interface)
+       - we can make a class as abstract by specifying the abstract keyword, it can  also have all concrete methods
+Keyword:-  we use implement keyword to implement the interface
+benefits:- design first and build later strategy, we can let the down streams have their own implementation
+properties:-
+we can't instantiate the abstract class,
+
+Java:-
+Map, List and their implemented classes are the good examples for abstraction
+
+selenium:-
+RemoteWebDriver class is implementing the searchContext interface
+
+In framework:-
+In framework, the first component developed was the interface which has the definition set for all the methods that needs implementation
+
+we also have ab abstract class (which is a reporter class), it has one abstract method which is "takeSnap". This method is implemented by the other classes
+

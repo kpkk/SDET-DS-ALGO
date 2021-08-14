@@ -1,0 +1,29 @@
+Defintion:-
+Encapsulation in java is one of the important OOPS concepts. Encapsulation is about binding the data members with code that process them. By principle most of the java classes are encapsulated ones.
+Its also  the process of hiding the data members (variables) by declaring them as private so no external class would have access to them.
+
+If any other classes want to access the data, they have to access these members through getters and setters methods
+
+Through encapsulation, we are having more control. We can either set the variables as read- only or write only
+
+Through encapsulation we can implicitly achieve the abstraction as the user will never know how the values are mutated and stored internally
+
+Java usage
+In java, String class has the private data members, hence it is immutable
+
+
+Selenium usage
+In our selenium framework in page object model design pattern were made all the webElements are private and exposed the getter methods, so that they can be used in test
+
+API usage
+Also in our API test framework, we have to build the JSON payload dynamically during the test run, earlier we were hardcoding the JSON template. After that we have implemented the POJO classes where all the fields of the payload are final and the values for these fields would be set through setters.
+
+Development perspective
+
+In our application we follow API First approach and we have our request and response body entity classes auto  generated through swagger,
+also the spring boot annotation @lombok will help us achieving the encapsulation the getters and setters for the fields without us having to write them
+
+
+
+
+

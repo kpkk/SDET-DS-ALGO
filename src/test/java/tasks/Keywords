@@ -1,0 +1,47 @@
+Keywords:-
+
+Static:-
+its a keyword, this can be used with class, methods, blocks and variables
+when we specify something as static, it gets stored in class area, and the initialization would have happen even before the constructor is invoked
+also only one copy of value is shared across multiple instances of the call
+static members can be accessed without specifying the object, by just specifying the class name
+static member access is faster compare to object, as these members reside in class area
+static members would be alive until the class is loaded in JVM, only after the objects were destroyed then only static members are eligible for garbage collection
+
+Java:
+String class join , Arrays class sort, copyOfRange, fill....sre some examples of static method
+
+Selenium:-
+in selenium all the methods under By class as id, name, xpath, cssSelector as static methods
+
+Framework:-
+we declare our webdriver object as public static, also we have some static utils
+
+
+final-
+final is a keyword which can be used with classes, methods and variables
+when we make something as final the value can't be changed
+final classes can't be extended
+final methods can't be overridden
+final variables can be labeled with static
+the values for global / instance variables can only be set through constructor
+
+keyword: final
+benefits: data intigrity, guaranteednes
+
+java
+String class is final
+
+Selenium
+yet to update----------------
+
+finalize:-
+finalize is a method, which is used juts before the object is destroyed.
+garbage collector calls the finalize method once it determines that the object alive is no longer has reference and can use that
+this is responsible for resource de-allocation, killing of unused objects by JVM
+
+
+
+
+
+

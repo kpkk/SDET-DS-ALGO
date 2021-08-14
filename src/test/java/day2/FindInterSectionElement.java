@@ -183,7 +183,7 @@ Simple technique brute force
         Arrays.sort(nums1);
         Arrays.sort(nums2);
         int p1=0, p2=0, index=0;
-        if(nums1.length==0 && nums2.length==0) return new int[]{-1,-1};
+      //  if(nums1.length==0 && nums2.length==0) return new int[]{-1,-1};
         if(nums1.length==0 || nums2.length==0) return new int[]{-1,-1};
 
         int minLength= nums1.length<nums2.length?nums1.length:nums2.length;

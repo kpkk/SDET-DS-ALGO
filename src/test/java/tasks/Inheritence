@@ -1,0 +1,80 @@
+Inheritence:-
+
+IS-A--> extending the class, two interfaces extending each other
+HAS-A relation --> creating an object
+
+STAR technique:-
+in our framework, we have
+
+
+In selenium framework:-
+projectMethods(child class) extends baseClass (super class) --> TestCase in turn extends the ProjectMethods --> this design helps us to fetch all the  methods from base, projectMethods
+
+in test cases we are creating object of the page and every page object method will return the corresponding page object
+
+In selenium webdriver, we have noted that webDriver interface extends searchContext interface
+
+Development usage:-
+while designing the API, the nested JSON objects are referred in the root JSON field class
+
+eg:
+class Employee{
+int id;
+String name;
+Address address // the employee has address (Has-A-relationship)
+}
+
+class Address{
+String street;
+String city;
+}
+
+
+
+String is group of character, and a class type in java
+string is immutable by design due to the access modifier final and its members are private
+
+String takes two forms
+1. string literal-
+2. string object- with new keyword
+
+literal-- it gets stored in string constant pool, which is a memory efficient design..instead storing it newly it checks for the existence of the value,
+if it presents it will point the reference to existing one
+
+.equals and == we must always use,  .equals on top of string object, as it checks for content
+
+Object- gets stored in heap, it will create a new instance for every time we create object
+
+In selenium- the getText, getTitle will return the text of the element, which is used mostly. Most of the test data would be a string in our framework
+
+StringBuilder- its a mutable version of string which is aysnchronous. we have some ready methods to insert at specified index, reverse. Its a child class of AbstarctStringBuilder
+
+StringBuffer- this is also another version of mutable string, but is completely synchronized, only one thread can act at a time.
+
+
+
+
+Both have their own trade-offs:
+If you create a string using String literals , the string stays in the string-pool forever. It is never garbage collected.
+The down side of this is that the string-pool has a fixed size and it will get full at sometime.
+With 'new' operator new strings objects are created out of the string-pool, and they are eligible for garbage-collection. So if you don't need them anymore you can make the eligible for garbage collection, but the down side of this is that with 'new' operator JVM will always have to create a new object and it is an overload for JVM.
+So if i know that my application is going to use some fixed number of string values , i will use string literals for better performance. But if my application will need different string at different times i will use 'new' operator to create them.
+
+
+
+
+/*
+	 * OOPS : Polymorphism, Inheritance, Encapsulation and Abstraction
+	 * ArrayList vs LinkedList
+	 * HashMap Internal architecture -->
+	 * HashMap vs TreeMap
+	 * Keywords: static, final, finalize
+	 * Interface vs Abstract class
+	 * Exceptions
+	 * this vs super -> Constructor chaining
+	 * --> Garbage Collection
+	 * String vs StringBuffer
+	 * Java 8 features
+	 * JDK vs JVM vs JRE
+	 *
+	 */

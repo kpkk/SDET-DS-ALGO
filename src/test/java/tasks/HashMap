@@ -1,0 +1,42 @@
+HashMap:-
+Its class, which holds the two dimensional data as a key value pair
+its an implemented class for the Map interface
+hashmap works based hashing algorithm
+key shouldn't be duplicate, but values can be
+null value is allowed as key, but only once
+
+
+hashing:- hashing is converting an object into integer hash code, its a static claculation (math formula) . diff objects might end up having the same hash code number,
+hash code is a method coming from Objet class
+
+Whenever a map is created with a default constructor, a  map size with 16 (0-15) buckets would get created
+default load factor would be .75, meaning when 3/4th of the map is occupied it considers growing
+
+we can insert an entry using the PUT method
+PUT:-
+when ever map receives an entry it calculates the hashcode for the key, based on hashcode the index would be calculated,then inserted into that index (key, value,hashcode,next node link)
+when one or more objects are falling into the same index,collision takes place, to handle this hashmap inserts this new record as a linked node to the existing record on that particular index
+
+when map size meets load factor, it will automatically grows to the next size, that time the index calculation for all the existing objects would happen and elements would be re-arranged
+
+Time complexity is O(1)
+
+GET:
+to retrieve a record from a map, we use get method by passing key,
+get method will find the index, check for the equality of hashcode
+    if equals then it will try to match the key value
+        if it matches again it returns its value--> time complexity for get method is best case-O(1)
+    if the key doesn't match then it will go the next node which is connected to the existing node--->worst case - O(n)until java 1.7 as the underlying structure of the node is linkedlist
+from 1.8 the the time complexity for get at worst case O(logn) due to tree structure
+
+
+
+Index calculation while insertion:-
+1. calculate the hashcode
+2. Bitwise && the has code with map size (n-1)
+
+selenium:-
+
+
+framework usage:-
+we have used this to read the test data excel spreadsheet, also used in context based to process the data received from the application

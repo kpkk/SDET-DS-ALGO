@@ -105,7 +105,7 @@ Simple technique brute force
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
         }
-        Integer max = Collections.max(map.values());
+      //  Integer max = Collections.max(map.values());
         Set<Map.Entry<Integer, Integer>> entries = map.entrySet();
         for (Map.Entry entry : entries) {
             Integer value = (Integer) entry.getValue();
@@ -170,7 +170,7 @@ Simple technique brute force
     }
 
     /*
-    Approach: Boure moore voting algorithm
+    Approach: Boyre moore voting algorithm
     - Initialize variables majorityEle and counter=0
     - Assign the first element in the array to majorityEle
     - traverse through the array from the index 1
