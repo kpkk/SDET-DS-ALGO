@@ -125,7 +125,6 @@ Simple technique brute force
         for (int i=0;i<p.length();i++) {
             pmap.put(p.charAt(i),pmap.getOrDefault(p.charAt(i),0)+1);
             smap.put(s.charAt(i),smap.getOrDefault(s.charAt(i),0)+1);
-
         }
         if (pmap.equals(smap)){
             indices[index++]=0;

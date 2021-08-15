@@ -1,0 +1,27 @@
+this -
+this is a keyword, which refers to the current class object
+we can use this keyword to set the values for the instance variables in the constructor
+this can be used to call/ return the current class constructor
+this--> can be used with synchronized block
+
+this()--> is used to call the one of the constructors of the same class, this call has to be the first executable statement in the constructor
+
+
+In framework-
+in page Object model pages, for a certain actions we return the this (current class object). eg: enter username/ password field
+
+super-
+
+super is used to call the parent class method or constructor
+
+Java-
+The append, length methods in StringBuilder class internally invokes the parent class (AbstractStringBuilder) append and length methods
+
+Selenium:-
+Super keyword is being used in By class to call id(), name() methods
+
+both this and super keyword not applicable from static context
+
+
+what if there is no super class to the current class and super keyword is used? will it refer Object class constructor?
+

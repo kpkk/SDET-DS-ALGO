@@ -1,9 +1,12 @@
 package day3;
 
+import com.sun.xml.internal.ws.api.model.CheckedException;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
 
 public class SortColors {
 
@@ -139,7 +142,7 @@ Simple technique brute force
 •You need traverse the array from left to right and STOP when your mid crosses High
      */
 
-    private int[] sortColorsUsingThreePointer(int[] nums){
+    private int[] sortColorsUsingThreePointer(int[] nums)  {
         if (nums.length<2) return nums;
         int low=0, mid=0, high=nums.length-1, temp=0;
         while (mid<=high){
@@ -155,6 +158,7 @@ Simple technique brute force
                 nums[high]=nums[mid];
                 nums[mid]=temp;
                 high--;
+
             }
 
         }

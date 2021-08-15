@@ -1,0 +1,38 @@
+Exceptions
+
+Exceptions is an unexpected state of the program during execution, during this case program terminates abruplty, which is not desired.
+With help of Exception class, we can alter the flow by gracefully handling such unexpected conditions.
+
+
+Exception in java is a class, its a subclass of Throwable.
+
+exceptions can be of two types
+    - checked exceptions
+    - unchecked exceptions
+    - custom exceptions
+
+checked exceptions are checked during compile time(outside the control of the program) and these can be foreseen by the JVM. we must handle these by using throws keyword or the try catch blocks
+eg: FileNotFoundException, IOException, SQLException
+
+unchecked exceptions are the runtime exceptions which can't be handled during compile time, this could be due to logic failures. RunTimeException is the parent class of all unchecked exceptions
+eg: ArithmaticException, ClassCastException, NullPointerException, ArrayIndexOutOfBoundException,NoSuchElementException,StaleElementReferenceException, NoSuchWindowException, AlertNotFoundException
+
+
+ways to handle exception
+- with throws keyword - we will specify this next to the signature of the method and exceptionName, it will handle the exception that is potentially being throwm by the code block
+- with try catch block - in try block we write the actual logic, and in catch block we handle the exception that is being thrown
+- with the help of throw keyword we can throw a RunTimeException explicitly
+
+- Try block can have multiple catch blocks, we should mention all the catch blocks in hierarchial order, most specific first then goes to generic
+- we can also have finally block, which is optional, no matter try / catch is executed finally is always executed
+
+In selenium-
+when the element is not found during execution, NoSuchElementException occurs, StaleElementReferenceException ocurres when the DOM gets refreshed /element would have not been generated
+
+In framework:-
+every baseClass methods has exception handling, we catch respective exceptions and print meaningful errors in the report/ logs
+we also write finally block where the teardown actions takes place such as close the browser / close the DB connection / flush the reporting
+
+Stack trace:-
+Once the Exception is caught we can get the stackTrace, get message and details related to that exception which will help for troubleshooting
+e.getMessage(), e.printStackTrace(), e.getCause()

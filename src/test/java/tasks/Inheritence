@@ -74,7 +74,7 @@ So if i know that my application is going to use some fixed number of string val
 	 * this vs super -> Constructor chaining
 	 * --> Garbage Collection
 	 * String vs StringBuffer
-	 * Java 8 features
+	 * Java 8 features-> lambda expression, streams API, functional interfaces
 	 * JDK vs JVM vs JRE
 	 *
 	 */

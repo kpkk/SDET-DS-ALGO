@@ -1,5 +1,6 @@
 package day2;
 
+import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,8 +12,8 @@ class Address{
 
 public class pojo {
 
-     private final int id=10;
-     private  String name;
+       int id=10;
+       String name;
     Address address;
 
     public int getId() {
@@ -30,10 +31,15 @@ public class pojo {
     public String getName() {
         return name;
     }
-    public pojo(int id, String name){
 
+    public pojo(){
+
+    }
+    public pojo(int id, String name){
+        this();
         this.id = id;
         this.name = name;
+
     }
 
 
@@ -46,10 +52,13 @@ public class pojo {
 
     }
 }
-class Test1 extends pojo{
+class Test1{
     static {
          int a=10;
          display();
+    }
+    public void m(){
+        System.out.println("");
     }
 
    /* Test1() {
@@ -62,10 +71,24 @@ class Test1 extends pojo{
 
 
     public static void main(String[] args) {
-        display();
-        Test1.display();
+        try {
+            display();
+            Test1.display();
+        }
+        catch (Exception e){
+
+        }
+
     }
 
+}
+
+class ExceptionExample{
+    public void display() throws FileNotFoundException {
+        System.out.println("");
+    }
+    public void show(){
+    }
 }
 
 
