@@ -53,7 +53,7 @@ Constraints:
     - Initialize variables currentNumber, currentLength=1, maxLength=0
     - Iterate the given array and all numbers to the set
     -  Iterate the set,
-           - check if the number-1 is present int the set
+           - check if the number-1 is present in the set
                 - if present, set the currentNumber=num
                 - set the current length as 1
                 - also validate if the set has next numbers in it

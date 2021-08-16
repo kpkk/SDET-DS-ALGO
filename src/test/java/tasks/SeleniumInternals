@@ -1,0 +1,163 @@
+Selenium questions
+
+
+How selenium works internally
+
+Selenium RC - built on JS
+
+Initially developed for HTML driver, later firefox came
+
+This code is not supporting the other browser
+
+For browser—> html, JS, css, images
+
+Css - will display stylesheet
+
+Run time errors thrown by JS script (validation at client level)
+
+Images are stored in server
+In console we can wrote java script
+
+
+How to run on multiple browsers,
+
+Simon Stewart in 2009 presented…
+
+Then selenium team we support this for all the browser
+
+It should  be language independent, browser independent
+
+Competitor —> puppeteer , cyprus(only supports chrome)—> node js
+
+Selenium architecture
+
+The language calls the RESTFUL API using json (older)/w3c wire protocol (newer version)
+
+
+The selenium while taking to browser, it needs a driver file.  Chromedriver (local server) written in python, js, c++
+
+Lay gecko driver
+
+
+The seleniumm jar, calls the API of chomedriver,
+
+
+Chrome driver will run on 9515
+
+/session. —> to open browser
+
+{
+Desired capabilities:{
+Browser: chrome
+}
+}
+
+/session/sessionid/window/maximize
+
+
+/url to launch the url
+/GetSessions-> get call
+/element —> {using: id value:path}
+
+Selenium web driver —> language binding Api, that communicates to the browser with list of actions
+
+Web driver manager will run a new browser
+
+Web driver.chrome.driver—> get property
+
+findFreeport—> will give a random port
+
+creteAcceptablePort-> synchronised  to give only one port number to one
+
+
+All exceptions also thrown using API calls
+
+Get calling GetCommand —> commonPayload method—> it call execute method
+
+
+Get will generate an immutable map
+
+It is following the Okhttp commnds
+
+
+Exceptions are thrown by chromedrver
+
+Selenium implements NoSuchElementException to era the message received from chromedriver
+
+
+Find element
+Interact
+
+Element reference has changed
+When we find an element, the element was there, but the reference is missed in the chrome driver…hence selenium is complaining- statelement exception
+
+Wait until the page is loaded properly
+Use retry logic, call the method recursively
+
+timeBound,  iteration
+
+All ExceptedConditions will use recursion
+
+ExpectedCondition.stelnessof()
+
+
+Common exceptions we get
+
+When we get it, what do we do
+
+staleElementReferenceExceptions
+TimeOutExceptions- when excepted conditions fails
+
+1. Increase the webdribver wait
+2.  Correct expected conditions
+
+
+NoSuchElementException- when element to be found can’t be located with the locator given
+InvalidSelectorException- when we try to use wrong selector on a webElement
+ElementNotInteractableException - when we try to interact with element whose state is not ready
+NoSuchFrameException - when the frame can’t be located
+NoAlertPresentException - when there is no alert but we are trying to handle
+UnhandledAlertException
+NoSuchWindowException- when the window doesn’t present to switch
+webDriverException
+elementclickinterceptedexception
+Invalidelementstate exception
+
+NotFoundException is parent of all no such exceptions
+1.  element is not there in Dom
+  2.  The implicitly wait is not designed
+
+
+
+How do we switch to a new window that is opened newly
+
+Using get window handles, we an get the set of windows, convert them into list then switch to the last index
+
+
+LHS—> foreach—> math tilet —> break
+Convert into list-> get thhe index
+Iterator
+How do you handle authentication pop up
+For chrome :-  http://username:password@url
+Other ways—> AutoIT/ Tikuli—> will not work during parallel run
+devTools—>network authentication—> inject into the web driver—> will work all except IE
+
+We can use java script executor , pass the credentials in URL
+Using auto IT
+
+How do you handle applications like Facebook, how do we know that we reached the end of the page
+
+Scroll down- store elements Int list, again scroll down, get the elements, if the elements are same then stop doing it, else keep scrolling
+
+Lazy loading- it will not load all the data,
+
+
+
+How do you handle cross browser testing/ multiple versions
+
+How do you work with selenium web driver when the code base is not throwing exception
+
+How do you deal with dynamic table
+How do you get the PDF downloded
+
+How do you work on parallel execution on multiple machines, where we need to upload files paralley

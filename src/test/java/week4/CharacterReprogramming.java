@@ -27,7 +27,7 @@ public class CharacterReprogramming {
     @Test
     public void test3(){
         String str="UDRLRRRLLLL";
-        Assert.assertEquals(getMaxDeletions(str),1);
+        Assert.assertEquals(getMaxDeletions(str),10);
     }
     @Test
     public void test4(){
@@ -37,7 +37,7 @@ public class CharacterReprogramming {
 
     private int getMaxDeletions(String str) {
         int count=0;
-        for (int i=0;i<str.charAt(i);i++){
+        for (int i=0;i<str.length();i++){
             if(str.charAt(i)=='U' ||str.charAt(i)=='R'){
                 count+=1;
             }else{

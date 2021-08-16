@@ -1,0 +1,19 @@
+Garbage collector-
+ the process of destroying the unused objects to free up memory. java has automatic garbage collection process which is being run by JVM
+
+ but in c/ c++ developer has to take care of resource allocation and de-allocation, else we run into memory out of errors
+
+we can also request JVM to run the garbage collector, by calling
+
+System.gc() method
+Runtime.getRunTime().gc();
+
+
+when an object is no longer refferred and unused then it is eligible for garbage collection
+ways to make object to eligible for GC
+-by nullifying it
+-by reassigning the reference variable
+-object created inside the method
+
+before the garbage collector acts the finalize() method from the object class would be executed, which will esnure all tear down activities are done
+

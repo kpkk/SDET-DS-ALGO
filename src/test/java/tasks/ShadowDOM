@@ -1,0 +1,21 @@
+DOM-
+its an acronym for document object model, it is a programming interface of a web page, where the data / content related to the web application is being displayed
+
+shadow DOM-  web components  are usually designed for encapsulations, so that the same mark up/ style structure can be hidden from other code
+
+shadow dom allows a hidden DOM to be attached to your web application, its completely an isolated domain. shadow DOm starts with shadow tree
+
+
+shadow host- the element to which it has attached to
+shadow root- the DOM tree inside a shadow DOM
+shadow root- the root element of the shadow DOM
+shadow boundary-  the place where the shadow DOm ends and starts
+
+
+Experiential sharing:-
+I've an experience of automating the shadow DOM, where the element cant be directly located by the driver object.
+
+shadow root node has to be identified then from there we need to find the subsequent node using java script executor
+
+
+one best example is the google settings page " chrome://settings"

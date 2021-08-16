@@ -1,0 +1,48 @@
+JDK
+java development kit, a software that comprises of run time engine and some additional development tools such as java compiler (javac), java document generator, keyTool,
+java archivar and java interpreter
+
+when we have JDK, implicilty we have JRE, JVM as well, it provides development capability as well as the running ability
+
+JRE
+
+java run time engine, it provides the run time environment to the java program
+JRE consists of JVM, supporting files and core classes/ certain libraries and JARS that are required to run the program
+
+when we have JRE we can only run the applications but can't develop the code
+
+JVM
+java virtual machine is an abstract machine, which gets created whenever a java program is attempted to run. JVM is the one, which calls main method
+
+due to JVM archirecture java has become platform independent
+
+JVM is a specification:- where the working of JVM is specified, the implementation provider has the fliexibility to choose their own algorithm to design
+JVM is a implementation:- where we specify the specification
+
+How java and JVM works internally
+whenever a .java program is executed, a .class file (byte) code is created and which would then be given for compilation
+
+JVM does
+
+1. class loading - it loads all the supporting classes into the class path and generating the binary data into method area
+    - it will contain fully qualified class name
+    - methods information
+    - whether .class file is an interface/ class/enum
+2. byte code verification - it checks whether or not the byte code is from proper compiler and verifies its correctness
+3. initialization- its initializes the memory, assigns value for all the static blocks and static members and create a object of class type
+
+3. interpreter
+
+JVM memory:-
+- method area --> all the class info, such as whose its parent and data members are stored
+- heap - where objects are stored
+- pC register -> it holds the address of the current instruction being executed
+- method stack ->  all the method calls, stores in a run time stack
+- native method stack- for every thread a run time stack would get created
+
+execution engine:-
+
+interpretation- line by line, during this process when the same method has been callsed twice, it has to interpret two different times.
+JIT compiler - it is used to increase the efficiency of the interpreter, Jit complier would interpret the entire byte code into native code  and store in a file.when interpreter meets the same code then JIT will provide the source code
+Grabage collector - it is used to kill the un-referenced objects
+

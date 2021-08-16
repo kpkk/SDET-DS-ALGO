@@ -60,7 +60,7 @@ public class SecondLeastRepeatingCharacter {
         Set<Map.Entry<Character, Integer>> entries = map.entrySet();
         for (Map.Entry entry:entries){
             Integer value = (Integer) entry.getValue();
-            if (min>value){
+            if (min<value){
                 secondMin=min;
                 min=value;
             }
