@@ -1,0 +1,17 @@
+Dynamic web table
+
+web tables are rows and column representation of the data in a webpage. These are  seen quite often in many of the applications
+
+web tables are usually designed in <table>, <td>, <tr>, <th> HTML tags
+
+there are two types of web tables
+1. static table - whose data is static and won;t change
+2 dynamic web table - which would get updated over the period of time as the data would get updated
+
+In my experience I've handled both the tables, handling of static table is relatively easy i used to fetch the data using the row and column numbers in xpath
+
+But in case of xpath the data cell would get changed,
+was using xpaths based on
+- text based, so as to find the data despite the cell position
+- getting the number of rows and columns, then iterate over then matching the desired text would be reliable logic
+- table with page nation - was in need of navigating to diff pages and find element

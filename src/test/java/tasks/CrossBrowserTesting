@@ -1,0 +1,24 @@
+How do you handle cross browser testing/ multiple versions
+
+Cross browser testing is testing of the web application in various browsers to ensure that there aren't any compatibility and design related issue
+such as no overlapping, style and properties of element are intact such as width , height, breadth
+
+however all browsers are same, but the way they load HTML,CSS, java script is diff hence testing in all browsers is must
+
+In one opf our client applications, there was a requirement to test the application in safari and edge alongside chrome and firefox
+
+we studied the requirement and understood that we need a cloud platform that provides multiple versions and types of browser
+
+we understood that there are some cloud providers such as browser stack, saucelabs and perfecto, ghost labs
+finally made a decision that to go with browser stack,
+from selenium implementation perspective, we pass the browser name and version as a parameter in the testNg.xml for each test case
+
+testNG helps us with @parameter annotation to parameterize the browser name
+
+the browser config file would be available in cloud that fetches the information and provides the respective browsers
+in that way we have achieved an extensive coverage with respect to different browsers
+
+
+ browser stack, saucelabs and perfecto, which one is best?why
+
+ ghost labs - explore

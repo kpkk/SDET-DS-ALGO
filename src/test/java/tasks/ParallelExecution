@@ -1,0 +1,17 @@
+How do you work on parallel execution on multiple machines, where we need to upload files paralley
+
+executing the selenium scripts on multiple platforms (OSs, browsers) to reduce the execution time
+
+We had 400 scripts in our suite, which were executed only on one machine before, which used to take around 2 hrs for execution.
+
+This slower execution delaying the regression runs, and eventually affecting test life cycle
+
+then to mitigate the risk, we introduced selenium grid as an option, where we use one machines as host and 4 other machines are nodes
+
+these machines will share the scripts and execute , which has resulted in a execution time of 1 hr
+
+With this option we are also achieving the multiple platforms and browsers execution
+
+later this is also integrated with jenkins pipeline for nightly execution
+
+we have eliminated the duplicate code base, only client has the code and it os being shared with nodes
