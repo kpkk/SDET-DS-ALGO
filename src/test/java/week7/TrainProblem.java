@@ -47,8 +47,8 @@ Constraints:
 
 n == dist.length
 1 <= n <= 105
-1 <= dist[i] <= 105
-1 <= hour <= 109
+1 <= dist[i] <= 10 power 5
+1 <= hour <= 10 power 9
 There will be at most two digits after the decimal point in hour.
      */
 
@@ -83,19 +83,23 @@ There will be at most two digits after the decimal point in hour.
 
     private int findMinSpeed(int[] distance, double hour) {
         if (hour<distance.length-1) return -1;
-        int low=1, high=distance.length, mid=0;
-        double timeSum=0;
+        int low=1, high=1000000, mid=0;
+      int sum=0;
         while (low<=high){
              mid=(low+high)/2;
-            timeSum=0;
+           double timeSum=0;
             for (int i=0;i<distance.length-1;i++){
-                timeSum+=(int)Math.ceil((double)distance[i]/mid);
+                timeSum+=Math.ceil((double)distance[i]/mid);
             }
             timeSum+=(double)distance[distance.length-1]/mid;
-            if(timeSum==hour)return mid;
+         //   if(timeSum==hour)return mid;
             if(timeSum>hour) low=mid+1;
-            if(timeSum<hour)high=mid-1;
+            else{
+                sum=mid;
+                high=mid-1;
+
+            }
         }
-        return mid ;
+        return sum ;
     }
 }
