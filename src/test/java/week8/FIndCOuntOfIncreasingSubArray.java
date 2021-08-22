@@ -52,6 +52,12 @@ The answer is 3 as [3,5] and [5,7] and [7,8] are the sub arrays.
         int k=2;
         Assert.assertEquals(findSubArray(nums,k),4);
     }
+    @Test
+    public void test6(){
+        int[] nums={1,2,3,3,4,5}; //7-2+1//6
+        int k=3;
+        Assert.assertEquals(findSubArraySinglePass(nums,k),2);
+    }
     /*
     Approach: two pointer equi-directional, sliding window
     Solution:-

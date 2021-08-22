@@ -26,6 +26,11 @@ Explanation: No swap.
         int num=9973;
         Assert.assertEquals(swapDigits(num),9973);
     }
+    @Test
+    public void test3(){
+        int num=1996;
+        Assert.assertEquals(swapDigits(num),9916);
+    }
 
     /*
     - 1st loop, find the range index, start from first index of the array
@@ -41,7 +46,7 @@ Explanation: No swap.
         char[] chars = String.valueOf(num).toCharArray();
         // to find the first raise of value, range index
         for (int i=1;i<chars.length;i++){
-            if(Integer.valueOf(chars[i])>Integer.valueOf(chars[i-1])){
+            if(Character.getNumericValue(chars[i])>Character.getNumericValue(chars[i-1])){
                 rangeIndex=i;
                 break;
             }
@@ -49,9 +54,10 @@ Explanation: No swap.
         // if range index is sitting at the last, return number
         if(rangeIndex==chars.length-1) return num;
         maxValue=Character.getNumericValue(chars[rangeIndex]);
+        maxIndex=rangeIndex;
         for (int i=rangeIndex;i<chars.length;i++){
-            if(Integer.valueOf(chars[i])>maxValue){
-                maxValue=Integer.valueOf(chars[i]);
+            if(Character.getNumericValue(chars[i])>=maxValue){
+                maxValue=Character.getNumericValue(chars[i]);
                 maxIndex=i;
             }
         }

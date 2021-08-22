@@ -64,9 +64,8 @@ Output: "ps"
             if(st.isEmpty() || !st.isEmpty() && ch!=st.peek()){
                 st.push(ch);
                 count.push(1);
-                continue;
             }
-            if(!st.isEmpty() && !count.isEmpty() && ch==st.peek()){
+            else if(!st.isEmpty() && !count.isEmpty() && ch==st.peek()){
                 st.push(ch);
                 count.push(count.peek()+1);
                 if(count.peek()==k){
