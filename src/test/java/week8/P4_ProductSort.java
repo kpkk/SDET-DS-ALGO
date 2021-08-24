@@ -72,39 +72,4 @@ public class P4_ProductSort {
         return resultArray;
 
     }
-
-
-
-
-
-
-
-
-
-
-   /* private int[] sortArrayByQuantity(int[] nums){
-        Stack<Integer>numbers=new Stack<>();
-        Stack<Integer>count=new Stack<>();
-        ArrayDeque<Integer> queue=new ArrayDeque<>();
-        Arrays.sort(nums);
-        for (int i=0;i<nums.length;i++){
-            if(numbers.isEmpty() || (!numbers.isEmpty() &&numbers.peek()!=nums[i])){
-                numbers.push(nums[i]);
-                count.push(1);
-            }
-            else if(!numbers.isEmpty() && !count.isEmpty() && numbers.peek()==nums[i]){
-                numbers.push(nums[i]);
-                count.push(count.peek()+1);
-            }
-            else if(!numbers.isEmpty() && !count.isEmpty() && numbers.peek()!=nums[i]){
-                while (k>0){
-                    numbers.pop();
-                    count.pop();
-                    k--;
-                }
-            }
-        }
-
-    }
-*/
 }

@@ -16,27 +16,27 @@ public class P1_FirstUniqueChar {
     @Test
     public void test1(){
         String s="statistics";
-        Assert.assertEquals(findUnique(s),3);
+        Assert.assertEquals(firstUniqueChar(s),3);
     }
     @Test
     public void test2(){
         String s="abbcd";
-        Assert.assertEquals(findUnique(s),1);
+        Assert.assertEquals(firstUniqueChar(s),1);
     }
     @Test
     public void test3(){
         String s="aabbccdd";
-        Assert.assertEquals(findUnique(s),-1);
+        Assert.assertEquals(firstUniqueChar(s),-1);
     }
     @Test
     public void test4(){
         String s="aabbc";
-        Assert.assertEquals(findUnique(s),5);
+        Assert.assertEquals(firstUniqueChar(s),5);
     }
     @Test
     public void test5(){
         String s="";
-        Assert.assertEquals(findUnique(s),-1);
+        Assert.assertEquals(firstUniqueChar(s),-1);
     }
     /*
     - initialize a hash map ith character as key and occurrence as value
@@ -59,6 +59,15 @@ public class P1_FirstUniqueChar {
             if(map.get(s.charAt(i))==1){
                 return i+1;
             }
+        }
+        return -1;
+    }
+
+    private int firstUniqueChar(String s){
+        if(s.length()==0) return -1;
+        if(s.length()==1) return 1;
+        for (int i=0;i<s.length();i++){
+            if(s.indexOf(s.charAt(i))==s.lastIndexOf(s.charAt(i))) return i+1;
         }
         return -1;
     }
