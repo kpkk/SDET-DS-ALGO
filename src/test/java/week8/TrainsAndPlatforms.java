@@ -35,7 +35,7 @@ of all trains.
      */
     @Test
     public void test1(){
-        String[] arrival={"0900", "0940", "0950", "1100", "1500", "1800"};
+        String[] arrival={"0900", "0940", "0950", "1100", "1500", "1800"};  //6
         String[] departure={"0910", "1200", "1120", "1130", "1900", "2000"};
         Assert.assertEquals(findPlatforms(arrival,departure),3);
     }

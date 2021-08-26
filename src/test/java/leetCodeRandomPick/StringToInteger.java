@@ -50,6 +50,7 @@ Do not ignore any characters other than the leading whitespace or the rest of th
     @Test
     public void test3(){
         String s="-91283472332";
+        double d=20000000000000000000d;
         Assert.assertEquals(myAtoi(s),Integer.MIN_VALUE);
     }
     @Test

@@ -56,33 +56,37 @@ Output: []
 
     private int[] findCommonSlot(int[][] slots1, int[][] slots2,int duration) {
         int slotOneStart=0, slotTwoStart=0;
-        Arrays.sort(slots1,(a,b)->{if(a[0]!=b[0]) return a[0]-b[0]; else return a[1]-b[1];});
-        Arrays.sort(slots2,(a,b)->{if(a[0]!=b[0]) return a[0]-b[0]; else return a[1]-b[1];});
+        Arrays.sort(slots1,(a,b)->{if(a[1]!=b[1]) return a[1]-b[1]; else return a[0]-b[0];});
+        Arrays.sort(slots2,(a,b)->{if(a[1]!=b[1]) return a[1]-b[1]; else return a[0]-b[0];});
 
         int maxStartTime=0, minEndTime=0;
 
         while (slotOneStart<slots1.length && slotTwoStart<slots2.length){
+
             int slot1Diff=Math.abs(slots1[slotOneStart][0]-slots1[slotOneStart][1]); //40
+
             int slot2Diff=Math.abs(slots2[slotOneStart][0]-slots2[slotOneStart][1]); //15
-            int[] bigSlot=new int[2];
-            int[] smallSlot=new int[2];
+
+            int[] bigSlot=new int[2]; //10 50
+            int[] smallSlot=new int[2]; //0 15
 
             if(slot1Diff>slot2Diff){
-                bigSlot[0]=slots1[slotOneStart][0];
-                bigSlot[1]=slots1[slotOneStart][1];
+                bigSlot[0]=slots1[slotOneStart][0]; //40
+                bigSlot[1]=slots1[slotOneStart][1]; //50
             }else{
                 bigSlot[0]=slots2[slotTwoStart][0];
                 bigSlot[1]=slots2[slotTwoStart][1];
             }
 
             if(slot1Diff<slot2Diff){
-                smallSlot[0]=slots1[slotOneStart][0];
-                smallSlot[1]=slots1[slotOneStart][1];
+                smallSlot[0]=slots1[slotOneStart][0]; //0
+                smallSlot[1]=slots1[slotOneStart][1]; //15
             }else{
                 smallSlot[0]=slots2[slotTwoStart][0];
                 smallSlot[1]=slots2[slotTwoStart][1];
             }
 
+            //0-15 //10-50
             if(smallSlot[0]>=bigSlot[0] && smallSlot[1]<bigSlot[1] || smallSlot[1]>=bigSlot[0] && smallSlot[1]<bigSlot[1]){
                 maxStartTime=Math.max(slots1[slotOneStart][0],slots2[slotTwoStart][0]);
                 minEndTime=Math.min(slots1[slotOneStart][1],slots2[slotTwoStart][1]);

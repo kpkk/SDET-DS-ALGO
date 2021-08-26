@@ -18,6 +18,13 @@ public class MeetingRooms {
         String[][] meetingTimes={{"09 00", "09 45"},{"09 30", "10 30"},{"10 40", "12 00"},{"11 00", "13 00"},{"11 45", "14 00"},{"16 00", "17 00"}};
         Assert.assertEquals(findMinMeetingRooms(meetingTimes),3);
     }
+    @Test
+    public void test2(){
+        //{"09 30", "10 00"}, {"11 00", "11 10"}, {"09 00", "11 20"}, {"10 40", "11 40"}
+        String[][] meetingTimes={{"09 30", "10 00"}, {"11 00", "11 10"}, {"09 00", "11 20"}, {"10 40", "11 40"}};
+                //{{"09 00", "09 45"},{"09 30", "10 30"},{"10 40", "12 00"},{"11 00", "13 00"},{"11 45", "14 00"},{"16 00", "17 00"}};
+        Assert.assertEquals(findMinMeetingRooms(meetingTimes),3);
+    }
 
     /*
     Solution

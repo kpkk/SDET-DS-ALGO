@@ -32,7 +32,7 @@ n == height.length
     @Test
     public void test1(){
         int[] nums={0,1,0,2,1,0,1,3,2,1,2,1};
-        Assert.assertEquals(trapWater(nums),6);
+        Assert.assertEquals(trap(nums),6);
     }
     @Test
     public void test2(){
@@ -66,6 +66,24 @@ n == height.length
                 rightheight=Math.max(rightheight,nums[j]);
             }
             sum+=Math.min(leftHeight,rightheight)-nums[i];
+        }
+        return sum;
+    }
+
+    public int trap(int[] height) {
+        int sum=0;
+        int[] leftHeight=new int[height.length];
+        int[] rightHeight=new int[height.length];
+        leftHeight[0]=height[0];
+        rightHeight[height.length-1]=height[height.length-1];
+        for(int i=1;i<height.length;i++){
+            leftHeight[i]=Math.max(leftHeight[i-1],height[i]);
+        }
+        for(int i=height.length-2;i>=0;i--){
+            rightHeight[i]=Math.max(height[i],rightHeight[i+1]);
+        }
+        for(int i=0;i<height.length;i++){
+            sum+=(Math.min(leftHeight[i],rightHeight[i])-height[i]);
         }
         return sum;
     }
