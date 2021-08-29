@@ -35,14 +35,14 @@ Output: []
         int [] []slots1={{10,50},{60,120},{140,210}};
         int [] []slots2={{0,15},{60,70}};
         int duration=12;
-        Assert.assertArrayEquals(findCommonSlot(slots1,slots2,duration),new int[]{});
+        Assert.assertArrayEquals(findCommonTimeSlotAlt(slots1,slots2,duration),new int[]{});
     }
     @Test
     public void test3(){
         int [] []slots1={{10,20},{40,70},{80,120}};
         int [] []slots2={{30,35},{125,135}};
         int duration=5;
-        Assert.assertArrayEquals(findCommonSlot(slots1,slots2,duration),new int[]{});
+        Assert.assertArrayEquals(findCommonTimeSlotAlt(slots1,slots2,duration),new int[]{});
     }
 
     /*
@@ -98,6 +98,63 @@ Output: []
 
         }
         return new int[]{};
+    }
+
+    private int[] findCommonTimeSlot(int[][] slots1, int[][] slots2, int duration) {
+        Arrays.sort(slots1, (a,b) -> {
+            if(a[1]!=b[1]) return a[1]-b[1];
+            else return a[0]-b[0];
+        });
+        Arrays.sort(slots2, (a,b) ->{
+            if(a[1]!=b[1]) return a[1]-b[1];
+            else return a[0]-b[0];
+        });
+        int count = 1;
+        int start =0, end =0;
+        int[] output = new int[2];
+        while(start < slots1.length && end < slots2.length) {
+            System.out.println(slots1[start][0] + duration);
+            System.out.println(slots2[end][1]);
+            if((slots1[start][0] + duration) <= slots2[end][1]) { //{{{10,50},{60,120},{140,210}  {{0,15}, {60,70}}
+                output[0] = slots1[start][0];
+                output[1] = slots1[start][0] + duration;
+            }
+            start++; end++;
+
+        }
+        System.out.println(output.toString());
+        return output;
+    }
+
+    private int[] findCommonTimeSlotAlt(int[][] slots1, int[][] slots2, int duration) {
+        Arrays.sort(slots1, (a,b) -> {
+            if(a[1]!=b[1]) return a[1]-b[1];
+            else return a[0]-b[0];
+        });
+        Arrays.sort(slots2, (a,b) ->{
+            if(a[1]!=b[1]) return a[1]-b[1];
+            else return a[0]-b[0];
+        });
+        int start_slots1 =0, end_slots1 =0, start_slots2 =0, end_slots2 =0;
+        int[] output = new int[2];
+        while(start_slots1 < slots1.length && end_slots2 < slots2.length) {
+//		System.out.println(slots1[start_slots1][0] + duration);
+//		System.out.println(slots2[end_slots2][1]);
+            if(((slots1[start_slots1][0] + duration) <= slots2[end_slots2][1]) && ((slots1[end_slots1][1] - duration) >= slots2[start_slots2][0])) {
+                output[0] = slots1[start_slots1][0];
+                output[1] = slots1[start_slots1][0] + duration;
+                break;
+            }
+            else if((slots1[start_slots1][0] + duration) > slots2[end_slots2][1]) {
+                start_slots2++;
+                end_slots2++;
+            }
+            else {
+                start_slots1++;
+                end_slots1++;
+            }
+        }
+        return output;
     }
 }
 

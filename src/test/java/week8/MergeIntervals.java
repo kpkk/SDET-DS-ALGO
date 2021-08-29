@@ -87,7 +87,6 @@ Given an array of intervals [[1,3],[2,4],[6,9]], merge the overlapping intervals
         }
         list.add(Arrays.asList(startTime,endTime));
         int[][] output=new int[list.size()][2];
-
         for (int i=0;i<list.size();i++){
             int j=0;
             List list1 = list.get(i);

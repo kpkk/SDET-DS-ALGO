@@ -3,6 +3,7 @@ package week8;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MaxLeaps {
@@ -13,17 +14,17 @@ public class MaxLeaps {
     @Test
     public void test1(){
         int[]nums={6,13,10,8,11,7,3,5,2};
-        Assert.assertEquals(maxFrogJumps(nums),5);
+        Assert.assertEquals(maxFrogJumpsOptimized(nums),5);
     }
     @Test
     public void test2(){
         int[]nums={6,4,5,4,3,2,1};
-        Assert.assertEquals(maxFrogJumps(nums),5);
+        Assert.assertEquals(maxFrogJumpsOptimized(nums),5);
     }
     @Test
     public void test3() {
         int[] nums = {5,7,11,9,10,7,6,3,5,2,1};
-        System.out.println(maxFrogJumps(nums));
+        System.out.println(maxFrogJumpsOptimized(nums));
     }
 
     /*
@@ -75,6 +76,29 @@ public class MaxLeaps {
 
         return maxJumps;
     }
+
+    public static int maxFrogJumpsOptimized(int[] nums){
+        ArrayList<Integer> sub = new ArrayList<>();
+        sub.add(nums[0]);
+
+        for (int i = 1; i < nums.length; i++) {
+            int num = nums[i];
+            if (num < sub.get(sub.size() - 1)) {
+                sub.add(num);
+            } else {
+                // Find the first element in sub that is greater than or equal to num
+                int j = 0;
+                while (num < sub.get(j)) {
+                    j += 1;
+                }
+                if(j == sub.size()-1)
+                    sub.set(j, num);
+            }
+        }
+
+        return sub.size()-1;
+    }
+
 }
 
 /*
