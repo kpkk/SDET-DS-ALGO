@@ -28,6 +28,18 @@ public class LargestString {
         int k=2;
         Assert.assertEquals(reArrangeString(s,k),"zzazz");
     }
+    @Test
+    public void test3(){
+        String s="yuzzvuyzpv";
+        int k=1;
+        Assert.assertEquals(reArrangeString(s,k),"zyzyzvuvup");
+    }
+    @Test
+    public void test4(){
+        String s="zxzuvozyzvzywvxyqxzxzyywyxwyzxxwzwzyzzzzyxzvzxxywx";
+        int k=4;
+        Assert.assertEquals(reArrangeString(s,k),"zzzzyzzzzyzzzzyzzzzyyyyxyyyxxxxwxxxxwxxwwwwvvvvuqo");
+    }
 
     private String reArrangeString(String s, int k) {
         StringBuilder sb=new StringBuilder();
@@ -36,15 +48,40 @@ public class LargestString {
         for (char c:chars){
             map.put(c,map.getOrDefault(c,0)+1);
         }
+        int prevValue=0;
+        char prevKey=' ';
+        char currentChar=' ';
         Set<Map.Entry<Character, Integer>> entries = map.entrySet();
         for (Map.Entry entry:entries){
             int value = (int)entry.getValue();
-            while (value>0){
+            int temp=k;
+            while (value>0 && temp>0){
+                currentChar=(char)entry.getKey();
                 sb.append(entry.getKey());
+                temp--;
+                value--;
             }
-            sb.append(entry.getKey());
+            while (temp>0 && prevValue>0){
+                sb.append(prevKey);
+                prevValue--;
+                temp--;
+            }
+            prevValue=value;
+            prevKey=currentChar;
         }
         return sb.toString();
     }
 
+    /*
+    Add all characters in String to int array
+Initialize a String
+Iterate int array from reverse to get the max value first
+If the current value count is > k,
+	Add k times and decrement the count in int array
+	Find the next char
+		Add the char just once and then decrement its count
+		if no char found, break
+else if the count is between 1 and k, add all to String
+else move to next char
+     */
 }
