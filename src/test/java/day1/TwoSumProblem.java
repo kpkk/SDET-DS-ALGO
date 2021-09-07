@@ -73,6 +73,7 @@ public class TwoSumProblem {
         return new int[]{-1,-1};
     }
 
+    // this is wrong because sorting will change the indices of the array elements
     public int[] twoSum(int [] nums, int k){
         Arrays.sort(nums);
         int left=0, right=nums.length-1;

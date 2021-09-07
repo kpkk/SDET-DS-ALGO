@@ -3,10 +3,7 @@ package amazonQuestions;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class P8_ReArrangeString {
     /*
@@ -38,22 +35,22 @@ s consists of lowercase English letters.
     @Test
     public void test1(){
         String s="aab";
-        Assert.assertEquals(reArrangeString(s),"aba");
+        Assert.assertEquals(reOrganizeString(s),"aba");
     }
     @Test
     public void test2(){
         String s="aaab";
-        Assert.assertEquals(reArrangeString(s),"");
+        Assert.assertEquals(reOrganizeString(s),"");
     }
     @Test
     public void test3(){
         String s="abc";
-        Assert.assertEquals(reArrangeString(s),"acb");
+        Assert.assertEquals(reOrganizeString(s),"acb");
     }
     @Test
     public void test4(){
         String s="cxmwmmm";
-        Assert.assertEquals(reArrangeString(s),"mcmwmxm");
+        Assert.assertEquals(reOrganizeString(s),"mcmwmxm");
     }
 
     /*
@@ -103,5 +100,29 @@ s consists of lowercase English letters.
         }
         return String.valueOf(output);
 
+    }
+    //aab
+    public String reOrganizeString(String s){
+        HashMap<Character,Integer> map=new HashMap<>();
+        char[] chars = s.toCharArray();
+        for (char ch: chars){
+            map.put(ch,map.getOrDefault(ch,0)+1);
+        }
+        PriorityQueue<Map.Entry<Character,Integer>>pq=new PriorityQueue<>((a,b)->b.getValue()-a.getValue());
+        pq.addAll(map.entrySet());
+        StringBuffer sb=new StringBuffer();
+        Map.Entry<Character,Integer> prevEntry=null;
+        while (!pq.isEmpty()){
+            Map.Entry<Character, Integer> currentEntry = pq.poll();
+            if(currentEntry.getValue()>(s.length()+1)/2) return "";
+            if(prevEntry!=null && prevEntry.getValue()>0){
+                pq.offer(prevEntry);
+            }
+            sb.append(currentEntry.getKey());
+            currentEntry.setValue(currentEntry.getValue()-1);
+            prevEntry=currentEntry;
+
+        }
+        return sb.toString();
     }
 }

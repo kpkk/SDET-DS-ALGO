@@ -44,6 +44,7 @@ public class MinimumDifference {
         }
         return Math.abs(leftSum-rightSum);
     }
+
     public boolean canPartition(int[] nums) {
         if (nums.length == 0)
             return false;
