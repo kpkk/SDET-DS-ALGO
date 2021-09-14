@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ContanerWithMostWater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/MaxPairSubArraySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/MergeSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/RemoveDuplicatesFromSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/SortArrayByParity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/SqaureOfSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week11/FindALLAnagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week11/GroupAnagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week11/MisTypedPrices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week11/ProductArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week11/SubStringWithThreeDistinctChars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/CountSubArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/CountSubArraysDivisibleByK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/InterViewProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/RemoveParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/workshop/truckBoxesproblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workshop/truckBoxesproblem.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1umtmFG1tfuqsKEOUFFyUss782I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/tasks" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/tasks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="week6" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SortArrayByParity.test1">
+    <configuration name="FindALLAnagrams.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week11" />
+      <option name="MAIN_CLASS_NAME" value="week11.FindALLAnagrams" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindALLAnagrams.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week11" />
+      <option name="MAIN_CLASS_NAME" value="week11.FindALLAnagrams" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortArrayByParity.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="twoPointer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="twoPointer" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.SortArrayByParity" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubStringWoRepeatingChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week11" />
+      <option name="MAIN_CLASS_NAME" value="week11.SubStringWoRepeatingChars" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubStringWoRepeatingChars.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week11" />
+      <option name="MAIN_CLASS_NAME" value="week11.SubStringWoRepeatingChars" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.SubStringWoRepeatingChars.test1" />
+      <item itemvalue="JUnit.SubStringWoRepeatingChars.test3" />
+      <item itemvalue="JUnit.FindALLAnagrams.test1" />
+      <item itemvalue="JUnit.FindALLAnagrams.test2" />
+      <item itemvalue="JUnit.SortArrayByParity.test1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SortArrayByParity.test1" />
+        <item itemvalue="JUnit.FindALLAnagrams.test2" />
+        <item itemvalue="JUnit.FindALLAnagrams.test1" />
+        <item itemvalue="JUnit.SubStringWoRepeatingChars.test1" />
+        <item itemvalue="JUnit.SubStringWoRepeatingChars.test3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="" />
+      <created>1625282751016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625282751016</updated>
+    </task>
+    <task id="LOCAL-00001" summary="pushing LinkedList problems using recursion">
+      <created>1628617017404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628617017404</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pushing LinkedList problems using recursion">
+      <created>1628657052670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628657052670</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pushing LinkedList problems using recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushing LinkedList problems using recursion" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day3/NiceString.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/findmaxSum.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/FindMaxSubString.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/FindTheMissingElement.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/FindSquareRoot.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/ClosestSumUsingBinarySearch.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/practise/practise.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/practise/palindromeString.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/practise/palindromeString.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/ArrangeTheNumbers.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day2/FindMajorityElement.java</url>
+          <line>183</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day3/ShortestDistnaceCharacter.java</url>
+          <line>196</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/practise/FindMaxSubString.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week4/PrintOddEvenLinkedList.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week4/MockInterview.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week4/MockInterview.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/Asessment2_2.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/Asessment2_3.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week5/LongestSubArrayLength.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week5/ProductOfNumbersInArray.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/recursion/DecodeString.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/recursion/DecodeString.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/recursion/ReverseLinkedListElements.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week6/FindPalindromeCominationsInString.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stack/DecodeAstring.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stack/SimplifyPath.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week4/DailyTemperature.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/linkedList/ReverseLinkedListElements.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/ThreeSum.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/practise/SecondMax.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/ThirdMax.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/IsSubsequence.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/StrongPassword.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/SwapDigits.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/AttendAllMeetings.java</url>
+          <line>39</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/LongPressedName.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/MaxLeaps.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/p1_TwoSum.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/p1_TwoSum.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/P2_MedianOfSortedArrays.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="302" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Test.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="303" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/CommonEarliestSlot.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="308" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/CommonEarliestSlot.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/LongestSubArrayWoDuplicatesWithInK.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="317" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/LargestString.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="331" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/P9_MergeKSortedLists.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="344" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/MergeIntervals.java</url>
+          <line>74</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/MeetingRooms.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week8/MeetingRooms.java</url>
+          <line>69</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/P11_MeetingRooms.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="351" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/LongestCommonPrefix.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="357" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/workshop/LongestSubStringWorepeatChars.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="372" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/P3_LongestPalindromicString.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/twoPointer/RemoveDuplicatesFromSortedArray.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="380" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/twoPointer/RemoveDuplicatesFromSortedArray.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week11/FindALLAnagrams.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="388" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="week4.ReverseNodes$Node" memberName="next" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SDET$HappyNumber_testCase.ic" NAME="HappyNumber.testCase Coverage Results" MODIFIED="1625921361503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>day3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDET$LinkedList_test.ic" NAME="LinkedList.test Coverage Results" MODIFIED="1627106037349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>week4.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDET$LongestCommonPrefix_test1.ic" NAME="LongestCommonPrefix.test1 Coverage Results" MODIFIED="1630748872162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetCodeRandomPick.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDET$FindMajorityElement_test1.ic" NAME="FindMajorityElement.test1 Coverage Results" MODIFIED="1625680241096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>day2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDET$RemoveDuplicatesFromSortedArray_test1.ic" NAME="RemoveDuplicatesFromSortedArray.test1 Coverage Results" MODIFIED="1631553133051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>twoPointer.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDET$ArrangeTheNumbers_test1.ic" NAME="ArrangeTheNumbers.test1 Coverage Results" MODIFIED="1626881068897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>day5.*</FILTER>
+    </SUITE>
+  </component>
+</project>
