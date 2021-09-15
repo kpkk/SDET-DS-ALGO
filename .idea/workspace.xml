@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ContanerWithMostWater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/MaxPairSubArraySum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/MergeSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/RemoveDuplicatesFromSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/SortArrayByParity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/SqaureOfSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/FindALLAnagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/GroupAnagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/MisTypedPrices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/ProductArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/SubStringWithThreeDistinctChars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/CountSubArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/CountSubArraysDivisibleByK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/InterViewProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/RemoveParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/workshop/truckBoxesproblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workshop/truckBoxesproblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/BalancedString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/Remove5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/SumDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/FindPositiveIntegerForGivenEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/FlipImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/MergeStringsAleternatively.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,40 +65,39 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SortArrayByParity.test1">
-    <configuration name="FindALLAnagrams.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FlipImage.test1">
+    <configuration name="BalancedString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week11.*" />
+          <option name="PATTERN" value="paloAltoNetworks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.FindALLAnagrams" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="paloAltoNetworks" />
+      <option name="MAIN_CLASS_NAME" value="paloAltoNetworks.BalancedString" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BalancedString.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="paloAltoNetworks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="paloAltoNetworks" />
+      <option name="MAIN_CLASS_NAME" value="paloAltoNetworks.BalancedString" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindALLAnagrams.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.FindALLAnagrams" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortArrayByParity.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlipImage.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -118,59 +106,58 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="twoPointer" />
-      <option name="MAIN_CLASS_NAME" value="twoPointer.SortArrayByParity" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.FlipImage" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubStringWoRepeatingChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MergeStringsAleternatively" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week11.*" />
+          <option name="PATTERN" value="twoPointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.SubStringWoRepeatingChars" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="twoPointer" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.MergeStringsAleternatively" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubStringWoRepeatingChars.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SumDigits.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week11.*" />
+          <option name="PATTERN" value="paloAltoNetworks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.SubStringWoRepeatingChars" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="paloAltoNetworks" />
+      <option name="MAIN_CLASS_NAME" value="paloAltoNetworks.SumDigits" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SubStringWoRepeatingChars.test1" />
-      <item itemvalue="JUnit.SubStringWoRepeatingChars.test3" />
-      <item itemvalue="JUnit.FindALLAnagrams.test1" />
-      <item itemvalue="JUnit.FindALLAnagrams.test2" />
-      <item itemvalue="JUnit.SortArrayByParity.test1" />
+      <item itemvalue="JUnit.BalancedString.test3" />
+      <item itemvalue="JUnit.BalancedString" />
+      <item itemvalue="JUnit.SumDigits.test2" />
+      <item itemvalue="JUnit.MergeStringsAleternatively" />
+      <item itemvalue="JUnit.FlipImage.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SortArrayByParity.test1" />
-        <item itemvalue="JUnit.FindALLAnagrams.test2" />
-        <item itemvalue="JUnit.FindALLAnagrams.test1" />
-        <item itemvalue="JUnit.SubStringWoRepeatingChars.test1" />
-        <item itemvalue="JUnit.SubStringWoRepeatingChars.test3" />
+        <item itemvalue="JUnit.FlipImage.test1" />
+        <item itemvalue="JUnit.MergeStringsAleternatively" />
+        <item itemvalue="JUnit.SumDigits.test2" />
+        <item itemvalue="JUnit.BalancedString" />
+        <item itemvalue="JUnit.BalancedString.test3" />
       </list>
     </recent_temporary>
   </component>
