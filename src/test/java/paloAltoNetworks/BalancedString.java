@@ -24,10 +24,10 @@ public class BalancedString {
         Assert.assertEquals(findBalancedFragment(s),8);
     }
 
-    /*
+    /**
     input - string
     output- length of the string (integer)
-    Solution:- using hashmap
+    Solution:- using hashset
     - Initialize two hash sets one for smaller case letters and another upper case characters
     - iterate the string from start index until the end
     - store the smaller and upper chars in respective sets
@@ -36,7 +36,7 @@ public class BalancedString {
     - check if the current char is present in both the maps, then add to the new string
     - if any char is missing then reset the string and move the left pointer to right
 
-     */
+     **/
     private int findBalancedFragment(String s) {
         HashSet<Character>lowerSet=new HashSet<>();
         HashSet<Character>upperSet=new HashSet<>();
@@ -53,8 +53,7 @@ public class BalancedString {
                 length=Math.max(length,right-left+1);
                 right++;
             }else{
-                if(right==s.length()-1)return -1;
-               left++;
+               left=left+2;
                right=left;
                temp="";
             }

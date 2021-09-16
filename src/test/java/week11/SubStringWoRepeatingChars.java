@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class SubStringWoRepeatingChars {
     /*
@@ -121,5 +122,44 @@ s consists of English letters, digits, symbols and spaces.
 
         }
         return length;
+    }
+
+    public int lengthOfLongestSubstrings(String s) {
+
+        //problem understanding - 2 min
+        //logic deriving -
+        //pseudo code -
+        //code -
+
+        /*
+          declare a maxCount variable as 0
+          declare two pointers left at 0 and right at 0
+          iterate throught the pointers till right pointer reach end
+          add the count of value at right to map as key and value
+          check the count of curr element is more than 1
+          yes-> iterate the left pointer till the right count becomes 1
+                while iterating decrement left count
+          no-> do nothing
+
+          get right-left+1
+          check if the right-left+1 is greater than maxCount if yes set maxCount
+          increment right
+
+
+        */
+
+        int maxCount = 0;
+        int left = 0, right = 0;
+        Map<Character,Integer> hm = new HashMap<Character,Integer>();
+        while(right<s.length()){
+            hm.put(s.charAt(right),hm.getOrDefault(s.charAt(right),0)+1);
+            while(hm.get(s.charAt(right)) > 1){
+                hm.put(s.charAt(left),hm.get(s.charAt(left))-1);
+                left++;
+            }
+            maxCount = Math.max(maxCount, right-left+1);
+            right++;
+        }
+        return maxCount;
     }
 }
