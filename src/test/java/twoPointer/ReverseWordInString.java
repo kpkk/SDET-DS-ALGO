@@ -53,12 +53,12 @@ Follow-up: If the string data type is mutable in your language, can you solve it
     @Test
     public void test1(){
         String s="a good   example";
-        Assert.assertEquals(reverseWords1(s),"example good a");
+        Assert.assertEquals(reverseWords(s),"example good a");
     }
     @Test
     public void test2(){
         String s="tit  for tat";
-        Assert.assertEquals(reverseWords1(s),"example good a");
+        Assert.assertEquals(revereseWordsInplace(s),"tat for tit");
     }
     /*
            input- String
@@ -91,55 +91,51 @@ Follow-up: If the string data type is mutable in your language, can you solve it
         sb.append(strs[strs.length-1]);
         return sb.toString();
     }
-
-    public String reverseWords1(String s) {
-        if (s == null) return null;
-
-        char[] a = s.toCharArray();
-        int n = a.length;
-
-        // step 1. reverse the whole string
-        reverse(a, 0, n - 1);
-        // step 2. reverse each word
-        reverseWords(a, n);
-        // step 3. clean up spaces
-        return cleanSpaces(a, n);
-    }
-
-    void reverseWords(char[] a, int n) {
-        int i = 0, j = 0;
-
-        while (i < n) {
-            while (i < j || i < n && a[i] == ' '){
-                i++; // skip spaces
+    /*
+    Solution:-
+    - reverse the string
+    - then reverse the words
+    - then remove the extra spaces
+     */
+    private String revereseWordsInplace(String s){
+        char[] chars = s.toCharArray();
+        int left=0,right=chars.length-1;
+        while (left<=right){
+            char temp=chars[left];
+            chars[left++]=chars[right];
+            chars[right--]=temp;
+        }
+        left=0; right=0;
+        while (left<s.length()){
+            while (left<right|| left<s.length() && chars[left]==' ') {
+                left++;
             }
-            while (j < i || j < n && a[j] != ' ') {
-                j++; // skip non spaces
+            while (right<left|| right<s.length() && chars[right]!=' ') {
+                right++;
             }
-            reverse(a, i, j - 1);                      // reverse the word
+            int i=left, j=right-1;
+            while (i<=j){
+                char temp=chars[i];
+                chars[i++]=chars[j];
+                chars[j--]=temp;
+            }
         }
-    }
-
-    // trim leading, trailing and multiple spaces
-    String cleanSpaces(char[] a, int n) {
-        int i = 0, j = 0;
-
-        while (j < n) {
-            while (j < n && a[j] == ' ') j++;             // skip spaces
-            while (j < n && a[j] != ' ') a[i++] = a[j++]; // keep non spaces
-            while (j < n && a[j] == ' ') j++;             // skip spaces
-            if (j < n) a[i++] = ' ';                      // keep only one space
+        left=0;right=0;
+        while (right<s.length()){
+            while (right<s.length() && chars[right]==' '){
+                right++;
+            }
+            while (right<s.length() && chars[right]!=' '){
+               chars[left++]=chars[right++];
+            }
+            while (right<s.length() && chars[right]==' '){
+                right++;
+            }
+            if (right<s.length()){
+                chars[left++]=' ';
+            }
         }
 
-        return new String(a).substring(0, i);
-    }
-
-    // reverse a[] from a[i] to a[j]
-    private void reverse(char[] a, int i, int j) {
-        while (i < j) {
-            char t = a[i];
-            a[i++] = a[j];
-            a[j--] = t;
-        }
+        return new String(chars).substring(0,left);
     }
 }

@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/LongPressName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/MaxConsecutiveOnes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/RepeatedStringSelection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/ReverseWordInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordsInSentence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/BalancedString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/BalancedString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/amazonQuestions/P7_ValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/P7_ValidParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day2/Inf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day2/Inf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordInString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,49 +64,18 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReverseWordInString.test2">
+  <component name="RunManager" selected="JUnit.ReverseWordsInSentence.test1">
     <configuration name="LongPressName.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetCodeRandomPick.*" />
+          <option name="PATTERN" value="twoPointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetCodeRandomPick" />
-      <option name="MAIN_CLASS_NAME" value="leetCodeRandomPick.LongPressName" />
+      <option name="PACKAGE_NAME" value="twoPointer" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.LongPressName" />
       <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepeatedStringSelection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.RepeatedStringSelection" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepeatedStringSelection.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.RepeatedStringSelection" />
-      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,12 +85,12 @@
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week11.*" />
+          <option name="PATTERN" value="twoPointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.ReverseWordInString" />
+      <option name="PACKAGE_NAME" value="twoPointer" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordInString" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -133,12 +101,44 @@
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week11.*" />
+          <option name="PATTERN" value="twoPointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week11" />
-      <option name="MAIN_CLASS_NAME" value="week11.ReverseWordInString" />
+      <option name="PACKAGE_NAME" value="twoPointer" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordInString" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseWordsInSentence.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="twoPointer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="twoPointer" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordsInSentence" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseWordsInSentence.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="twoPointer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="twoPointer" />
+      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordsInSentence" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -146,19 +146,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RepeatedStringSelection" />
-      <item itemvalue="JUnit.RepeatedStringSelection.test5" />
       <item itemvalue="JUnit.LongPressName.test1" />
       <item itemvalue="JUnit.ReverseWordInString.test1" />
       <item itemvalue="JUnit.ReverseWordInString.test2" />
+      <item itemvalue="JUnit.ReverseWordsInSentence.test2" />
+      <item itemvalue="JUnit.ReverseWordsInSentence.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReverseWordsInSentence.test1" />
+        <item itemvalue="JUnit.ReverseWordsInSentence.test2" />
         <item itemvalue="JUnit.ReverseWordInString.test2" />
         <item itemvalue="JUnit.ReverseWordInString.test1" />
         <item itemvalue="JUnit.LongPressName.test1" />
-        <item itemvalue="JUnit.RepeatedStringSelection.test5" />
-        <item itemvalue="JUnit.RepeatedStringSelection" />
       </list>
     </recent_temporary>
   </component>
@@ -512,9 +512,9 @@
           <option name="timeStamp" value="390" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/week11/ReverseWordInString.java</url>
-          <line>103</line>
-          <option name="timeStamp" value="399" />
+          <url>file://$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordsInSentence.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="404" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,5 @@
 package amazonQuestions;
 
-import netscape.security.UserTarget;
 import org.junit.Assert;
 import org.junit.Test;
 
