@@ -84,8 +84,6 @@ nums[i] is either 0 or 1.
            maxOnes=Math.max(maxOnes,right-left+1);
            right++;
        }
-       String s="";
-       s.lastIndexOf('a');
        return maxOnes;
     }
 }

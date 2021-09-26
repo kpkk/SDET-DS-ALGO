@@ -2,10 +2,11 @@ package day1;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
+import javax.script.ScriptContext;
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class FindFirstDuplicate {
 
@@ -53,6 +54,8 @@ eg:-  int=[1,2,3,4,4,5,6,6]
         System.out.println(duplicate);
         int approach = approach(nums);
         System.out.println(approach);
+
+
     }
 
     @Test
@@ -108,6 +111,8 @@ eg:-  int=[1,2,3,4,4,5,6,6]
                 return nums[i];
         }
         return 0;
+      //  String s=new String();
+
     }
 
     /*

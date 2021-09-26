@@ -5,12 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordsInSentence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/CaserCipherString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/DamDesignproblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/DecodeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/DoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/MaxSumSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RemoveLinkedListElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RightRotateArrayByKtimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/SellingProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/SpiralMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/CountLargestGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/HouseRobber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/gasStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/DynamicArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/MinStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/Rotate2dArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/retailmeNot/IncreaseDigit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/LongestSubArrayAfterdeletingOneZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/MinSizeSubArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWithDistinctChars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/CountBinarySubString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/RangeSumOfSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/RemovepalindromeSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/SwapNodesInLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week11/StringComma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/amazonQuestions/P7_ValidParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/P7_ValidParenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day2/Inf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day2/Inf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordInString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day1/FindFirstDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day1/FindFirstDuplicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/RotateArrayRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/RotateArrayRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Asessment2_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Asessment2_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/BalancedString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/BalancedString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/Remove5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/Remove5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/SumDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/SumDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/slidingWindow/MaxConsecutiveOnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/MaxConsecutiveOnes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stack/CountMissedBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stack/CountMissedBrackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week8/AttendAllMeetings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week8/AttendAllMeetings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week8/MudConcreteWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week8/MudConcreteWall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/day1/FindFirstDuplicate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/day1/FindFirstDuplicate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/leetCodeRandomPick/RotateArrayRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/leetCodeRandomPick/RotateArrayRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/Remove5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/Remove5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/SumDigits.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/SumDigits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/slidingWindow/MaxConsecutiveOnes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/slidingWindow/MaxConsecutiveOnes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stack/CountMissedBrackets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stack/CountMissedBrackets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/week8/AttendAllMeetings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/week8/AttendAllMeetings.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,81 +107,81 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReverseWordsInSentence.test1">
-    <configuration name="LongPressName.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CaserCipherString.test1">
+    <configuration name="CaserCipherString.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="twoPointer.*" />
+          <option name="PATTERN" value="dunZo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="twoPointer" />
-      <option name="MAIN_CLASS_NAME" value="twoPointer.LongPressName" />
+      <option name="PACKAGE_NAME" value="dunZo" />
+      <option name="MAIN_CLASS_NAME" value="dunZo.CaserCipherString" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseWordInString.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DamDesignproblem.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="twoPointer.*" />
+          <option name="PATTERN" value="dunZo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="twoPointer" />
-      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordInString" />
+      <option name="PACKAGE_NAME" value="dunZo" />
+      <option name="MAIN_CLASS_NAME" value="dunZo.DamDesignproblem" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseWordInString.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KSubArrays.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="twoPointer.*" />
+          <option name="PATTERN" value="week7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="twoPointer" />
-      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordInString" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseWordsInSentence.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="twoPointer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="twoPointer" />
-      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordsInSentence" />
+      <option name="PACKAGE_NAME" value="week7" />
+      <option name="MAIN_CLASS_NAME" value="week7.KSubArrays" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseWordsInSentence.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RemoveLinkedListElements.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="twoPointer.*" />
+          <option name="PATTERN" value="dunZo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="twoPointer" />
-      <option name="MAIN_CLASS_NAME" value="twoPointer.ReverseWordsInSentence" />
+      <option name="PACKAGE_NAME" value="dunZo" />
+      <option name="MAIN_CLASS_NAME" value="dunZo.RemoveLinkedListElements" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rotate2dArray.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practiseWM.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practiseWM" />
+      <option name="MAIN_CLASS_NAME" value="practiseWM.Rotate2dArray" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -146,19 +189,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LongPressName.test1" />
-      <item itemvalue="JUnit.ReverseWordInString.test1" />
-      <item itemvalue="JUnit.ReverseWordInString.test2" />
-      <item itemvalue="JUnit.ReverseWordsInSentence.test2" />
-      <item itemvalue="JUnit.ReverseWordsInSentence.test1" />
+      <item itemvalue="JUnit.DamDesignproblem.test1" />
+      <item itemvalue="JUnit.RemoveLinkedListElements.test1" />
+      <item itemvalue="JUnit.KSubArrays.test1" />
+      <item itemvalue="JUnit.Rotate2dArray.test2" />
+      <item itemvalue="JUnit.CaserCipherString.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReverseWordsInSentence.test1" />
-        <item itemvalue="JUnit.ReverseWordsInSentence.test2" />
-        <item itemvalue="JUnit.ReverseWordInString.test2" />
-        <item itemvalue="JUnit.ReverseWordInString.test1" />
-        <item itemvalue="JUnit.LongPressName.test1" />
+        <item itemvalue="JUnit.CaserCipherString.test1" />
+        <item itemvalue="JUnit.Rotate2dArray.test2" />
+        <item itemvalue="JUnit.KSubArrays.test1" />
+        <item itemvalue="JUnit.RemoveLinkedListElements.test1" />
+        <item itemvalue="JUnit.DamDesignproblem.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -251,11 +294,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/practise/palindromeString.java</url>
           <line>54</line>
           <option name="timeStamp" value="136" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/day5/ArrangeTheNumbers.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/day2/FindMajorityElement.java</url>
@@ -353,11 +391,6 @@
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/linkedList/ReverseLinkedListElements.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="217" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/ThreeSum.java</url>
           <line>70</line>
           <option name="timeStamp" value="224" />
@@ -388,14 +421,6 @@
           <option name="timeStamp" value="255" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/week8/AttendAllMeetings.java</url>
-          <line>39</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/LongPressedName.java</url>
           <line>33</line>
           <option name="timeStamp" value="287" />
@@ -414,11 +439,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/p1_TwoSum.java</url>
           <line>109</line>
           <option name="timeStamp" value="298" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/P2_MedianOfSortedArrays.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="302" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Test.java</url>
@@ -515,6 +535,51 @@
           <url>file://$PROJECT_DIR$/src/test/java/twoPointer/ReverseWordsInSentence.java</url>
           <line>39</line>
           <option name="timeStamp" value="404" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/twoPointer/RemovepalindromeSubSequence.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="406" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/paloAltoNetworks/Remove5.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/twoPointer/CountBinarySubString.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="409" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/twoPointer/RangeSumOfSortedArray.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="410" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/slidingWindow/MinSizeSubArray.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="412" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/P10_MergeIntervals.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="413" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week11/StringComma.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="426" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWithDistinctChars.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="427" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/practiseWM/LinkedList.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="446" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -45,3 +45,24 @@ public class Asessment2_2 {
         return list;
     }
 }
+ class TestMe{
+    public static void main(String args[]){
+        Parent p = new Child();
+        System.out.println(p.i);
+        p.show();
+    }
+}
+class Parent{
+    int i = 10;
+    public void show(){
+        System.out.println("in parent");
+    }
+}
+
+class Child extends Parent{
+    int i = 20;
+    @Override
+    public void show(){
+        System.out.println("in child");
+    }
+}

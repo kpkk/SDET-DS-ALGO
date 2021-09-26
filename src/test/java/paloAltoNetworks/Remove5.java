@@ -10,7 +10,7 @@ public class Remove5 {
     @Test
     public void test1(){
         int n=15958;
-        Assert.assertEquals(remove5(n),1958);
+        Assert.assertEquals(removes5(n),1958);
     }
     /*
     input- integer
@@ -77,4 +77,17 @@ public class Remove5 {
     }
 
 */
+
+    private int removes5(int n) {
+        int maxDigit = Integer.MIN_VALUE;
+        String str = String.valueOf(n);
+        for (int i = 0; i < str.length(); i++) {
+            StringBuilder sb = new StringBuilder(str);
+            if(sb.charAt(i) == '5') {
+                int parsedInt = Integer.parseInt(sb.deleteCharAt(i).toString());
+                maxDigit = Math.max(parsedInt, maxDigit);
+            }
+        }
+        return maxDigit;
+    }
 }

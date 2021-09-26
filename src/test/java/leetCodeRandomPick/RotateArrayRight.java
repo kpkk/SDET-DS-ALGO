@@ -19,6 +19,12 @@ Output: [2,9,1,36,4,6,3,8]
         int k=4;
         Assert.assertArrayEquals(rotateArray(nums,k),new int[]{2,9,1,36,4,6,3,8});
     }
+    @Test
+    public void test2(){
+        int[] nums={1,2,3,4,5};
+        int k=3;
+        Assert.assertArrayEquals(rotateArray(nums,k),new int[]{3,4,5,1,2});
+    }
 
     /*
     - Initialize two pointers left=k-1, right=nums.length-1

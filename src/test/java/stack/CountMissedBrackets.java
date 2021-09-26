@@ -66,8 +66,6 @@ String st = “(()))” -> 1 bracket
                 stack.pop();
             } else
                 stack.push(ch);
-
-
         }
         return stack.size();
     }
