@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/NumberOfSubArraysOfSizeK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/MaxLenOfConcatenatedStringWuniqChars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dunZo/SellingProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dunZo/SellingProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/linkedList/FindMiddleNodeOfLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
