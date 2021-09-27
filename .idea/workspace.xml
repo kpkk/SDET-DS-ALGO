@@ -5,55 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/CaserCipherString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/DamDesignproblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/DecodeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/MaxSumSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/PriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RemoveLinkedListElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RightRotateArrayByKtimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/SellingProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/SpiralMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/CountLargestGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/HouseRobber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/gasStation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/DynamicArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/MinStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/PriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practiseWM/Rotate2dArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/retailmeNot/IncreaseDigit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/LongestSubArrayAfterdeletingOneZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/MinSizeSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWithDistinctChars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/CountBinarySubString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/RangeSumOfSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/RemovepalindromeSubSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/ReverseString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/twoPointer/SwapNodesInLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week11/StringComma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/NumberOfSubArraysOfSizeK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/MaxLenOfConcatenatedStringWuniqChars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day1/FindFirstDuplicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day1/FindFirstDuplicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/RotateArrayRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/RotateArrayRight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Asessment2_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Asessment2_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/BalancedString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/BalancedString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/Remove5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/Remove5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/SumDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/paloAltoNetworks/SumDigits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/slidingWindow/MaxConsecutiveOnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/MaxConsecutiveOnes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stack/CountMissedBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stack/CountMissedBrackets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week8/AttendAllMeetings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week8/AttendAllMeetings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week8/MudConcreteWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week8/MudConcreteWall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/amazonQuestions/P7_ValidParenthesis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/day1/FindFirstDuplicate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/day1/FindFirstDuplicate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/leetCodeRandomPick/RotateArrayRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/leetCodeRandomPick/RotateArrayRight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/Remove5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/Remove5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/SumDigits.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/paloAltoNetworks/SumDigits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/slidingWindow/MaxConsecutiveOnes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/slidingWindow/MaxConsecutiveOnes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stack/CountMissedBrackets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stack/CountMissedBrackets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/week8/AttendAllMeetings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/week8/AttendAllMeetings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dunZo/SellingProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dunZo/SellingProducts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,101 +63,100 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CaserCipherString.test1">
-    <configuration name="CaserCipherString.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MaxLenOfConcatenatedStringWuniqChars">
+    <configuration name="MaxLenOfConcatenatedStringWuniqChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dunZo.*" />
+          <option name="PATTERN" value="week12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dunZo" />
-      <option name="MAIN_CLASS_NAME" value="dunZo.CaserCipherString" />
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DamDesignproblem.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dunZo.*" />
+          <option name="PATTERN" value="week12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dunZo" />
-      <option name="MAIN_CLASS_NAME" value="dunZo.DamDesignproblem" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KSubArrays.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week7" />
-      <option name="MAIN_CLASS_NAME" value="week7.KSubArrays" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RemoveLinkedListElements.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dunZo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dunZo" />
-      <option name="MAIN_CLASS_NAME" value="dunZo.RemoveLinkedListElements" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Rotate2dArray.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practiseWM.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="practiseWM" />
-      <option name="MAIN_CLASS_NAME" value="practiseWM.Rotate2dArray" />
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.DamDesignproblem.test1" />
-      <item itemvalue="JUnit.RemoveLinkedListElements.test1" />
-      <item itemvalue="JUnit.KSubArrays.test1" />
-      <item itemvalue="JUnit.Rotate2dArray.test2" />
-      <item itemvalue="JUnit.CaserCipherString.test1" />
+      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test1" />
+      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test2" />
+      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars" />
+      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test3" />
+      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CaserCipherString.test1" />
-        <item itemvalue="JUnit.Rotate2dArray.test2" />
-        <item itemvalue="JUnit.KSubArrays.test1" />
-        <item itemvalue="JUnit.RemoveLinkedListElements.test1" />
-        <item itemvalue="JUnit.DamDesignproblem.test1" />
+        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars" />
+        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test4" />
+        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test3" />
+        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test2" />
+        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -580,6 +535,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/practiseWM/LinkedList.java</url>
           <line>27</line>
           <option name="timeStamp" value="446" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/slidingWindow/NumberOfSubArraysOfSizeK.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="447" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="448" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
