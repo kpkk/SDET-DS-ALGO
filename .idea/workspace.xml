@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/linkedList/FindMiddleNodeOfLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/DQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/DecodeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/PrimeNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/ProductArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/MakeTheStringGreat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/FindPivotIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/StringtoAtioProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/linkedList/RemoveElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/linkedList/RemoveElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week8/P4_ProductSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week8/P4_ProductSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,39 +72,24 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MaxLenOfConcatenatedStringWuniqChars">
-    <configuration name="MaxLenOfConcatenatedStringWuniqChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FindPivotIndex.test1">
+    <configuration name="DecodeString.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week12.*" />
+          <option name="PATTERN" value="customImplementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
+      <option name="PACKAGE_NAME" value="customImplementation" />
+      <option name="MAIN_CLASS_NAME" value="customImplementation.DecodeString" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindPivotIndex.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -100,59 +98,75 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
+      <option name="MAIN_CLASS_NAME" value="week12.FindPivotIndex" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedList.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="customImplementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="customImplementation" />
+      <option name="MAIN_CLASS_NAME" value="customImplementation.LinkedList" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedList.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="customImplementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="customImplementation" />
+      <option name="MAIN_CLASS_NAME" value="customImplementation.LinkedList" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedList.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week12.*" />
+          <option name="PATTERN" value="customImplementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
+      <option name="PACKAGE_NAME" value="customImplementation" />
+      <option name="MAIN_CLASS_NAME" value="customImplementation.LinkedList" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxLenOfConcatenatedStringWuniqChars.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.MaxLenOfConcatenatedStringWuniqChars" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test1" />
-      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test2" />
-      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars" />
-      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test3" />
-      <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test4" />
+      <item itemvalue="JUnit.LinkedList.test1" />
+      <item itemvalue="JUnit.LinkedList.test2" />
+      <item itemvalue="JUnit.LinkedList.test3" />
+      <item itemvalue="JUnit.DecodeString.test1" />
+      <item itemvalue="JUnit.FindPivotIndex.test1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars" />
-        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test4" />
-        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test3" />
-        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test2" />
-        <item itemvalue="JUnit.MaxLenOfConcatenatedStringWuniqChars.test1" />
+        <item itemvalue="JUnit.FindPivotIndex.test1" />
+        <item itemvalue="JUnit.DecodeString.test1" />
+        <item itemvalue="JUnit.LinkedList.test3" />
+        <item itemvalue="JUnit.LinkedList.test2" />
+        <item itemvalue="JUnit.LinkedList.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -538,9 +552,39 @@
           <option name="timeStamp" value="447" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="454" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="457" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week12/StringtoAtioProblem.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="459" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="448" />
+          <line>64</line>
+          <option name="timeStamp" value="461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/customImplementation/LinkedList.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="465" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/customImplementation/DecodeString.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="466" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -572,6 +616,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/SDET$ArrangeTheNumbers_test1.ic" NAME="ArrangeTheNumbers.test1 Coverage Results" MODIFIED="1626881068897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>day5.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SDET$Test.ic" NAME="Test Coverage Results" MODIFIED="1632836175598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>oopsPractise.*</FILTER>
     </SUITE>
   </component>
 </project>

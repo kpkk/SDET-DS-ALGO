@@ -35,6 +35,7 @@ public class RemoveElements {
         head.next.next.next=addNode(6);
         head.next.next.next.next=addNode(4);
         head.next.next.next.next.next=addNode(6);
+
         Node node = removeNodes(head,6);
         printAllNodes(node);
     }
@@ -48,6 +49,10 @@ public class RemoveElements {
     - make the current.next node null
 
      */
+
+    // 1-->2-->3-->4-->5-->6   3?
+    //slow.value
+    // 1-->2-->4-->5
     private Node removeNodes(Node node, int value){
        Node n=new Node();
        Node current=n;
