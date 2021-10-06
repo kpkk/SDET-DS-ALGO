@@ -90,7 +90,7 @@ Simple technique brute force
         int [] nums={8,1,2,2,3};
         int[] output={4,0,1,1,3};
       //  Assert.assertTrue(Arrays.equals(bruteForce(nums),output));
-        Assert.assertTrue(Arrays.equals(findSmallerEleusingMap(nums),output));
+        Assert.assertTrue(Arrays.equals(countSmaller(nums),output));
 
 
 
@@ -161,5 +161,37 @@ Simple technique brute force
        return eleCount;
     }
 
+    public int[] countSmaller(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int[] arr = new int[nums.length];
+        for(int i = nums.length - 1; i>= 0; i--){
+            if(map.containsKey(nums[i])){
+                arr[i] = map.get(nums[i]);
+            }
+            else{
+                arr[i] = -1;
+            }
+            map.put(nums[i], i);
+        }
+        int[] result = new int[nums.length];
+        for(int i = nums.length - 1; i >= 0; i--){
+            int count = 0;
+            if(arr[i] == -1){
+                for(int j = i; j < nums.length; j++){
+                    if(nums[i] > nums[j]) count++;
+                }
+                result[i] = count;
+            }else{
+                for(int j = i; j < arr[i]; j++){
+                    if(nums[i] > nums[j]) count++;
+                }
+                result[i] = count + result[arr[i]];
+            }
+        }
+        List<Integer> res = new LinkedList<>();
+        for(int n : result) res.add(n);
+        System.out.println(res);
+        return arr;
+    }
 
 }

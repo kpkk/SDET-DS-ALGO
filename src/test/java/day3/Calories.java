@@ -81,7 +81,7 @@ Simple technique brute force
     public void test2() {
         int[] calaroies = {3, 2};
         int output = 1, k = 2, lower = 0, upper = 1;
-        Assert.assertEquals(calculateCaloriesConsumtption(calaroies, lower, upper, k), output);
+        Assert.assertEquals(calories(calaroies, lower, upper, k), output);
     }
 
     @Test
@@ -127,5 +127,21 @@ Simple technique brute force
             else continue;
         }
         return total;
+    }
+
+    private int calories(int [] calories, int lower, int upper, int k){
+        int sum=0, points=0;
+        for (int i=0;i<k;i++){
+            sum+=calories[i];
+        }
+        if(sum<lower) points--;
+        else if(sum>upper) points++;
+        if(calories.length==k) return points;
+        for(int i=k;i<calories.length;i++){
+            sum+=calories[i]-calories[i-k];
+            if(sum<lower) points--;
+            else if(sum>upper) points++;
+        }
+        return points;
     }
 }

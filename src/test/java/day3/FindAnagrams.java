@@ -3,6 +3,7 @@ package day3;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -61,20 +62,31 @@ Simple technique brute force
      */
 
     @Test
-    public void test1(){
-        String s="cbaebabacd";
-        String p="abc";
-        Arrays.equals(findAnagramsIndices(s,p),new int[]{0,6});
+    public void test1() {
+        String s = "cbaebabacd";
+        String p = "abc";
+        Arrays.equals(findAngramIndices(s, p), new int[]{0, 6});
     }
+
     @Test
-    public void test2(){
-        String s="cbaebabacd";
-        String p="dba";
+    public void test2() {
+        String s = "cbaebabacd";
+        String p = "dba";
+        Arrays.equals(findAngramIndices(s, p), new int[]{0, 6});
     }
+
     @Test
-    public void test3(){
-        String s="abccbaacb";
-        String p="abc";
+    public void test3() {
+        String s = "abccbaacb";
+        String p = "abc";
+        Arrays.equals(findAngramIndices(s, p), new int[]{0, 6});
+    }
+
+    @Test
+    public void test4() {
+        String s = "abab";
+        String p = "ab";
+        Assert.assertArrayEquals(findAngramIndices(s, p), new int[]{0, 1, 2});
     }
     /*
     Solution
@@ -90,66 +102,89 @@ Simple technique brute force
      */
 
     //cbaebabacd   a-1
-    public int[] findAnagramsIndices(String str, String ptn){
+    public int[] findAnagramsIndices(String str, String ptn) {
         int pLength = ptn.length();
         int sLength = str.length();
-        int[] indices=new int[sLength];
-        HashMap<Character,Integer>ptnMap=new HashMap<>();
-        HashMap<Character,Integer>strMap=new HashMap<>();
-        int index=0;
-        for (char ch:ptn.toCharArray()){
-            ptnMap.put(ch, ptnMap.getOrDefault(ch,0)+1);
+        int[] indices = new int[sLength];
+        HashMap<Character, Integer> ptnMap = new HashMap<>();
+        HashMap<Character, Integer> strMap = new HashMap<>();
+        int index = 0;
+        for (char ch : ptn.toCharArray()) {
+            ptnMap.put(ch, ptnMap.getOrDefault(ch, 0) + 1);
         }
-        for (int i=0;i<str.length();i++){
+        for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
-            strMap.put(c, strMap.getOrDefault(c,0)+1);
-            if(i>=pLength){
-                if(strMap.get(str.charAt(i-pLength))>1)
-                    strMap.put(str.charAt(i-pLength), strMap.getOrDefault(str.charAt(i-pLength),0)-1);
+            strMap.put(c, strMap.getOrDefault(c, 0) + 1);
+            if (i >= pLength) {
+                if (strMap.get(str.charAt(i - pLength)) > 1)
+                    strMap.put(str.charAt(i - pLength), strMap.getOrDefault(str.charAt(i - pLength), 0) - 1);
                 else
-                    strMap.remove(str.charAt(i-pLength));
+                    strMap.remove(str.charAt(i - pLength));
             }
-            if(strMap.equals(ptnMap))
-                indices[index++]=i-pLength+1;
+            if (strMap.equals(ptnMap))
+                indices[index++] = i - pLength + 1;
         }
-        return Arrays.copyOf(indices,index);
+        return Arrays.copyOf(indices, index);
     }
 
-    public int[] slidingWindow(String s, String p){
-        if(p.length()>s.length()) throw new RuntimeException("invalid input");
+    public int[] slidingWindow(String s, String p) {
+        if (p.length() > s.length()) throw new RuntimeException("invalid input");
 
-        int index=0;
-        int[] indices=new int[s.length()];
-        HashMap<Character,Integer>pmap=new HashMap<>();
-        HashMap<Character,Integer>smap=new HashMap<>();
-        for (int i=0;i<p.length();i++) {
-            pmap.put(p.charAt(i),pmap.getOrDefault(p.charAt(i),0)+1);
-            smap.put(s.charAt(i),smap.getOrDefault(s.charAt(i),0)+1);
+        int index = 0;
+        int[] indices = new int[s.length()];
+        HashMap<Character, Integer> pmap = new HashMap<>();
+        HashMap<Character, Integer> smap = new HashMap<>();
+        for (int i = 0; i < p.length(); i++) {
+            pmap.put(p.charAt(i), pmap.getOrDefault(p.charAt(i), 0) + 1);
+            smap.put(s.charAt(i), smap.getOrDefault(s.charAt(i), 0) + 1);
         }
-        if (pmap.equals(smap)){
-            indices[index++]=0;
+        if (pmap.equals(smap)) {
+            indices[index++] = 0;
         }
 
         //cbaebabacd aab
-        for (int i=1;i<=s.length()-p.length();i++){
-            if(smap.get(s.charAt(i - 1))>1)
-                smap.put(s.charAt(i-1), smap.getOrDefault(s.charAt(i-1),0)-1);
+        for (int i = 1; i <= s.length() - p.length(); i++) {
+            if (smap.get(s.charAt(i - 1)) > 1)
+                smap.put(s.charAt(i - 1), smap.getOrDefault(s.charAt(i - 1), 0) - 1);
             else
-                smap.remove(s.charAt(i-1));
+                smap.remove(s.charAt(i - 1));
 
-            smap.put(s.charAt(i+p.length()-1),smap.getOrDefault(s.charAt(i+p.length()-1),0)+1);
-            if (smap.equals(pmap)) indices[index++]=i;
+            smap.put(s.charAt(i + p.length() - 1), smap.getOrDefault(s.charAt(i + p.length() - 1), 0) + 1);
+            if (smap.equals(pmap)) indices[index++] = i;
 
         }
 
 
-
-        return Arrays.copyOf(indices,index);
+        return Arrays.copyOf(indices, index);
 
 
     }
 
+    private int[] findAngramIndices(String s, String p) {
+        ArrayList<Integer> list = new ArrayList<>();
+        HashMap<Character, Integer> pmap = new HashMap<>();
+        HashMap<Character, Integer> smap = new HashMap<>();
 
+        for (int i = 0; i < p.length(); i++) {
+            pmap.put(s.charAt(i), pmap.getOrDefault(s.charAt(i), 0) + 1);
+            smap.put(s.charAt(i), smap.getOrDefault(s.charAt(i), 0) + 1);
+        }
+        if (pmap.equals(smap)) list.add(0);
+
+        int j = 0;
+        for (int i = 1; i < s.length() - p.length() + 1; i++) {
+            smap.put(s.charAt(i + p.length() - 1), smap.getOrDefault(s.charAt(i + p.length() - 1), 0) + 1);
+            if (smap.get(s.charAt(i - 1)) > 1) {
+                smap.put(s.charAt(i - 1), smap.getOrDefault(s.charAt(i - 1), 0) - 1);
+            } else {
+                smap.remove(s.charAt(i - 1));
+            }
+            if (smap.equals(pmap)) list.add(i);
+
+        }
+        System.out.println(list);
+        return new int[] {1};
+    }
 }
 
 

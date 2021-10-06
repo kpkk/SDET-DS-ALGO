@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/DQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/DecodeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/PrimeNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/ProductArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/customImplementation/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/MakeTheStringGreat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/FindPivotIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/StringtoAtioProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/ContainsDuplicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/LongestSubStringWoRepeatingChars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/ValidPalinDrome2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/ValidPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/linkedList/RemoveElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/linkedList/RemoveElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/SubStringWallChars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week8/P4_ProductSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week8/P4_ProductSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day2/PalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day2/PalindromeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/Calories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/Calories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/CountElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/CountElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/FindAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/FindAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/FindCountOfSmallerNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/FindCountOfSmallerNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/HappyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/HappyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,81 +71,80 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindPivotIndex.test1">
-    <configuration name="DecodeString.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PushZeroesToRight.test2">
+    <configuration name="HappyNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="customImplementation.*" />
+          <option name="PATTERN" value="day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="customImplementation" />
-      <option name="MAIN_CLASS_NAME" value="customImplementation.DecodeString" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="day3" />
+      <option name="MAIN_CLASS_NAME" value="day3.HappyNumber" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HappyNumber.testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day3" />
+      <option name="MAIN_CLASS_NAME" value="day3.HappyNumber" />
+      <option name="METHOD_NAME" value="testCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindPivotIndex.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PushZeroesToRight.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week12.*" />
+          <option name="PATTERN" value="day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.FindPivotIndex" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="day3" />
+      <option name="MAIN_CLASS_NAME" value="day3.PushZeroesToRight" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PushZeroesToRight.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="customImplementation.*" />
+          <option name="PATTERN" value="day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="customImplementation" />
-      <option name="MAIN_CLASS_NAME" value="customImplementation.LinkedList" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedList.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="customImplementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="customImplementation" />
-      <option name="MAIN_CLASS_NAME" value="customImplementation.LinkedList" />
+      <option name="PACKAGE_NAME" value="day3" />
+      <option name="MAIN_CLASS_NAME" value="day3.PushZeroesToRight" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PushZeroesToRight.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="customImplementation.*" />
+          <option name="PATTERN" value="day3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="customImplementation" />
-      <option name="MAIN_CLASS_NAME" value="customImplementation.LinkedList" />
+      <option name="PACKAGE_NAME" value="day3" />
+      <option name="MAIN_CLASS_NAME" value="day3.PushZeroesToRight" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -154,19 +152,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.LinkedList.test1" />
-      <item itemvalue="JUnit.LinkedList.test2" />
-      <item itemvalue="JUnit.LinkedList.test3" />
-      <item itemvalue="JUnit.DecodeString.test1" />
-      <item itemvalue="JUnit.FindPivotIndex.test1" />
+      <item itemvalue="JUnit.HappyNumber.testCase" />
+      <item itemvalue="JUnit.HappyNumber" />
+      <item itemvalue="JUnit.PushZeroesToRight.test" />
+      <item itemvalue="JUnit.PushZeroesToRight.test3" />
+      <item itemvalue="JUnit.PushZeroesToRight.test2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindPivotIndex.test1" />
-        <item itemvalue="JUnit.DecodeString.test1" />
-        <item itemvalue="JUnit.LinkedList.test3" />
-        <item itemvalue="JUnit.LinkedList.test2" />
-        <item itemvalue="JUnit.LinkedList.test1" />
+        <item itemvalue="JUnit.PushZeroesToRight.test2" />
+        <item itemvalue="JUnit.PushZeroesToRight.test3" />
+        <item itemvalue="JUnit.PushZeroesToRight.test" />
+        <item itemvalue="JUnit.HappyNumber" />
+        <item itemvalue="JUnit.HappyNumber.testCase" />
       </list>
     </recent_temporary>
   </component>
@@ -585,6 +583,31 @@
           <url>file://$PROJECT_DIR$/src/test/java/customImplementation/DecodeString.java</url>
           <line>17</line>
           <option name="timeStamp" value="466" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/slidingWindow/ContainsDuplicate.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/slidingWindow/ContainsDuplicate.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="470" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day3/Calories.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day3/FindCountOfSmallerNumbers.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day3/HappyNumber.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="473" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

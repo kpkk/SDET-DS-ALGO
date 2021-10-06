@@ -1,5 +1,6 @@
 package day3;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class PushZeroesToRight {
@@ -46,16 +47,19 @@ Simple technique brute force
     public void test(){
         int [] nums={1,0,2,0,3,0,4,5};
         int[] output={1,2,3,4,5,0,0,0};
+        Assert.assertArrayEquals(moveZeroes(nums),output);
     }
     @Test
     public void test2(){
         int [] nums={0,0,0,0};
         int[] output={0,0,0,0};
+        Assert.assertArrayEquals(moveZeroes(nums),output);
     }
     @Test
     public void test3(){
         int [] nums={1,5,34,7,3};
         int[] output={1,5,34,7,3};
+        Assert.assertArrayEquals(moveZeroes(nums),output);
     }
 
     /*
@@ -64,4 +68,17 @@ Simple technique brute force
     1. Initialize an array of same length as that of input
     2.
      */
+    private int[] moveZeroes(int[] nums){
+
+        int j=0;
+        for (int i=0;i<nums.length;i++){
+            if(nums[i]!=0){
+                int temp=nums[i];
+                nums[i]=nums[j];
+                nums[j++]=temp;
+            }
+
+        }
+        return nums;
+    }
 }

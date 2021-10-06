@@ -167,4 +167,37 @@ Simple technique brute force
         return true;
 
     }
+
+    public boolean findpalindrome(int n){
+        if(n<0) return false;
+        if(n>=0 || n<=9) return true;
+       // find the place value
+        int div=1;
+        while (n/div>=10) {
+            div=div*10;
+        }
+        while (n!=0){
+            int left= n/div;
+            int right=n%10;
+            if(left!=right)return false;
+            n=(n%div)/10;
+            div=div/100;
+        }
+        return true;
+    }
+    /*
+    - reverse only the last half of the digits
+    - then compare the reversed half with
+
+    */
+    public boolean findPalindrome2(int n){
+        if(n<0) return false;
+        int temp=n;
+        int reversedNumber=0;
+        while (n>reversedNumber){
+            reversedNumber=reversedNumber*10+n%10;
+            n=n/10;
+        }
+        return temp==reversedNumber || temp==reversedNumber/10;
+    }
 }

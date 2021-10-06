@@ -43,12 +43,12 @@ s consists of English letters, digits, symbols and spaces.
     @Test
     public void test1(){
         String str="abcabcbb";
-        Assert.assertEquals(SubStringWoDuplicatesHashSet(str),3);
+        Assert.assertEquals(lengthOfLongestSubstrings(str),3);
     }
     @Test
     public void test2(){
         String str="pwwkew";
-        Assert.assertEquals(SubStringWoDuplicatesHashSet(str),3);
+        Assert.assertEquals(lengthOfLongestSubstrings(str),3);
     }
     //problem understanding -2 mins
     // logic -
@@ -65,7 +65,7 @@ s consists of English letters, digits, symbols and spaces.
     @Test
     public void test3(){
         String str="abbccc";
-        Assert.assertEquals(lengthOfLongestSubstring(str),2);
+        Assert.assertEquals(lengthOfLongestSubstrings(str),2);
     }
     public int lengthOfLongestSubstring(String s) {
         int left=0, right=0, maxLength=0;

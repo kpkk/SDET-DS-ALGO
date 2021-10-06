@@ -163,6 +163,4 @@ Simple technique brute force
         }
         return count;
     }
-
-
 }

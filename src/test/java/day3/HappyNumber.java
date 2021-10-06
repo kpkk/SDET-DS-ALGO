@@ -67,14 +67,14 @@ Simple technique brute force
 
     @Test
     public void testCase() {
-        int n = 19;
-        Assert.assertTrue(happyNumber(n));
+        int n = 7;
+        Assert.assertTrue(happyNum(n));
     }
 
     @Test
     public void testCase1() {
         int n = 25;
-        Assert.assertFalse(happyNumber(n));
+        Assert.assertFalse(happyNum(n));
     }
 
     @Test
@@ -119,6 +119,23 @@ Simple technique brute force
             if (!set.add(sum)) return false;
         } while (sum != 1);
 
+        return true;
+    }
+
+    private boolean happyNum(int n){
+        HashSet<Integer>set=new HashSet<>();
+        int sum=0;
+        while (sum!=1){
+            sum=0;
+            while (n!=0){
+                int lastDigit= n%10;
+                sum+=lastDigit*lastDigit;
+                n/=10;
+            }
+            if(!set.add(sum)) return false;
+           n=sum;
+
+        }
         return true;
     }
 
