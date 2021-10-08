@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/ContainsDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/LongestSubStringWoRepeatingChars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/ValidPalinDrome2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/ValidPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ally/RemoveDuplicatesFromArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ally/SumDigitsUntilSingleDigit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ally/puhZeroesToRight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day2/PalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day2/PalindromeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/Calories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/Calories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/CountElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/CountElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/FindAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/FindAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/FindCountOfSmallerNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/FindCountOfSmallerNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/HappyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/HappyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week11/SubStringWoRepeatingChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/ReverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/CountNumberOfOnesBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/CountNumberOfOnesBinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindIndexInRotatedArrayBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindIndexInRotatedArrayBinarySearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,100 +66,100 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PushZeroesToRight.test2">
-    <configuration name="HappyNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RotateNumberByKtimes">
+    <configuration name="RemoveDuplicatesFromArray.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day3.*" />
+          <option name="PATTERN" value="ally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day3" />
-      <option name="MAIN_CLASS_NAME" value="day3.HappyNumber" />
+      <option name="PACKAGE_NAME" value="ally" />
+      <option name="MAIN_CLASS_NAME" value="ally.RemoveDuplicatesFromArray" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RotateNumberByKtimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ally.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ally" />
+      <option name="MAIN_CLASS_NAME" value="ally.RotateNumberByKtimes" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HappyNumber.testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RotateNumberByKtimes.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day3.*" />
+          <option name="PATTERN" value="ally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day3" />
-      <option name="MAIN_CLASS_NAME" value="day3.HappyNumber" />
-      <option name="METHOD_NAME" value="testCase" />
+      <option name="PACKAGE_NAME" value="ally" />
+      <option name="MAIN_CLASS_NAME" value="ally.RotateNumberByKtimes" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PushZeroesToRight.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SumDigitsUntilSingleDigit.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day3.*" />
+          <option name="PATTERN" value="ally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day3" />
-      <option name="MAIN_CLASS_NAME" value="day3.PushZeroesToRight" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="ally" />
+      <option name="MAIN_CLASS_NAME" value="ally.SumDigitsUntilSingleDigit" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PushZeroesToRight.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SumDigitsUntilSingleDigit.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day3.*" />
+          <option name="PATTERN" value="ally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day3" />
-      <option name="MAIN_CLASS_NAME" value="day3.PushZeroesToRight" />
+      <option name="PACKAGE_NAME" value="ally" />
+      <option name="MAIN_CLASS_NAME" value="ally.SumDigitsUntilSingleDigit" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PushZeroesToRight.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day3" />
-      <option name="MAIN_CLASS_NAME" value="day3.PushZeroesToRight" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.HappyNumber.testCase" />
-      <item itemvalue="JUnit.HappyNumber" />
-      <item itemvalue="JUnit.PushZeroesToRight.test" />
-      <item itemvalue="JUnit.PushZeroesToRight.test3" />
-      <item itemvalue="JUnit.PushZeroesToRight.test2" />
+      <item itemvalue="JUnit.RemoveDuplicatesFromArray.test1" />
+      <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test1" />
+      <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test2" />
+      <item itemvalue="JUnit.RotateNumberByKtimes.test1" />
+      <item itemvalue="JUnit.RotateNumberByKtimes" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PushZeroesToRight.test2" />
-        <item itemvalue="JUnit.PushZeroesToRight.test3" />
-        <item itemvalue="JUnit.PushZeroesToRight.test" />
-        <item itemvalue="JUnit.HappyNumber" />
-        <item itemvalue="JUnit.HappyNumber.testCase" />
+        <item itemvalue="JUnit.RotateNumberByKtimes" />
+        <item itemvalue="JUnit.RotateNumberByKtimes.test1" />
+        <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test2" />
+        <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test1" />
+        <item itemvalue="JUnit.RemoveDuplicatesFromArray.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -237,11 +232,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/day5/FindSquareRoot.java</url>
           <line>66</line>
           <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/day5/ClosestSumUsingBinarySearch.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/practise/practise.java</url>

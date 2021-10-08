@@ -99,7 +99,6 @@ Simple technique brute force
                 char c = chars[left];
                 chars[left++] = chars[right];
                 chars[right--] = c;
-
             }
         }
         String s = "";
