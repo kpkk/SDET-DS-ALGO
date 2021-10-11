@@ -9,13 +9,13 @@ public class RotateNumberByKtimes {
     public void test1(){
         int n=1234;
         int k=1;
-        Assert.assertEquals(rotateNumber(n,k),2341);
+        Assert.assertEquals(shiftDigits(n,k),2341);
     }
     @Test
     public void test2(){
         int n=1234;
         int k=2;
-        Assert.assertEquals(rotateNumber(n,k),3412);
+        Assert.assertEquals(shiftDigits(n,k),3412);
     }
 
     /*
@@ -50,5 +50,26 @@ public class RotateNumberByKtimes {
             total=total*10+num;
         }
         return total;
+    }
+
+
+    public int findNumberOfDigits(int n){
+       int div=1, count=1;
+       while (n/div>=10){
+           div*=10;
+           count++;
+       }
+       return count;
+    }
+
+    public int shiftDigits(int n, int k){
+
+        int digitCount=findNumberOfDigits(n);
+        k=k%digitCount;
+
+        int removedDigit=(int)(n/Math.pow(10,digitCount-k));
+        n=(int)(n%Math.pow(10,digitCount-k));
+      int noOfdigitsremoved= findNumberOfDigits(removedDigit);
+      return (int)(n*Math.pow(10,noOfdigitsremoved)+removedDigit);
     }
 }

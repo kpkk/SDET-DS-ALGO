@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ally/RemoveDuplicatesFromArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ally/SumDigitsUntilSingleDigit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ally/puhZeroesToRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ally/RemoveDuplicatesInArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Android.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BiConsumerInterfacePractise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/ConsumerInterfacePractise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/LambdaComparatorExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/LambdaRunnableExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Mobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/OnePlus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Samsung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/StreamsPractise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/StudentDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/ExecutionSequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/ReverseString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/CountNumberOfOnesBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/CountNumberOfOnesBinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindIndexInRotatedArrayBinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindIndexInRotatedArrayBinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day2/Inf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day2/Inf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindLastMatchingAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindLastMatchingAnagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindMaxSubString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindMaxSubString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindSquareRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindSquareRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,100 +81,89 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RotateNumberByKtimes">
-    <configuration name="RemoveDuplicatesFromArray.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.BiConsumerInterfacePractise">
+    <configuration name="BiConsumerInterfacePractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.BiConsumerInterfacePractise" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ally.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ally" />
-      <option name="MAIN_CLASS_NAME" value="ally.RemoveDuplicatesFromArray" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RotateNumberByKtimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerInterfacePractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.ConsumerInterfacePractise" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ally.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ally" />
-      <option name="MAIN_CLASS_NAME" value="ally.RotateNumberByKtimes" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RotateNumberByKtimes.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LambdaComparatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.LambdaComparatorExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ally.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ally" />
-      <option name="MAIN_CLASS_NAME" value="ally.RotateNumberByKtimes" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumDigitsUntilSingleDigit.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LambdaRunnableExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.LambdaRunnableExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ally.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ally" />
-      <option name="MAIN_CLASS_NAME" value="ally.SumDigitsUntilSingleDigit" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumDigitsUntilSingleDigit.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StreamsPractise.countEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ally.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ally" />
-      <option name="MAIN_CLASS_NAME" value="ally.SumDigitsUntilSingleDigit" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="java8" />
+      <option name="MAIN_CLASS_NAME" value="java8.StreamsPractise" />
+      <option name="METHOD_NAME" value="countEmployees" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.RemoveDuplicatesFromArray.test1" />
-      <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test1" />
-      <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test2" />
-      <item itemvalue="JUnit.RotateNumberByKtimes.test1" />
-      <item itemvalue="JUnit.RotateNumberByKtimes" />
+      <item itemvalue="JUnit.StreamsPractise.countEmployees" />
+      <item itemvalue="Application.LambdaRunnableExample" />
+      <item itemvalue="Application.LambdaComparatorExample" />
+      <item itemvalue="Application.ConsumerInterfacePractise" />
+      <item itemvalue="Application.BiConsumerInterfacePractise" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RotateNumberByKtimes" />
-        <item itemvalue="JUnit.RotateNumberByKtimes.test1" />
-        <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test2" />
-        <item itemvalue="JUnit.SumDigitsUntilSingleDigit.test1" />
-        <item itemvalue="JUnit.RemoveDuplicatesFromArray.test1" />
+        <item itemvalue="Application.BiConsumerInterfacePractise" />
+        <item itemvalue="Application.ConsumerInterfacePractise" />
+        <item itemvalue="Application.LambdaComparatorExample" />
+        <item itemvalue="Application.LambdaRunnableExample" />
+        <item itemvalue="JUnit.StreamsPractise.countEmployees" />
       </list>
     </recent_temporary>
   </component>
@@ -219,19 +223,9 @@
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/day5/FindMaxSubString.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/day5/FindTheMissingElement.java</url>
           <line>62</line>
           <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/day5/FindSquareRoot.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/practise/practise.java</url>
@@ -267,11 +261,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/practise/FindMaxSubString.java</url>
           <line>24</line>
           <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/week4/PrintOddEvenLinkedList.java</url>
@@ -541,17 +530,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="454" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="457" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
-          <line>178</line>
+          <line>180</line>
           <option name="timeStamp" value="458" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -598,6 +577,21 @@
           <url>file://$PROJECT_DIR$/src/test/java/day3/HappyNumber.java</url>
           <line>125</line>
           <option name="timeStamp" value="473" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/FindLastMatchingAnagram.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="476" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="481" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

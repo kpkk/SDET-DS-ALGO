@@ -27,7 +27,7 @@ class Bike7{
 class B1 extends Bike7{
     int x;
     B1(){
-        super();
+      //  super();
         System.out.println("this is b2 class "+x);
     }
     {
@@ -60,13 +60,15 @@ class Parent{
 
 class TestExceptionChild extends Parent {
     int i=20;
-    @Override
+  //  @Override
     void msg() {
         System.out.println("TestExceptionChild");
     }
 
     public static void main(String args[]) {
         Parent p = new TestExceptionChild();
+        //can't be casted
+       // TestExceptionChild t= (TestExceptionChild) new Parent();
         p.msg();
         int c=p.i;
         System.out.println(c);
@@ -100,7 +102,7 @@ class Tiptop {
         Integer i5=5;
         class Inner{
              final Integer i6=6;
-             Integer i7=7;
+              Integer i7=7;
             Inner(){
                 System.out.println(i6+i7);
             }
@@ -176,7 +178,7 @@ class Programmer extends Employee{
 
 
     public static void main(String args[]){
-        Programmer p=new Programmer();
+        Employee p=new Programmer();
         System.out.println("Programmer salary is:"+p.bonus);
        p.salary();
     }
@@ -272,18 +274,19 @@ class Derived extends Base {
         // calls Base's display()
         obj1.display();
 
+
         // Here overriding works and Derive's print() is called
         obj1.print();
     }
 }
 class A{
-      void msg(){System.out.println("Hello java");}
+      void msg(){System.out.println("Hello java-parent");}
 }
 
 class Simple extends A{
      void msg(){System.out.println("Hello java");}//C.T.Error
     public static void main(String args[]){
-        Simple obj=new Simple();
+        A obj=new Simple();
         obj.msg();
     }
 }

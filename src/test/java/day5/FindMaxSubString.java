@@ -29,13 +29,13 @@ public class FindMaxSubString {
     public void test1(){
         String s="eceba";
         int k=2;
-        Assert.assertEquals(findSubString(s,k),3);
+        Assert.assertEquals(subStringLength(s,k),3);
     }
     @Test
     public void test2(){
         String s="aabab";
         int k=2;
-        Assert.assertEquals(findSubString(s,k),5);
+        Assert.assertEquals(subStringLength(s,k),5);
     }
     @Test //-ve
     public void test3(){
@@ -100,6 +100,24 @@ public class FindMaxSubString {
           max= Math.max(max,right-left+1);
        }
         return max;
+    }
+
+
+    private int subStringLength(String s, int k){
+        int left=0, right=0, maxLength=0;
+        HashMap<Character,Integer>map=new HashMap<>();
+        while (right<s.length()){
+            map.put(s.charAt(right),map.getOrDefault(s.charAt(right),0)+1);
+            while (map.size()>k){
+                if (map.get(s.charAt(left))>1){
+                    map.put(s.charAt(left),map.getOrDefault(s.charAt(left),0)+1);
+                }else map.remove(s.charAt(left));
+                left++;
+            }
+           maxLength=Math.max(maxLength,right-left+1);
+            right++;
+        }
+        return maxLength;
     }
 
 }

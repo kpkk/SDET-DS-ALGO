@@ -2,6 +2,7 @@ package day5;
 
 import org.junit.Assert;
 import org.junit.Test;
+import sun.java2d.pipe.OutlineTextRenderer;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -20,31 +21,31 @@ public class FindLastMatchingAnagram {
     public void test1(){
         String input="abcdeghcbahjcab";
         String anagram="abc";
-        Assert.assertEquals(findLastSubStringAscii(input,anagram),"cba");
+        Assert.assertEquals(findElements(input,anagram),"cab");
     }
     @Test
     public void test2(){
         String input="abcd";
         String anagram="abcd";
-        Assert.assertEquals(findLastAnagram(input,anagram),"abcd");
+        Assert.assertEquals(findElements(input,anagram),"abcd");
     }
     @Test
     public void test3(){
         String input="abcd";
         String anagram="agh";
-        Assert.assertEquals(findLastAnagram(input,anagram),"");
+        Assert.assertEquals(findElements(input,anagram),"");
     }
     @Test
     public void test4(){
         String input="";
         String anagram="";
-        Assert.assertEquals(findLastAnagram(input,anagram),"");
+        Assert.assertEquals(findElements(input,anagram),"");
     }
     @Test
     public void test5(){
         String input="aaaaa";
         String anagram="a";
-        Assert.assertEquals(findLastAnagram(input,anagram),"a");
+        Assert.assertEquals(findElements(input,anagram),"a");
     }
 
     //Time complexity-O(n)
@@ -116,6 +117,36 @@ public class FindLastMatchingAnagram {
         }
 
        return outputString;
+    }
+
+
+    private String findElements(String str, String pattern){
+        int start=0, end=0,i=0;
+        HashMap<Character,Integer>smap=new HashMap<>();
+        HashMap<Character,Integer>pmap=new HashMap<>();
+        for(i=0;i<pattern.length();i++){
+            pmap.put(pattern.charAt(i),pmap.getOrDefault(pattern.charAt(i),0)+1);
+            smap.put(str.charAt(i),smap.getOrDefault(str.charAt(i),0)+1);
+        }
+        if(smap.equals(pmap)){
+            start=0;
+            end=i-1;
+        }
+        for(i=1;i<str.length()-pattern.length()+1;i++){
+            smap.put(str.charAt(i+pattern.length()-1),smap.getOrDefault(str.charAt(i+pattern.length()-1),0)+1);
+            if(smap.get(str.charAt(i-1))>1){
+                smap.put(str.charAt(i-1),smap.getOrDefault(str.charAt(i-1),0)-1);
+            }else{
+                smap.remove(str.charAt(i-1));
+            }
+
+            if(smap.equals(pmap)){
+                start=i;
+                end=i+pattern.length()-1;
+            }
+        }
+        if(start==0 &&end==0) return "";
+        return str.substring(start,end+1);
     }
 
 }

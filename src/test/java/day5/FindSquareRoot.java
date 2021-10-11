@@ -13,12 +13,12 @@ public class FindSquareRoot {
     @Test
     public void test1(){
         int number=25;
-        Assert.assertEquals(findSquareRootUsingBinary(number),5);
+        Assert.assertEquals(bruteForce(number),5);
     }
     @Test
     public void test2(){
         int number=17;
-        Assert.assertEquals(findSquareRootUsingBinary(number),4);
+        Assert.assertEquals(bruteForce(number),4);
     }
     @Test
     public void test3(){
@@ -29,6 +29,11 @@ public class FindSquareRoot {
     public void test4(){
         int number=-17;
         Assert.assertEquals(findSquareRootUsingBinary(number),4);
+    }
+    @Test
+    public void test5(){
+        int number=4;
+        Assert.assertEquals(mySqrt(number),2);
     }
 
     /*
@@ -71,7 +76,26 @@ public class FindSquareRoot {
             if(mid*mid==number|| (mid* mid<number && (mid+1)* (mid+1)>number ))return mid;
             else if(mid* mid<number) low=mid+1;
             else high=mid-1;
-           // else low=mid+1;
+        }
+        return -1;
+    }
+    public int mySqrt(int x) {
+        int low=1, high=x, ans=0;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(mid<=x/mid){
+                low=mid+1;
+                ans=mid;
+            }else{
+                high=mid-1;
+            }
+        }
+        return ans;
+    }
+
+    public int bruteForce(int x){
+        for(int i=1;i<=x;i++){
+            if(i<=x/i && (i+1)>x/(i+1)) return i;
         }
         return -1;
     }

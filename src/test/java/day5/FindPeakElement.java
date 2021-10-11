@@ -59,8 +59,14 @@ nums[i] != nums[i + 1] for all valid i.
         int output=1;
         Assert.assertEquals(findPeakElement(nums),output);
     }
+    @Test
+    public void test4(){
+        int[] nums={2,1};
+        int output=0;
+        Assert.assertEquals(findPeakElement(nums),output);
+    }
 
-    private int findPeakElement(int[] nums){
+    private int findPeakElementq(int[] nums){
         int low=0, high=nums.length-1;
         HashMap<String, Integer> map=new HashMap<>();
         Set<Map.Entry<String, Integer>> entries = map.entrySet();
@@ -70,5 +76,17 @@ nums[i] != nums[i + 1] for all valid i.
             else low=mid+1;
         }
         return low;
+    }
+
+    public int findPeakElement(int[] nums) {
+        if(nums.length==1) return 0;
+        if(nums.length==2){
+            if(nums[0]>nums[1]) return 0;
+            else return 1;
+        }
+        for(int i=1;i<nums.length-1;i++){
+            if(nums[i]>nums[i-1] && nums[i]>nums[i+1]) return i;
+        }
+        return -1;
     }
 }

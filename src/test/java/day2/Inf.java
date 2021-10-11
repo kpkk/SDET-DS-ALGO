@@ -11,6 +11,9 @@ public interface Inf {
        static void staticmethod(){
            System.out.println("This is static method");
        }
+       default void demo2(){
+
+       }
 }
   class A implements Inf{
 
