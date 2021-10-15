@@ -50,19 +50,19 @@ Follow up: Could you find an algorithm that runs in O(m + n) time?
     public void test1(){
         String s="ADOBECODEBANC";
         String t="ABC";
-        Assert.assertEquals(findMinSubString(s,t),"BANC");
+        Assert.assertEquals(findSubStringMin(s,t),"BANC");
     }
     @Test
     public void test2(){
         String s="a";
         String t="a";
-        Assert.assertEquals(findMinSubString(s,t),"a");
+        Assert.assertEquals(findSubStringMin(s,t),"a");
     }
     @Test
     public void test3(){
-        String s="a";
+        String s="aa";
         String t="aa";
-        Assert.assertEquals(findMinSubString(s,t),"");
+        Assert.assertEquals(findSubStringMin(s,t),"aa");
     }
 
 
@@ -131,5 +131,43 @@ Follow up: Could you find an algorithm that runs in O(m + n) time?
 
     }
 
+
+    private String findSubStringMin(String s, String t){
+        HashMap<Character, Integer>map=new HashMap<>();
+        int left=0, right=0;
+        String output=""; int length=Integer.MAX_VALUE;
+        while (right<s.length()){
+            map.put(s.charAt(right),map.getOrDefault(s.charAt(right),0)+1);
+            if (right-left+1>=t.length()){
+                while (isCharactersPresent(map,t)){
+                    if((right-left)+1<length){
+                        output=s.substring(left,right+1);
+                        length=output.length();
+                    }
+                    if(map.get(s.charAt(left))>1){
+                        map.put(s.charAt(left),map.getOrDefault(s.charAt(left),0)-1);
+                    }
+                    else map.remove(s.charAt(left));
+                    left++;
+                }
+            }
+            right++;
+        }
+        return output;
+    }
+
+    private boolean isCharactersPresent(HashMap<Character, Integer> map, String t) {
+        int left=0, right=t.length()-1;
+        while (left<=right){
+            if(left==right){
+                if(!map.containsKey(t.charAt(left))) return false;
+            }
+           else if(!map.containsKey(t.charAt(left))) return false;
+           else if(!map.containsKey(t.charAt(right))) return false;
+           left++;
+           right--;
+        }
+        return true;
+    }
 
 }

@@ -18,6 +18,7 @@ public class BiConsumerInterfacePractise {
 
         BiConsumer<String, List<String>> biConsumer1=(s, strings) -> System.out.println("name :"+s+" Activities :"+strings);
 
+
         students.forEach(student->biConsumer1.accept(student.getName(),student.getActivities()));
     }
 }

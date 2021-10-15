@@ -3,6 +3,8 @@ package day5;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.HashMap;
+
 public class LogestSubStringWoRepeatingChars {
     /*
     Given a string s, find the length of the longest substring without repeating characters.
@@ -25,19 +27,19 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
     @Test
     public void test1() {
         String s = "abcabcbb";
-        Assert.assertEquals(findLongestSubString(s), 3);
+        Assert.assertEquals(longestSubStringusingMap(s), 3);
     }
 
     @Test
     public void test2() {
         String s = "bbbbb";
-        Assert.assertEquals(findLongestSubString(s), 1);
+        Assert.assertEquals(longestSubStringusingMap(s), 1);
     }
 
     @Test
     public void test3() {
         String s = "pwwkew";
-        Assert.assertEquals(findLongestSubString(s), 3);
+        Assert.assertEquals(longestSubStringusingMap(s), 3);
     }
     /*
 
@@ -66,5 +68,20 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
             right++;
         }
         return max;
+    }
+
+    private int longestSubStringusingMap(String s){
+        HashMap<Character, Integer>map=new HashMap<>();
+        int left=0, right=0, maxlength=0;
+        while (right<s.length()){
+            map.put(s.charAt(right),map.getOrDefault(s.charAt(right),0)+1);
+            while (map.get(s.charAt(right))>1){
+                map.put(s.charAt(left),map.getOrDefault(s.charAt(left),0)-1);
+                left++;
+            }
+            maxlength=Math.max(maxlength,right-left+1);
+            right++;
+        }
+        return maxlength;
     }
 }

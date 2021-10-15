@@ -5,29 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ally/RemoveDuplicatesInArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Android.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BiConsumerInterfacePractise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/ConsumerInterfacePractise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/LambdaComparatorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/LambdaRunnableExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Mobile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/OnePlus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Samsung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/StreamsPractise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/StudentDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/ExecutionSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RemoveAnagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RodCutting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BiFunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BiPredicateExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BinaryOperatorExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/FunctionInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateAndConsumerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateInterfacePractise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateStudentExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/SupplierExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/UnaryOperatorExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/queue/RotateArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/PermutationString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/BrekAPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/Encryptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day2/Inf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day2/Inf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day3/PushZeroesToRight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindLastMatchingAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindLastMatchingAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindMaxSubString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindMaxSubString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/FindSquareRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/FindSquareRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/LogestSubStringWoRepeatingChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/LogestSubStringWoRepeatingChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/MinSubArraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/MinSubArraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java8/BiConsumerInterfacePractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/BiConsumerInterfacePractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java8/ConsumerInterfacePractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/ConsumerInterfacePractise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +79,9 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BiConsumerInterfacePractise">
-    <configuration name="BiConsumerInterfacePractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.BiConsumerInterfacePractise" />
+  <component name="RunManager" selected="Application.SupplierExample">
+    <configuration name="BiFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.BiFunctionExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerInterfacePractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.ConsumerInterfacePractise" />
+    <configuration name="BinaryOperatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.BinaryOperatorExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaComparatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.LambdaComparatorExample" />
+    <configuration name="FunctionInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.FunctionInterface" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +119,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaRunnableExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.LambdaRunnableExample" />
+    <configuration name="SupplierExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.SupplierExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -134,7 +132,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamsPractise.countEmployees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UnaryOperatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.UnaryOperatorExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -142,28 +141,24 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="java8" />
-      <option name="MAIN_CLASS_NAME" value="java8.StreamsPractise" />
-      <option name="METHOD_NAME" value="countEmployees" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.StreamsPractise.countEmployees" />
-      <item itemvalue="Application.LambdaRunnableExample" />
-      <item itemvalue="Application.LambdaComparatorExample" />
-      <item itemvalue="Application.ConsumerInterfacePractise" />
-      <item itemvalue="Application.BiConsumerInterfacePractise" />
+      <item itemvalue="Application.FunctionInterface" />
+      <item itemvalue="Application.BiFunctionExample" />
+      <item itemvalue="Application.UnaryOperatorExample" />
+      <item itemvalue="Application.BinaryOperatorExample" />
+      <item itemvalue="Application.SupplierExample" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BiConsumerInterfacePractise" />
-        <item itemvalue="Application.ConsumerInterfacePractise" />
-        <item itemvalue="Application.LambdaComparatorExample" />
-        <item itemvalue="Application.LambdaRunnableExample" />
-        <item itemvalue="JUnit.StreamsPractise.countEmployees" />
+        <item itemvalue="Application.SupplierExample" />
+        <item itemvalue="Application.BinaryOperatorExample" />
+        <item itemvalue="Application.UnaryOperatorExample" />
+        <item itemvalue="Application.BiFunctionExample" />
+        <item itemvalue="Application.FunctionInterface" />
       </list>
     </recent_temporary>
   </component>
@@ -246,11 +241,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/day2/FindMajorityElement.java</url>
           <line>183</line>
           <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/day3/ShortestDistnaceCharacter.java</url>
@@ -589,9 +579,9 @@
           <option name="timeStamp" value="479" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/day5/FindPeakElement.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="481" />
+          <url>file://$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="484" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

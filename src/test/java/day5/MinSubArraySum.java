@@ -29,21 +29,21 @@ Output: 0
     public void test1() {
         int[] nums = {2, 3, 1, 2, 4, 3};
         int target = 7;
-        Assert.assertEquals(minSubArrayLengthBruteForce(nums, target), 2);
+        Assert.assertEquals(findSubArrayLength(nums, target), 2);
     }
 
     @Test
     public void test2() {
         int[] nums = {1, 4, 4};
         int target = 1;
-        Assert.assertEquals(minSubArrayLengthBruteForce(nums, target), 1);
+        Assert.assertEquals(findSubArrayLength(nums, target), 1);
     }
 
     @Test
     public void test3() {
         int[] nums = {1, 1, 1, 1, 1, 1, 1, 1};
         int target = 11;
-        Assert.assertEquals(minSubArrayLengthBruteForce(nums, target), 0);
+        Assert.assertEquals(findSubArrayLength(nums, target), 0);
     }
 
     /*
@@ -64,20 +64,17 @@ Output: 0
     //Time complexity- O(n)
     //Space complexity- O(1)
     private int findSubArrayLength(int[] nums, int target) {
-        if (nums.length == 0) return 0;
-        boolean isTargetEverMet = false;
-        if (nums.length == 1 && nums[0] >= target) return 1;
-        int left = 0, right = 0, sum = 0, min = Integer.MAX_VALUE;
-        while (right < nums.length) {
-            sum += nums[right++];
-            while (sum >= target) {
-                isTargetEverMet = true;
-                sum -= nums[left++];
-            }
-            min = Math.min(min, right - left + 1);
-        }
-        if (!isTargetEverMet) return 0;
-        return min;
+     int left=0, right=0;
+     int sum=0, length=nums.length+1;
+     while (right<nums.length){
+         sum+=nums[right];
+         while (sum>=target){
+             length=Math.min(length,right-left+1);
+             sum-=nums[left++];
+         }
+         right++;
+     }
+     return length==nums.length+1?0:length;
     }
 
     /*
