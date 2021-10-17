@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RemoveAnagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dunZo/RodCutting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BiFunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BiPredicateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/BinaryOperatorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/FunctionInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateAndConsumerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateInterfacePractise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateStudentExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/SupplierExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/UnaryOperatorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/queue/RotateArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/slidingWindow/PermutationString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/BrekAPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/Encryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/ConstructorReferenceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/LocalVariablesWithLambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/java8/MethodReferenceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/DebugStreamusingPeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/FlatMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/StreamExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/StreamMethodsExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/StreamVsCollections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/mapExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/LogestSubStringWoRepeatingChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/LogestSubStringWoRepeatingChars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/MinSubArraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/MinSubArraySum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java8/BiConsumerInterfacePractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/BiConsumerInterfacePractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java8/ConsumerInterfacePractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/ConsumerInterfacePractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java8/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +69,13 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SupplierExample">
-    <configuration name="BiFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.BiFunctionExample" />
+  <component name="RunManager" selected="Application.StreamMethodsExamples">
+    <configuration name="DebugStreamusingPeek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.DebugStreamusingPeek" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryOperatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.BinaryOperatorExample" />
+    <configuration name="FlatMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.FlatMapExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.FunctionInterface" />
+    <configuration name="StreamMethodsExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.StreamMethodsExamples" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupplierExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.SupplierExample" />
+    <configuration name="StreamVsCollections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.StreamVsCollections" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnaryOperatorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.UnaryOperatorExample" />
+    <configuration name="mapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.mapExample" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FunctionInterface" />
-      <item itemvalue="Application.BiFunctionExample" />
-      <item itemvalue="Application.UnaryOperatorExample" />
-      <item itemvalue="Application.BinaryOperatorExample" />
-      <item itemvalue="Application.SupplierExample" />
+      <item itemvalue="Application.StreamVsCollections" />
+      <item itemvalue="Application.DebugStreamusingPeek" />
+      <item itemvalue="Application.mapExample" />
+      <item itemvalue="Application.FlatMapExample" />
+      <item itemvalue="Application.StreamMethodsExamples" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SupplierExample" />
-        <item itemvalue="Application.BinaryOperatorExample" />
-        <item itemvalue="Application.UnaryOperatorExample" />
-        <item itemvalue="Application.BiFunctionExample" />
-        <item itemvalue="Application.FunctionInterface" />
+        <item itemvalue="Application.StreamMethodsExamples" />
+        <item itemvalue="Application.FlatMapExample" />
+        <item itemvalue="Application.mapExample" />
+        <item itemvalue="Application.DebugStreamusingPeek" />
+        <item itemvalue="Application.StreamVsCollections" />
       </list>
     </recent_temporary>
   </component>
