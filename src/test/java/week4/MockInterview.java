@@ -6,7 +6,7 @@ import org.junit.Test;
 public class MockInterview {
 
     /*
-    given an integer array which is not -sorted, need to find max difference between any 2 values
+    given an integer array which is not -sorted, need to find max difference between any 2 values and return their indices
      */
 
     /*
@@ -50,18 +50,16 @@ public class MockInterview {
 
     private int[] findIndices(int[] arr) {
         int []indices=new int[2];
-        int left=0, right=1, max=Integer.MIN_VALUE;
-        while (right<arr.length){
-            int diff=Math.abs(arr[left++]-arr[right++]);
-            int currentMax=Integer.MIN_VALUE;
-            currentMax=Math.max(diff,currentMax);
-            if(currentMax>max) {
-                max=Math.max(currentMax,max);
-                indices[0]=left;
-                indices[1]=right;
-            }
-
-        }
+       int min=arr[0];
+       int max=arr[0];
+       for (int i=1;i<arr.length;i++){
+           if(arr[i]<min){
+               indices[0]=i;
+           }
+           if(arr[i]>max){
+               indices[1]=i;
+           }
+       }
         return indices;
     }
 }

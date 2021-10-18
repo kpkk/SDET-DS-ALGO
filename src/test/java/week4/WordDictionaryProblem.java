@@ -3,8 +3,10 @@ package week4;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 
 public class WordDictionaryProblem {
     /*
@@ -85,5 +87,44 @@ public class WordDictionaryProblem {
         if(counter==map.size() &&left==right) return true;
 
         return false;
+    }
+
+
+    @Test
+    public void test4(){
+        String s="leetcode";
+        List<String>words= Arrays.asList("leet","code");
+        Assert.assertTrue(wordBreakProblem(s,words));
+    }
+    @Test
+    public void test5(){
+        String s="applepenapple";
+        List<String>words= Arrays.asList("apple","pen");
+        Assert.assertTrue(wordBreakProblem(s,words));
+    }
+    @Test
+    public void test6(){
+        String s="catsandog";
+        List<String>words= Arrays.asList("cats","dog","sand","and","cat");
+        Assert.assertFalse(wordBreakProblem(s,words));
+    }
+
+    private boolean wordBreakProblem(String s, List<String> words){
+
+        boolean[] dp=new boolean[s.length()+1];
+        dp[0]=true;
+        int maxLen=0;
+        for (String str: words){
+            maxLen=Math.max(maxLen,str.length());
+        }
+        for (int i=0;i<=s.length();i++){
+            for (int j=0;j<i;j++){
+                if(i-j>maxLen){
+                    continue;
+                }
+                if(dp[j] && words.contains(s.substring(j,i))) dp[i]=true;
+            }
+        }
+        return dp[s.length()];
     }
 }

@@ -3,6 +3,8 @@ package week4;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class LongestConsecutiveSequence {
@@ -35,13 +37,13 @@ Constraints:
     public void test1(){
         int[] nums={100,4,200,1,3,2};
         int output=4;
-        Assert.assertEquals(findConsecutive(nums),output);
+        Assert.assertEquals(longestSequence(nums),output);
     }
     @Test
     public void test2(){
         int[] nums={0,3,7,2,5,8,4,6,0,1};
         int output=9;
-        Assert.assertEquals(findConsecutive(nums),output);
+        Assert.assertEquals(longestSequence(nums),output);
     }
 
     /*
@@ -81,5 +83,33 @@ Constraints:
         }
 
         return maxLength;
+    }
+
+    /*
+    - sort the array
+    - initialize two variables currentLength=1, longLength=1
+    - iterate the array from index=1 until the end
+    - if the diff between number at current index and index-1 is 1
+        - increment the currentlength
+     - else calculate the max of currentLength and longlength
+     - set the currentLength back to 1
+     - return longLength
+     */
+    private int longestSequence(int [] nums){
+        if(nums.length==0) return 0;
+        Arrays.sort(nums);
+        int currentLength=1;
+        int longLength=1;
+        for (int i=1;i<nums.length;i++){
+          //  if(nums[i]!=nums[i-1]){
+                if(nums[i]-nums[i-1]==1){
+                    currentLength++;
+                }else{
+                    longLength=Math.max(longLength,currentLength);
+                    currentLength=1;
+                }
+         //   }
+        }
+        return Math.max(currentLength,longLength);
     }
 }

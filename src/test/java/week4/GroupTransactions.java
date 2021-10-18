@@ -21,7 +21,6 @@ public class GroupTransactions {
     private List<String> groupItems(List<String> list){
         Map<String,Integer> map=new TreeMap<>();
         ArrayList<String>al=new ArrayList<>();
-       ArrayList<Map.Entry<String,Integer>> values=null;
         // add all elements into treemap
         for (String str:list){
             map.put(str,map.getOrDefault(str,0)+1);

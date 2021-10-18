@@ -56,11 +56,11 @@ public class SecondLeastRepeatingCharacter {
         for (char ch:chars){
             map.put(ch,map.getOrDefault(ch,0)+1);
         }
-        int min=Integer.MAX_VALUE,secondMin=Integer.MAX_VALUE;
+        int min=map.firstEntry().getValue(),secondMin= map.firstEntry().getValue();
         Set<Map.Entry<Character, Integer>> entries = map.entrySet();
         for (Map.Entry entry:entries){
             Integer value = (Integer) entry.getValue();
-            if (min<value){
+            if (min>value){
                 secondMin=min;
                 min=value;
             }

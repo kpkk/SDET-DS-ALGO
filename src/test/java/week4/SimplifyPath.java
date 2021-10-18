@@ -61,6 +61,13 @@ Explanation: Note that there is no trailing slash after the last directory
         String str="/root//../users/.//desktop";
         Assert.assertEquals(simplifypath(str),"/users/desktop");
     }
+    @Test
+    public void test4(){
+        String str="/../";
+        Assert.assertEquals(simplifypath(str),"/");
+    }
+
+
 
     private String simplifypath(String str) {
         Stack<String>stack=new Stack<>();

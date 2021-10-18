@@ -19,13 +19,13 @@ public class DecodeString {
     public void test1(){
         String str="a2[bc]";
         String output="abcbc";
-        Assert.assertEquals(decodeString(str),output);
+        Assert.assertEquals(decode(str),output);
     }
     @Test
     public void test2(){
         String str="2[ab3[b]]";   //abbbbabbbb
         String output="abbbbabbbb";
-        Assert.assertEquals(decodeString(str),output);
+        Assert.assertEquals(decode(str),output);
     }
     @Test
     public void test3(){
@@ -58,7 +58,6 @@ public class DecodeString {
 
     private String decodeString(String str) {
         Stack<Character>stack=new Stack<>();
-
         char[] chars = str.toCharArray();
         for (int i=0;i<chars.length;i++){
             if(chars[i]!=']'){
@@ -88,5 +87,41 @@ public class DecodeString {
         }
         return sb.reverse().toString();
 
+    }
+
+    private String decode(String s){
+        //2[ab3[b]]
+        Stack<String> stringStack=new Stack<>();
+        Stack<Integer> countStack=new Stack<>();
+        String result="";
+        int right=0;
+        while (right<s.length()){
+            if(Character.isDigit(s.charAt(right))){
+                int sum=0;
+                while (Character.isDigit(s.charAt(right))){
+                    sum=sum*10+Character.getNumericValue(s.charAt(right));
+                    right++;
+                }
+                countStack.push(sum);
+            }
+            else if(s.charAt(right)=='['){
+                stringStack.push(result);
+                result="";
+                right++;
+            }
+            else if(s.charAt(right)==']'){
+                StringBuilder sb=new StringBuilder(stringStack.pop());
+                Integer pop = countStack.pop();
+                for (int i=0;i<pop;i++){
+                    sb.append(result);
+                }
+                result=sb.toString();
+                right++;
+            }
+            else{
+                result+=s.charAt(right++)+"";
+            }
+        }
+        return result;
     }
 }

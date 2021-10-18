@@ -38,7 +38,7 @@ Constraints:
     @Test
     public void test1(){
         int[] temperature={73,74,75,71,69,72,76,73};
-        int[] output={1,1,4,2,1,1,-1,0};
+        int[] output={1,1,4,2,1,1,0,0};
         Assert.assertArrayEquals(dailyTempUsingStack(temperature),output);
 
     }
@@ -139,7 +139,6 @@ Constraints:
      */
 
     private int[] dailyTempUsingStack(int [] nums){
-
         if(nums.length==0) return nums;
         Stack<Integer>stack=new Stack<>();
         int[] output=new int[nums.length];
@@ -152,5 +151,18 @@ Constraints:
         }
 
         return output;
+    }
+
+    private int[] dailyTempusingStack(int[] nums){
+        int[] answer=new int[nums.length];
+        Stack<Integer> stack=new Stack<>();
+        for (int i=0;i<nums.length;i++){
+            while (!stack.isEmpty() && nums[i]>nums[stack.peek()]){
+                int pop=stack.pop();
+                answer[pop]=i-pop;
+            }
+            stack.push(i);
+        }
+        return answer;
     }
 }

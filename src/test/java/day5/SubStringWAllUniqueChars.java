@@ -17,38 +17,38 @@ public class SubStringWAllUniqueChars {
     public void test1() {
         String st = "abbcafcb";
         String output = "bcaf";
-        Assert.assertEquals(returnUniqueCharsUsingMap(st), output);
+        Assert.assertEquals(uniqueSubString(st), output);
     }
 
     @Test
     public void test2() {
         String st = "";
         String output = "";
-        Assert.assertEquals(returnUniqueCharsUsingMap(st), output);
+        Assert.assertEquals(uniqueSubString(st), output);
     }
     @Test
     public void test3() {
         String st = "abcd";
         String output = "abcd";
-        Assert.assertEquals(returnUniqueCharsUsingMap(st), output);
+        Assert.assertEquals(uniqueSubString(st), output);
     }
     @Test
     public void test4() {
         String st = "abbcafcbfcab";
         String output = "bcaf";
-        Assert.assertEquals(returnUniqueCharsUsingMap(st), output);
+        Assert.assertEquals(uniqueSubString(st), output);
     }
     @Test
     public void test5() {
         String st = "aaaaaa";
         String output = "a";
-        Assert.assertEquals(returnUniqueCharsUsingMap(st), output);
+        Assert.assertEquals(uniqueSubString(st), output);
     }
     @Test
     public void test6() {
         String st = "xxyyzzyyxxzzy";
-        String output = "xyyz";
-        Assert.assertEquals(returnUniqueCharsUsingMap(st), output);
+        String output = "xy";
+        Assert.assertEquals(uniqueSubString(st), output);
     }
 
     /*
@@ -175,18 +175,23 @@ public class SubStringWAllUniqueChars {
         }
         return outputString;
     }
+
+    private String uniqueSubString(String str){
+        int[] ascii=new int[128];
+        int left=0, right=0, maxLength=0;
+        String output="";
+        while (right<str.length()){
+            ascii[str.charAt(right)]++;
+            while (ascii[str.charAt(right)]>1){
+                ascii[str.charAt(left++)]--;
+            }
+            if(right-left+1>maxLength){
+                maxLength=right-left+1;
+                output=str.substring(left,right+1);
+            }
+            right++;
+        }
+        return output;
+    }
 }
 
-/*
-  char[] chars = subStringEle.toCharArray();
-                while (left<right){
-                    if(chars[left]>chars[right]){
-                        char temp=chars[left];
-                        chars[left++]=chars[right];
-                        chars[right--]=temp;
-                    }
-                }
-                for (char c:chars){
-                    sortedString+=c;
-                }
- */

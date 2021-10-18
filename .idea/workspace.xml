@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/ConstructorReferenceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/LocalVariablesWithLambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/java8/MethodReferenceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/DebugStreamusingPeek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/FlatMapExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/StreamExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/StreamMethodsExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/StreamVsCollections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/mapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/ReeturnUnCommonChars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java8/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day5/SubStringWAllUniqueChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/SubStringWAllUniqueChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/DailyTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/DailyTemperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/DecodeString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/GroupTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/GroupTransactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/LongestConsecutiveSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/LongestConsecutiveSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/MockInterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/MockInterview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/SecondLeastRepeatingCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/SecondLeastRepeatingCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/SimplifyPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/Transactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week4/WordDictionaryProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/WordDictionaryProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,86 +70,100 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamMethodsExamples">
-    <configuration name="DebugStreamusingPeek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="streams.DebugStreamusingPeek" />
+  <component name="RunManager" selected="JUnit.WordDictionaryProblem.test6">
+    <configuration name="WordDictionaryProblem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="streams.*" />
+          <option name="PATTERN" value="week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlatMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="streams.FlatMapExample" />
+    <configuration name="WordDictionaryProblem.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="streams.*" />
+          <option name="PATTERN" value="week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamMethodsExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="streams.StreamMethodsExamples" />
+    <configuration name="WordDictionaryProblem.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="streams.*" />
+          <option name="PATTERN" value="week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamVsCollections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="streams.StreamVsCollections" />
+    <configuration name="WordDictionaryProblem.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="streams.*" />
+          <option name="PATTERN" value="week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="streams.mapExample" />
+    <configuration name="WordDictionaryProblem.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="streams.*" />
+          <option name="PATTERN" value="week4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="week4" />
+      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StreamVsCollections" />
-      <item itemvalue="Application.DebugStreamusingPeek" />
-      <item itemvalue="Application.mapExample" />
-      <item itemvalue="Application.FlatMapExample" />
-      <item itemvalue="Application.StreamMethodsExamples" />
+      <item itemvalue="JUnit.WordDictionaryProblem" />
+      <item itemvalue="JUnit.WordDictionaryProblem.test3" />
+      <item itemvalue="JUnit.WordDictionaryProblem.test6" />
+      <item itemvalue="JUnit.WordDictionaryProblem.test5" />
+      <item itemvalue="JUnit.WordDictionaryProblem.test4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StreamMethodsExamples" />
-        <item itemvalue="Application.FlatMapExample" />
-        <item itemvalue="Application.mapExample" />
-        <item itemvalue="Application.DebugStreamusingPeek" />
-        <item itemvalue="Application.StreamVsCollections" />
+        <item itemvalue="JUnit.WordDictionaryProblem.test6" />
+        <item itemvalue="JUnit.WordDictionaryProblem.test4" />
+        <item itemvalue="JUnit.WordDictionaryProblem.test5" />
+        <item itemvalue="JUnit.WordDictionaryProblem" />
+        <item itemvalue="JUnit.WordDictionaryProblem.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -248,16 +263,6 @@
           <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/week4/MockInterview.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/week4/MockInterview.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/Asessment2_2.java</url>
           <line>37</line>
           <option name="timeStamp" value="176" />
@@ -306,11 +311,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/stack/SimplifyPath.java</url>
           <line>66</line>
           <option name="timeStamp" value="215" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/week4/DailyTemperature.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/ThreeSum.java</url>
@@ -572,6 +572,21 @@
           <url>file://$PROJECT_DIR$/src/test/java/day5/MinimiunWindowSubtring.java</url>
           <line>135</line>
           <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/day5/SubStringWAllUniqueChars.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/ReeturnUnCommonChars.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week4/SecondLeastRepeatingCharacter.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="495" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
