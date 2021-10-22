@@ -5,18 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/ReeturnUnCommonChars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/NumbersDisAppeared.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/ClassDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/ConstructorExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/CustomSortExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/FindFirstAnyExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/LimitAndSkipFunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/MapFilterReduceFunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/MatchFunctionsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/MaxUsingReduceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/streams/ReduceFunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/FindOccurrenceOfAdjacentCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/RemoveSpecialChars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/SortArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day5/SubStringWAllUniqueChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day5/SubStringWAllUniqueChars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/DailyTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/DailyTemperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/DecodeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/GroupTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/GroupTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/LongestConsecutiveSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/LongestConsecutiveSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/MockInterview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/MockInterview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/SecondLeastRepeatingCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/SecondLeastRepeatingCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/SimplifyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week4/WordDictionaryProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week4/WordDictionaryProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/amazonQuestions/ReeturnUnCommonChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/ReeturnUnCommonChars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/java8/PredicateInterfacePractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateInterfacePractise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oopsPractise/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/streams/FlatMapExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/streams/FlatMapExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week5/FindAvgSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week5/FindAvgSalary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,100 +77,97 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WordDictionaryProblem.test6">
-    <configuration name="WordDictionaryProblem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FindOccurrenceOfAdjacentCharacters">
+    <configuration name="PredicateInterfacePractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8.PredicateInterfacePractise" />
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week4.*" />
+          <option name="PATTERN" value="java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindOccurrenceOfAdjacentCharacters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDET" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.FindOccurrenceOfAdjacentCharacters" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordDictionaryProblem.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReeturnUnCommonChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week4.*" />
+          <option name="PATTERN" value="amazonQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="amazonQuestions" />
+      <option name="MAIN_CLASS_NAME" value="amazonQuestions.ReeturnUnCommonChars" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordDictionaryProblem.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RemoveSpecialChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week4.*" />
+          <option name="PATTERN" value="week12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.RemoveSpecialChars" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordDictionaryProblem.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortArray.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week4.*" />
+          <option name="PATTERN" value="week12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordDictionaryProblem.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SDET" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="week4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="week4" />
-      <option name="MAIN_CLASS_NAME" value="week4.WordDictionaryProblem" />
-      <option name="METHOD_NAME" value="test6" />
+      <option name="PACKAGE_NAME" value="week12" />
+      <option name="MAIN_CLASS_NAME" value="week12.SortArray" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.WordDictionaryProblem" />
-      <item itemvalue="JUnit.WordDictionaryProblem.test3" />
-      <item itemvalue="JUnit.WordDictionaryProblem.test6" />
-      <item itemvalue="JUnit.WordDictionaryProblem.test5" />
-      <item itemvalue="JUnit.WordDictionaryProblem.test4" />
+      <item itemvalue="Application.PredicateInterfacePractise" />
+      <item itemvalue="JUnit.ReeturnUnCommonChars.test1" />
+      <item itemvalue="JUnit.RemoveSpecialChars.test1" />
+      <item itemvalue="JUnit.SortArray.test1" />
+      <item itemvalue="JUnit.FindOccurrenceOfAdjacentCharacters" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WordDictionaryProblem.test6" />
-        <item itemvalue="JUnit.WordDictionaryProblem.test4" />
-        <item itemvalue="JUnit.WordDictionaryProblem.test5" />
-        <item itemvalue="JUnit.WordDictionaryProblem" />
-        <item itemvalue="JUnit.WordDictionaryProblem.test3" />
+        <item itemvalue="JUnit.FindOccurrenceOfAdjacentCharacters" />
+        <item itemvalue="JUnit.SortArray.test1" />
+        <item itemvalue="JUnit.RemoveSpecialChars.test1" />
+        <item itemvalue="Application.PredicateInterfacePractise" />
+        <item itemvalue="JUnit.ReeturnUnCommonChars.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -444,11 +448,6 @@
           <option name="timeStamp" value="381" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/week11/FindALLAnagrams.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="388" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/week11/RepeatedStringSelection.java</url>
           <line>71</line>
           <option name="timeStamp" value="390" />
@@ -587,6 +586,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/week4/SecondLeastRepeatingCharacter.java</url>
           <line>68</line>
           <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/NumbersDisAppeared.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="498" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -13,7 +13,7 @@ class ObjTest {
        }
         }
 
-        class Main {
+        class Mains {
             public static void main(String[] args) {
                 ObjTest obj1 = new ObjTest();
                 ObjTest obj2 = new B();

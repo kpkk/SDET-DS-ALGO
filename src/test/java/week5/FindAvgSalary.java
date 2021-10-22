@@ -71,6 +71,11 @@ Output: 4750.00000
         int[] salaries={8000,9000,2000,3000,6000,1000};
         Assert.assertEquals(4750.00,findAvg(salaries),00);
     }
+    @Test
+    public void test5(){
+        int[] salaries={48000,59000,99000,13000,78000,45000,31000,17000,39000,37000,93000,77000,33000,28000,4000,54000,67000,6000,1000,11000};
+        Assert.assertEquals(41111.11111,findAvg(salaries),00);
+    }
 
     /*
     Solution:-

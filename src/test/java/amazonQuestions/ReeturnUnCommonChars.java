@@ -46,6 +46,7 @@ public class ReeturnUnCommonChars {
             }
             uniqueSet.add(c);
             s1Map.add(c);
+
         }
         output="";
        for (char c : uniqueSet){

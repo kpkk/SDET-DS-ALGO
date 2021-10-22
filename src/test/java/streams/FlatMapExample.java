@@ -3,6 +3,7 @@ package streams;
 import java8.Student;
 import java8.StudentDB;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,7 +23,7 @@ public class FlatMapExample {
 
         List<String> collect = students.stream()
                 .map(Student::getActivities)
-                .flatMap(List::stream)
+                 .flatMap(List::stream)
                 .collect(toList());
         System.out.println(collect);
     }
