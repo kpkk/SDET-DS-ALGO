@@ -5,25 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b4269d-df53-475b-8a07-2726817bc573" name="Default Changelist" comment="pushing LinkedList problems using recursion">
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetCodeRandomPick/NumbersDisAppeared.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/ClassDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/ConstructorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/CustomSortExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/FindFirstAnyExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/LimitAndSkipFunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/MapFilterReduceFunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/MatchFunctionsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/MaxUsingReduceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/streams/ReduceFunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/FindOccurrenceOfAdjacentCharacters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/RemoveSpecialChars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/week12/SortArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/ExecutionFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sorting/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sorting/InsertionArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sorting/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/BinaryString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/CharacterfrequencyWoCaseSensitivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/week12/MinSubArrayLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/workshop/SortArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/amazonQuestions/ReeturnUnCommonChars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/ReeturnUnCommonChars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/java8/PredicateInterfacePractise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/java8/PredicateInterfacePractise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/oopsPractise/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/streams/FlatMapExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/streams/FlatMapExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/week5/FindAvgSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week5/FindAvgSalary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ally/RotateNumberByKtimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/amazonQuestions/P3_LongestPalindromicString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/P3_LongestPalindromicString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/amazonQuestions/p1_TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/amazonQuestions/p1_TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/week12/SortArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/week12/SortArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/workshop/ReverseStringByWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/workshop/ReverseStringByWords.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,21 +74,24 @@
       <recent name="week6" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindOccurrenceOfAdjacentCharacters">
-    <configuration name="PredicateInterfacePractise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8.PredicateInterfacePractise" />
+  <component name="RunManager" selected="JUnit.P3_LongestPalindromicString.test5">
+    <configuration name="InsertionArray.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8.*" />
+          <option name="PATTERN" value="sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="sorting" />
+      <option name="MAIN_CLASS_NAME" value="sorting.InsertionArray" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindOccurrenceOfAdjacentCharacters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MinSubArrayLength.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -100,13 +100,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.FindOccurrenceOfAdjacentCharacters" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="week12.MinSubArrayLength" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReeturnUnCommonChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="P3_LongestPalindromicString.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
@@ -115,59 +116,58 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="amazonQuestions" />
-      <option name="MAIN_CLASS_NAME" value="amazonQuestions.ReeturnUnCommonChars" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="amazonQuestions.P3_LongestPalindromicString" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveSpecialChars.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RotateNumberByKtimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week12.*" />
+          <option name="PATTERN" value="ally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.RemoveSpecialChars" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="ally" />
+      <option name="MAIN_CLASS_NAME" value="ally.RotateNumberByKtimes" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortArray.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RotateNumberByKtimes.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDET" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week12.*" />
+          <option name="PATTERN" value="ally.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="week12" />
-      <option name="MAIN_CLASS_NAME" value="week12.SortArray" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="ally" />
+      <option name="MAIN_CLASS_NAME" value="ally.RotateNumberByKtimes" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PredicateInterfacePractise" />
-      <item itemvalue="JUnit.ReeturnUnCommonChars.test1" />
-      <item itemvalue="JUnit.RemoveSpecialChars.test1" />
-      <item itemvalue="JUnit.SortArray.test1" />
-      <item itemvalue="JUnit.FindOccurrenceOfAdjacentCharacters" />
+      <item itemvalue="JUnit.InsertionArray.test1" />
+      <item itemvalue="JUnit.RotateNumberByKtimes" />
+      <item itemvalue="JUnit.MinSubArrayLength.test1" />
+      <item itemvalue="JUnit.RotateNumberByKtimes.test2" />
+      <item itemvalue="JUnit.P3_LongestPalindromicString.test5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindOccurrenceOfAdjacentCharacters" />
-        <item itemvalue="JUnit.SortArray.test1" />
-        <item itemvalue="JUnit.RemoveSpecialChars.test1" />
-        <item itemvalue="Application.PredicateInterfacePractise" />
-        <item itemvalue="JUnit.ReeturnUnCommonChars.test1" />
+        <item itemvalue="JUnit.P3_LongestPalindromicString.test5" />
+        <item itemvalue="JUnit.RotateNumberByKtimes.test2" />
+        <item itemvalue="JUnit.MinSubArrayLength.test1" />
+        <item itemvalue="JUnit.RotateNumberByKtimes" />
+        <item itemvalue="JUnit.InsertionArray.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -357,16 +357,6 @@
           <option name="timeStamp" value="293" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/p1_TwoSum.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="297" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/p1_TwoSum.java</url>
-          <line>109</line>
-          <option name="timeStamp" value="298" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Test.java</url>
           <line>21</line>
           <option name="timeStamp" value="303" />
@@ -431,11 +421,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/workshop/LongestSubStringWorepeatChars.java</url>
           <line>57</line>
           <option name="timeStamp" value="372" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/amazonQuestions/P3_LongestPalindromicString.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="373" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/twoPointer/RemoveDuplicatesFromSortedArray.java</url>
@@ -509,7 +494,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
-          <line>180</line>
+          <line>183</line>
           <option name="timeStamp" value="458" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -564,7 +549,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/oopsPractise/Bike7.java</url>
-          <line>71</line>
+          <line>74</line>
           <option name="timeStamp" value="479" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -591,6 +576,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/leetCodeRandomPick/NumbersDisAppeared.java</url>
           <line>22</line>
           <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sorting/InsertionArray.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="501" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/week12/MinSubArrayLength.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="502" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -23,7 +23,8 @@ public class ReverseStringByWords {
     @Test
     public void test1(){
         String s="today is a beautiful day";
-        Assert.assertEquals(reverseString(s),"day beautiful a is today");
+        Assert.assertEquals(reverseAString(s),"day beautiful a is today");
+
     }
     @Test
     public void test2(){
@@ -51,5 +52,23 @@ public class ReverseStringByWords {
             output+=str[i]+" ";
         }
         return output.trim();
+    }
+
+    private String reverseAString(String s){
+        int i=s.length()-1;
+        String ans="";
+        while (i>=0){
+            while (i>=0 && s.charAt(i)==' ') i--;
+            int j=i;
+            if(i<0) break;
+            while (i>=0 && s.charAt(i)!=' ') i--;
+            if(ans.isEmpty()){
+                ans=ans.concat(s.substring(i+1,j+1));
+            }else{
+                ans=ans.concat(" "+s.substring(i+1,j+1));
+            }
+
+        }
+        return ans;
     }
 }

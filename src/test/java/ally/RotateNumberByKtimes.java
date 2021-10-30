@@ -9,13 +9,13 @@ public class RotateNumberByKtimes {
     public void test1(){
         int n=1234;
         int k=1;
-        Assert.assertEquals(shiftDigits(n,k),2341);
+        Assert.assertEquals(rotateDigit(n,k),2341);
     }
     @Test
     public void test2(){
         int n=1234;
         int k=2;
-        Assert.assertEquals(shiftDigits(n,k),3412);
+        Assert.assertEquals(shiftDigit(n,k),3412);
     }
 
     /*
@@ -62,6 +62,14 @@ public class RotateNumberByKtimes {
        return count;
     }
 
+    /*
+    - first count the total number of digits
+    - then calculate the k%digitCount and assign it to k
+    - perform n/Math.pow(10,digitCount-k) to get the first k digits to be shifted
+    - then get the last k digits using n%Math.pow(10, digitcount-k)
+    - then count the number of removed digits
+    - then return int version of n*math.pow(10, removedDigiCount)+remeoveddigit
+     */
     public int shiftDigits(int n, int k){
 
         int digitCount=findNumberOfDigits(n);
@@ -71,5 +79,31 @@ public class RotateNumberByKtimes {
         n=(int)(n%Math.pow(10,digitCount-k));
       int noOfdigitsremoved= findNumberOfDigits(removedDigit);
       return (int)(n*Math.pow(10,noOfdigitsremoved)+removedDigit);
+    }
+
+    private int rotateDigit(int n, int k){
+        int totalInputDigitCount= countDigits(n);
+        k%=totalInputDigitCount;
+        int removedDigitValue = (int)(n / Math.pow(10, totalInputDigitCount-k));
+        int remainingKdigits = (int)(n % Math.pow(10, totalInputDigitCount-k));
+        int removedDigitCount = countDigits(removedDigitValue);
+        return (int)(remainingKdigits*Math.pow(10,removedDigitCount)+removedDigitValue);
+    }
+
+    private int countDigits(int number){
+        int count=1;int div=1;
+        while (number/div>=10){
+            div*=10;
+            count++;
+        }
+        return count;
+    }
+    private int shiftDigit(int n, int k){
+        String result="";
+        String digit=String.valueOf(n);
+        String toBeRotated=digit.substring(0,k);
+        String remainingDigits=digit.substring(k);
+        result+=remainingDigits+toBeRotated;
+        return Integer.valueOf(result);
     }
 }

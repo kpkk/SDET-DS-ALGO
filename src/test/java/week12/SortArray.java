@@ -10,9 +10,6 @@ public class SortArray {
         String s="face";
         Assert.assertEquals(sortString(s),"acef");
     }
-    //String s = "VinvGeINHgh";
-    //Output : V=2,i=2,n=2,G=2,e=1,H=2
-
     private String sortString(String s) {
         char[] chars = s.toCharArray();
 

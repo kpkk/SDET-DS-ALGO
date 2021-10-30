@@ -61,6 +61,11 @@ s consist of only digits and English letters.
         String s="\"esbtzjaaijqkgmtaajpsdfiqtvxsgfvijpxrvxgfumsuprzlyvhclgkhccmcnquukivlpnjlfteljvykbddtrpmxzcrdqinsnlsteonhcegtkoszzonkwjevlasgjlcquzuhdmmkhfniozhuphcfkeobturbuoefhmtgcvhlsezvkpgfebbdbhiuwdcftenihseorykdguoqotqyscwymtjejpdzqepjkadtftzwebxwyuqwyeegwxhroaaymusddwnjkvsvrwwsmolmidoybsotaqufhepinkkxicvzrgbgsarmizugbvtzfxghkhthzpuetufqvigmyhmlsgfaaqmmlblxbqxpluhaawqkdluwfirfngbhdkjjyfsxglsnakskcbsyafqpwmwmoxjwlhjduayqyzmpkmrjhbqyhongfdxmuwaqgjkcpatgbrqdllbzodnrifvhcfvgbixbwywanivsdjnbrgskyifgvksadvgzzzuogzcukskjxbohofdimkmyqypyuexypwnjlrfpbtkqyngvxjcwvngmilgwbpcsseoywetatfjijsbcekaixvqreelnlmdonknmxerjjhvmqiztsgjkijjtcyetuygqgsikxctvpxrqtuhxreidhwcklkkjayvqdzqqapgdqaapefzjfngdvjsiiivnkfimqkkucltgavwlakcfyhnpgmqxgfyjziliyqhugphhjtlllgtlcsibfdktzhcfuallqlonbsgyyvvyarvaxmchtyrtkgekkmhejwvsuumhcfcyncgeqtltfmhtlsfswaqpmwpjwgvksvazhwyrzwhyjjdbphhjcmurdcgtbvpkhbkpirhysrpcrntetacyfvgjivhaxgpqhbjahruuejdmaghoaquhiafjqaionbrjbjksxaezosxqmncejjptcksnoq\"";
         Assert.assertEquals(findLongestPalindrome(s),"yvvy");
     }
+    @Test
+    public void test5(){
+        String s="a";
+        Assert.assertEquals(findLongestPalindrome(s),"a");
+    }
 
     /*
     Solution:-
@@ -91,11 +96,30 @@ s consist of only digits and English letters.
                     finalStr=s.substring(i,j+1);
                     length=Math.max(length,output.length());
                 }
-
             }
             output="";
         }
 
+        return finalStr.isEmpty()?s.charAt(0)+"":finalStr;
+    }
+
+    private String palindromicString(String s){
+        String output="", finalStr="";
+        int length=0;
+        char[] chars = s.toCharArray();
+        for (int i=0;i<chars.length-1;i++){
+            output+=chars[i];
+            for (int j=i+1;j<chars.length;j++){
+                output+=chars[j];
+                StringBuilder sb=new StringBuilder();
+                if(sb.reverse().toString().equals(s.substring(i,j+1))){
+                    if(sb.length()>length)
+                    finalStr=s.substring(i,j+1);
+                    length=Math.max(length,j-i+1);
+                }
+            }
+            output="";
+        }
         return finalStr.isEmpty()?s.charAt(0)+"":finalStr;
     }
 }
