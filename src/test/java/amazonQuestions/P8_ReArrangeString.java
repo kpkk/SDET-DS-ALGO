@@ -50,7 +50,7 @@ s consists of lowercase English letters.
     @Test
     public void test4(){
         String s="cxmwmmm";
-        Assert.assertEquals(reOrganizeString(s),"mcmwmxm");
+        Assert.assertEquals(arrangeAlternatively(s),"mcmwmxm");
     }
 
     /*
@@ -124,5 +124,42 @@ s consists of lowercase English letters.
 
         }
         return sb.toString();
+    }
+
+    private String arrangeAlternatively(String s){
+        int [] ascii =new int[26];
+        char[] chars = s.toCharArray();
+        for (int i=0;i<s.length();i++){
+            ascii[chars[i]-97]++;
+        }
+        // count the maximum occurred character
+        int maxIndex=0, maxValue=0;
+        for (int i=0;i<ascii.length;i++){
+            if(ascii[i]>maxIndex){
+                maxValue=ascii[i];
+                maxIndex=i;
+            }
+        }
+        if(maxValue>(s.length()+1)/2) return "";
+        int index=0;
+        char [] output=new char[s.length()];
+        while (ascii[maxIndex]>0){
+            output[index]=(char)(maxIndex+'a');
+            index+=2;
+            ascii[maxIndex]--;
+        }
+        for (int i=0;i<ascii.length;i++){
+            if(ascii[i]>0){
+                if(index>=output.length)index=1;
+                output[index]=(char)(i+'a');
+                index+=2;
+                ascii[i]--;
+            }
+        }
+       String result="";
+        for (int i=0;i<output.length;i++){
+            result+=output[i]+"";
+        }
+        return result;
     }
 }

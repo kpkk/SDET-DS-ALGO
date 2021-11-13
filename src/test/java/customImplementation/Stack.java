@@ -50,10 +50,10 @@ class Test1{
         s.push(5);
         s.push(7);
         s.push(6);
-     //   s.printStack();
+        s.printStack();
         System.out.println( s.pop());
         System.out.println(s.size());
         System.out.println(s.isEmpty());
-      //  s.printStack();
+        s.printStack();
     }
 }

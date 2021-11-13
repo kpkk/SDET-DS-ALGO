@@ -90,7 +90,7 @@ Simple technique brute force
         int [] nums={8,1,2,2,3};
         int[] output={4,0,1,1,3};
       //  Assert.assertTrue(Arrays.equals(bruteForce(nums),output));
-        Assert.assertTrue(Arrays.equals(countSmaller(nums),output));
+        Assert.assertTrue(Arrays.equals(countSmallerNumbersInArray(nums),output));
 
 
 
@@ -192,6 +192,33 @@ Simple technique brute force
         for(int n : result) res.add(n);
         System.out.println(res);
         return arr;
+    }
+
+    /*
+    Solution:-
+    - initialize an integer array of length-->101, as the max value at any given index would be 100
+    - initialize an integer array result of given input array length
+    - iterate the input array and initialize the indices in count array with input array values respectively
+    - iterate from the number 1 to 100, then update the indices in count array
+    - iterate the input array and if the value at index is zero update the result index as zero
+        - else update the count array index value
+     */
+    private int[] countSmallerNumbersInArray(int[] nums){
+        int[] count=new int[101];
+        int[] result=new int[nums.length];
+        for (int i=0;i<nums.length;i++){
+            count[nums[i]]++;
+        }
+        for (int i=1;i<=100;i++){
+            count[i]=count[i]+count[i-1];
+        }
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==0) result[i]=0;
+            else{
+                result[i]=count[nums[i]-1];
+            }
+        }
+        return result;
     }
 
 }

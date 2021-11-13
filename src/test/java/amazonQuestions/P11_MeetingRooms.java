@@ -49,4 +49,20 @@ public class P11_MeetingRooms {
 
        return minRooms;
     }
+
+    private int meetingRooms(String[][] meetings){
+        int[][] meeting=new int[meetings.length][2];
+        for (int i=0;i<meetings.length;i++){
+            meeting[i][0]=Integer.parseInt(meetings[i][0].replaceAll(" ",""));
+            meeting[i][1]=Integer.parseInt(meetings[i][1].replaceAll(" ",""));
+        }
+        int start=0, end=0, meetingRooms=meeting.length;
+        while (start<meeting.length){
+            if(meeting[start++][0]>=meeting[end][1]){
+                meetingRooms--;
+                end++;
+            }
+        }
+        return meetingRooms;
+    }
 }

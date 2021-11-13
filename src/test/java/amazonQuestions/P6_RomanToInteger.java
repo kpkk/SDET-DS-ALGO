@@ -111,7 +111,6 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
             }
         };
         char[] chars = s.toCharArray();
-        int j=0;
         for(int i=0;i<s.length();i++){
             if(i!=0 && map.get(chars[i])>map.get(chars[i-1])){
                 sum=sum-map.get(chars[i-1])+map.get(chars[i])-map.get(chars[i-1]);

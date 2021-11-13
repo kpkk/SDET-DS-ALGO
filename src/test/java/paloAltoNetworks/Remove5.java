@@ -10,7 +10,12 @@ public class Remove5 {
     @Test
     public void test1(){
         int n=15958;
-        Assert.assertEquals(removes5(n),1958);
+        Assert.assertEquals(remove(n),1958);
+    }
+    @Test
+    public void test2(){
+        int n=-5859;
+        Assert.assertEquals(remove(n),-589);
     }
     /*
     input- integer
@@ -56,7 +61,7 @@ public class Remove5 {
 
 
 
-   /* public int remove(int n){
+    public int remove(int n){
         boolean isNegative = false;
         if (n < 0) {
             isNegative = true;
@@ -76,7 +81,7 @@ public class Remove5 {
         return isNegative ? min : max;
     }
 
-*/
+
 
     private int removes5(int n) {
         int maxDigit = Integer.MIN_VALUE;

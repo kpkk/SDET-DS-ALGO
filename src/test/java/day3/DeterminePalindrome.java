@@ -72,13 +72,13 @@ Simple technique brute force
     public void test2(){
         String s="abca";
         boolean result=true;
-        Assert.assertTrue(isPalindrome(s));
+        Assert.assertTrue(validPalindrome(s));
     }
     @Test
     public void test3(){
         String s="abcakcba";
         boolean result=true;
-        Assert.assertFalse(isPalindrome(s));
+        Assert.assertFalse(validPalindrome(s));
     }
     @Test
     public void test4(){
@@ -105,6 +105,39 @@ Simple technique brute force
         if (set.size()<=2)
             return true;
         return false;
+    }
+
+    /*
+    Solution:-
+    - Initialize two pointers, left=0, right= length-1
+    - while i<j and character at both left and right indices are same then increment left and decrement right pointer
+        - if not terminate the loop
+    - if i crossed j (i>=j) then return true
+    - if either of the substrings between i+1,j and i, j-1 are true then return true else false
+      */
+    private boolean validPalindrome(String s){
+
+        int left=0, right=s.length()-1;
+        while (left<right && s.charAt(left)==s.charAt(right)){
+            left++;
+            right--;
+        }
+        if(left>=right) return true;
+        if(isPalindromeString(s,left+1,right)|| isPalindromeString(s,left,right-1)) return true;
+
+        return false;
+    }
+
+    private boolean isPalindromeString(String s, int i, int j){
+        while (i<j){
+            if(s.charAt(i)==s.charAt(j)) {
+                i++;
+                j--;
+            }else{
+                return false;
+            }
+        }
+        return true;
     }
 }
 

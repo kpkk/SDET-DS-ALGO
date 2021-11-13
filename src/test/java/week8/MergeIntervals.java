@@ -3,10 +3,8 @@ package week8;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class MergeIntervals {
 
@@ -97,6 +95,23 @@ Given an array of intervals [[1,3],[2,4],[6,9]], merge the overlapping intervals
         }
         return output;
     }
-
+    @Test
+    public void test6(){
+        List<List<Integer>> intervals=new ArrayList<>();
+        List<Integer> integers = Arrays.asList(7, 7);
+        List<Integer> integers1 = Arrays.asList(2,3);
+        List<Integer> integers2 = Arrays.asList(6,11);
+        List<Integer> integers3  = Arrays.asList(1,2);
+        intervals.add(integers);
+        intervals.add(integers1);
+        intervals.add(integers2);
+        intervals.add(integers3);
+        System.out.println(intervals);
+    }
+    private void mergeIntervals(List<List<Integer>> intervals) {
+        Integer[] temp=new Integer[3];
+        for (List list:intervals)
+            intervals.add(Arrays.stream(temp).collect(Collectors.toList()));
+    }
 }
 

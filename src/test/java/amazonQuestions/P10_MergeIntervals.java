@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReferenceArray;
 
 public class P10_MergeIntervals {
     /*
@@ -75,5 +76,28 @@ intervals[i].length == 2
           mergedMeetings[i][1]=meetings.get(i).get(1);
       }
       return mergedMeetings;
+    }
+
+    private int[][] mergeMeetingIntervals(int[][] meetings){
+        List<List<Integer>>mergedMeetings=new ArrayList<>();
+        Arrays.sort(meetings,(a,b)->{if(a[0]!=b[0]) return a[0]-b[0]; else return a[1]-b[1];});
+        int startTime=meetings[0][0];
+        int endTime=meetings[0][1];
+        for (int i=1;i<meetings.length;i++){
+            if(meetings[i][0]<=endTime){
+                endTime=Math.max(endTime,meetings[i][1]);
+            }else{
+                mergedMeetings.add(Arrays.asList(startTime,endTime));
+                startTime=meetings[i][0];
+                endTime=meetings[i][1];
+            }
+        }
+        mergedMeetings.add(Arrays.asList(startTime,endTime));
+        int[][] output=new int[mergedMeetings.size()][2];
+        for (int i=0;i<mergedMeetings.size();i++){
+            output[i][0]=mergedMeetings.get(i).get(0);
+            output[i][1]=mergedMeetings.get(i).get(1);
+        }
+        return output;
     }
 }

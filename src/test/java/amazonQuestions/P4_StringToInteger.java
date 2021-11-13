@@ -141,7 +141,7 @@ s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+
                 continue;
             }
             else if(chars[i]=='+' && i==0) continue;
-            if(Character.isDigit(chars[i])) result= result*10+Integer.parseInt(chars[i]+"");
+            else if(Character.isDigit(chars[i])) result= result*10+Integer.parseInt(chars[i]+"");
             else break;
         }
         if(isNegative) result*=-1;
